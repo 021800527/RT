@@ -1,37 +1,19 @@
-# radio_map_from_xml.py
-import matplotlib.pyplot as plt
-from sionna.rt import load_scene, RadioMapSolver
+import sionna.rt as rt
+import numpy as np
 
-# 1. 加载 XML 场景（必须是 Mitsuba 3 格式）
-scene = load_scene("Hongkong.xml")
+# 加载你的自定义场景
+scene = rt.load_scene("Hongkong.xml")  # 注意：用正斜杠或双反斜杠
 
-# 2. 可视化场景几何（可选：确认加载成功）
-scene.show()  # 弹出交互式 3D 查看器（需要支持 GUI）
+# 可选：查看场景中有哪些对象
+print("Objects in scene:", list(scene.objects.keys()))
+print("Transmitters:", list(scene.transmitters.keys()))
+print("Receivers:", list(scene.receivers.keys()))
 
-# 3. 创建 RadioMapSolver
-solver = RadioMapSolver(scene)
-
-# 4. 计算 Radio Map（路径损耗图）
-#    假设在 z=1.5 米高度，覆盖 40m x 40m 区域，分辨率 0.5m
-radio_map = solver(
-    center=[0, 0, 1.5],
-    size=[40, 40],
-    cell_size=[0.5, 0.5],
-    num_samples=1e6,
-    max_depth=8
+# 创建一个相机视角（你可以调整 position 和 look_at）
+camera = rt.Camera(
+    position=[500, 500, 300],      # 相机位置 (x, y, z)
+    look_at=[0, 0, 50]             # 看向哪个点
 )
 
-# 5. 绘图
-plt.figure(figsize=(8, 6))
-im = plt.imshow(
-    radio_map.path_loss.numpy(),
-    origin="lower",
-    extent=[-20, 20, -20, 20],
-    cmap="viridis_r"
-)
-plt.colorbar(im, label="Path Loss [dB]")
-plt.xlabel("X [m]")
-plt.ylabel("Y [m]")
-plt.title("Radio Map from scene.xml")
-plt.tight_layout()
-plt.show()
+# 渲染并显示场景（不带无线电地图）
+scene.render(camera=camera)
