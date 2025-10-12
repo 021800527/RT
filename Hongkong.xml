@@ -1,0 +1,43 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="twosided" id="mat-itu_concrete" name="mat-itu_concrete">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.800000 0.800000 0.800000" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-itu_brick" name="mat-itu_brick">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.073800 0.073800 0.073800" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+	<shape type="ply" id="mesh-Plane" name="mesh-Plane">
+		<string name="filename" value="meshes/Plane.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Hongkong_osm_buildings" name="mesh-Hongkong_osm_buildings">
+		<string name="filename" value="meshes/Hongkong_osm_buildings.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>
