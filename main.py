@@ -83,5 +83,6 @@ else:
     scene_etoile.preview(
         radio_map=rm_etoile,
         rm_metric="sinr",
-        rm_vmin=-10,       rm_vmax=60
+        rm_vmin=-10,
+        rm_vmax=60
     )
