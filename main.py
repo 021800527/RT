@@ -86,3 +86,6 @@ else:
         rm_vmin=-10,
         rm_vmax=60
     )
+print("---------------------------")
+print(rm_etoile.rss[0][0][0])
+print(rm_etoile.rss[:5, :5])
