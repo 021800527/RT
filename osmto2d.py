@@ -3,58 +3,57 @@ import matplotlib.pyplot as plt
 import fiona
 import os
 
+
 def generate_2d_map(osm_file_path):
     """
-    从指定的 OSM 文件生成二维建筑地图，并保存为 PNG 图片。
+    从给定的 .osm 文件生成 2D 建筑轮廓图，保存为 ./2D/文件名.png
 
     参数:
-    - osm_file_path: 字符串，OSM 文件的路径。
+        osm_file_path (str): 输入的 OSM 文件路径，例如 "./osm/Hongkong.osm"
     """
-    # 提取文件名（不包含扩展名）作为输出文件名的基础
-    output_filename = os.path.splitext(os.path.basename(osm_file_path))[0]
+    # 确保输出目录存在
+    os.makedirs("./2D", exist_ok=True)
 
+    # 提取基础文件名（不含路径和扩展名）
+    filename = os.path.basename(osm_file_path)
+    if not filename.lower().endswith('.osm'):
+        raise ValueError(f"输入文件必须是 .osm 文件，但得到: {filename}")
+    base_name = filename[:-4]  # 去掉 .osm 后缀
+    output_path = f"./2D/{base_name}.png"
+
+    # 读取 OSM multipolygons 图层
     try:
-        # 尝试读取 buildings（OSM 中建筑通常在 multipolygons 图层）
         gdf = gpd.read_file(osm_file_path, layer='multipolygons')
     except Exception as e:
-        print("尝试读取 multipolygons 失败，尝试其他图层...")
-        # 列出所有图层
-        layers = fiona.listlayers(osm_file_path)
-        print("可用图层:", layers)
+        print(f"❌ 无法读取 {osm_file_path} 的 'multipolygons' 图层。")
+        try:
+            layers = fiona.listlayers(osm_file_path)
+            print(f"可用图层: {layers}")
+        except Exception:
+            pass
         raise e
 
-    # 筛选建筑：OSM 中建筑通常有 building=* 标签
+    # 筛选建筑要素
     if 'building' in gdf.columns:
         buildings = gdf[gdf['building'].notnull()]
     else:
-        print("警告：未找到 'building' 列，可能需要手动检查属性")
-        buildings = gdf  # 或根据其他字段过滤
+        print(f"⚠️ 警告: {osm_file_path} 中无 'building' 字段，尝试保留所有要素。")
+        buildings = gdf
 
-    # 如果没有建筑，提前退出
     if buildings.empty:
-        raise ValueError("未找到任何建筑！请确认 OSM 文件包含 building=* 的要素")
+        print(f"⚠️ 警告: {osm_file_path} 中未找到有效建筑，跳过生成。")
+        return
 
-    # 只保留 geometry（多边形）
+    # 仅保留 geometry 列
     buildings = buildings[['geometry']]
 
     # 绘图
     fig, ax = plt.subplots(figsize=(12, 12))
-
-    # 绘制建筑边界（白色线条）
-    buildings.boundary.plot(
-        ax=ax,
-        color='white',
-        linewidth=2.0  # 可调粗细
-    )
-
-    # 设置黑色背景
+    buildings.boundary.plot(ax=ax, color='white', linewidth=2.0)
     ax.set_facecolor('black')
-
-    # 去掉坐标轴
     ax.set_axis_off()
 
-    # 保存为高分辨率 PNG（无白边），文件名为 "文件名.png"
-    output_path = "{}.png".format(output_filename)
+    # 保存图像
     plt.savefig(
         output_path,
         dpi=300,
@@ -62,8 +61,6 @@ def generate_2d_map(osm_file_path):
         pad_inches=0,
         facecolor='black'
     )
+    plt.close(fig)  # 防止内存泄漏
 
     print(f"✅ 已保存: {output_path}")
-
-# 示例调用：
-# generate_2d_map("xxx/yyy.osm") 会生成 yyy.png

@@ -1,9 +1,22 @@
+import os
+from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.ndimage import zoom
 from PIL import Image
 import sionna.rt as rt
 from osmto2d import generate_2d_map
+
+
+# ==============================
+# 第一部分: osm文件转换成2D俯视图
+# ==============================
+osm_dir = Path("./osm")
+if osm_dir.exists():
+    for osm_file in osm_dir.glob("*.osm"):
+        generate_2d_map(str(osm_file))
+else:
+    print("请创建 ./osm 文件夹并放入 .osm 文件")
 
 # ==============================
 # 第一部分：生成无线电地图（你的原始代码）
