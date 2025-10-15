@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.ndimage import zoom
 from PIL import Image
 import sionna.rt as rt
+from osmto2d import generate_2d_map
 
 # ==============================
 # 第一部分：生成无线电地图（你的原始代码）
