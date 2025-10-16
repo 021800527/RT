@@ -6,7 +6,7 @@ from scipy.ndimage import zoom
 from PIL import Image
 import sionna.rt as rt
 from osmto2d import generate_2d_map
-
+from RT import generate_radio_maps_from_xmls, get_scene_bounds
 
 # ==============================
 # 第一部分: osm文件转换成2D俯视图
@@ -18,8 +18,10 @@ if osm_dir.exists():
 else:
     print("请创建 ./osm 文件夹并放入 .osm 文件")
 
+generate_radio_maps_from_xmls()
+
 # ==============================
-# 第一部分：生成无线电地图（你的原始代码）
+# 第二部分：生成无线电地图（你的原始代码）
 # ==============================
 def config_scene(num_rows, num_cols):
     scene = rt.load_scene("Hongkong.xml")
@@ -124,11 +126,3 @@ final_image = np.maximum(rss_gray, building_array)  # 信号强的地方更亮
 # Step 7: 保存结果
 result_img = Image.fromarray(final_image)
 result_img.save("rss_overlay_on_building.png")
-
-# 可选：显示结果
-plt.figure(figsize=(12, 10))
-plt.imshow(final_image, cmap='gray')
-plt.title("RSS Overlay on Building Plan (Stronger = Whiter)")
-plt.axis('off')
-plt.tight_layout()
-plt.show()
