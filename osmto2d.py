@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import fiona
 import os
 
-
 def generate_2d_map(osm_file_path):
     """
     从给定的 .osm 文件生成 2D 建筑轮廓图，保存为 ./2D/文件名.png
@@ -44,12 +43,10 @@ def generate_2d_map(osm_file_path):
         print(f"⚠️ 警告: {osm_file_path} 中未找到有效建筑，跳过生成。")
         return
 
-    # 仅保留 geometry 列
-    buildings = buildings[['geometry']]
-
     # 绘图
     fig, ax = plt.subplots(figsize=(12, 12))
-    buildings.boundary.plot(ax=ax, color='white', linewidth=2.0)
+    # 填充建筑物内部并设置边框
+    buildings.plot(ax=ax, facecolor='white', edgecolor='white', linewidth=2.0)
     ax.set_facecolor('black')
     ax.set_axis_off()
 

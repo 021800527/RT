@@ -2,41 +2,44 @@ import numpy as np
 from scipy.ndimage import zoom
 from PIL import Image
 
-
 def overlay_rss_on_building(rss_data, building_png_path, output_path):
     """
-    将多Tx的RSS数据线性叠加后，插值并叠加到建筑俯视图上，保存为灰度增强图。
-
-    参数:
-    - rss_data: numpy.ndarray, shape (num_tx, H_rss, W_rss)，单位为线性功率（W）
-    - building_png_path: str，建筑俯视图路径（如 "osmto2d.png"）
-    - output_path: str，输出图像路径（如 "./tx_overlays/Hongkong_rss_overlay.png"）
+    将多Tx的RSS数据叠加后，插值并叠加到建筑俯视图上。
+    - 不平滑、不滤波
+    - RSS=0 映射为 100（深灰）
+    - 所有非建筑区域灰度 ∈ [100, 255]
+    - 建筑区域 = 0（纯黑）
     """
     # Step 1: 合并所有 Tx 的 RSS（线性相加）
     total_rss_linear = np.sum(rss_data, axis=0)  # (H, W)
 
-    # Step 2: 转换为 dBm
-    total_rss_dbm = 10 * np.log10(total_rss_linear / 1e-3 + 1e-20)  # 避免除零
+    # Step 2: 转换为 dBm，避免 log(0)
+    total_rss_dbm = 10 * np.log10(np.where(total_rss_linear == 0, 1e-30, total_rss_linear / 1e-3))
 
-    # Step 3: 加载建筑图（灰度）
+    # Step 3: 加载建筑图
     building_img = Image.open(building_png_path).convert("L")
-    building_array = np.array(building_img)  # (H_bg, W_bg)
-
+    building_array = np.array(building_img)
     H_bg, W_bg = building_array.shape
     H_rss, W_rss = total_rss_dbm.shape
 
-    # Step 4: 插值放大到建筑图尺寸
+    # Step 4: 插值放大（保持你用的 order=3）
     scale_y = H_bg / H_rss
     scale_x = W_bg / W_rss
     rss_resized = zoom(total_rss_dbm, (scale_y, scale_x), order=3)
-    rss_resized = rss_resized[:H_bg, :W_bg]  # 严格对齐尺寸
+    rss_resized = rss_resized[:H_bg, :W_bg]
 
-    # Step 5: 归一化到 [0, 255]
-    rss_norm = (rss_resized - rss_resized.min()) / (rss_resized.max() - rss_resized.min() + 1e-12)
-    rss_gray = (rss_norm * 255).astype(np.uint8)
+    # Step 5: 映射到 [100, 255]
+    vmin = -180.0   # 最弱信号
+    vmax = -40.0    # 最强信号
 
-    # Step 6: 叠加（信号强的地方更亮）
-    final_image = np.maximum(rss_gray, building_array)
+    # 线性映射：[vmin, vmax] → [100, 255]
+    normalized = (rss_resized - vmin) / (vmax - vmin)
+    normalized = np.clip(normalized, 0.0, 1.0)  # 超出范围的截断
+    rss_gray = (100 + (255 - 100) * normalized).astype(np.uint8)
+
+    # Step 6: 建筑区域设为纯黑（0）
+    building_mask = (building_array == 255)
+    final_image = np.where(building_mask, 0, rss_gray)
 
     # Step 7: 保存
     result_img = Image.fromarray(final_image)

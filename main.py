@@ -22,15 +22,15 @@ else:
 # ==============================
 generate_radio_maps_from_xmls(
     xml_dir="./xml",
-    building_png="osmto2d.png",
-    num_tx=5,
-    tx_height=1.5,
+    building_png="./2d/Hongkong.png",
+    num_tx=1,
+    tx_height=0,
     num_rows=8,
     num_cols=2,
     power_dbm=23,
     max_depth=5,
-    samples_per_tx=10**6,
-    cell_size=(1, 1),
+    samples_per_tx=30**6,
+    cell_size=(0.5, 0.5),
     output_dir="./radio_maps",
     overlay_dir="./tx_overlays",
     with_tx_dir="./with_tx"
