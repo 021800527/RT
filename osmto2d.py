@@ -1,63 +1,56 @@
-import geopandas as gpd
-import matplotlib.pyplot as plt
-import fiona
 import os
+import numpy as np
+import geopandas as gpd
+from rasterio.transform import from_bounds
+from rasterio.features import rasterize
+from matplotlib import pyplot as plt
 
 def generate_2d_map(osm_file_path):
     """
-    从给定的 .osm 文件生成 2D 建筑轮廓图，保存为 ./2D/文件名.png
-
-    参数:
-        osm_file_path (str): 输入的 OSM 文件路径，例如 "./osm/Hongkong.osm"
+    从 .osm 文件生成严格 256x256 像素的二值建筑图（白色建筑，黑色背景）
+    假设 .osm 文件覆盖的地理范围正好用于生成 256x256 米区域（1米=1像素）
     """
-    # 确保输出目录存在
     os.makedirs("./2D", exist_ok=True)
-
-    # 提取基础文件名（不含路径和扩展名）
-    filename = os.path.basename(osm_file_path)
-    if not filename.lower().endswith('.osm'):
-        raise ValueError(f"输入文件必须是 .osm 文件，但得到: {filename}")
-    base_name = filename[:-4]  # 去掉 .osm 后缀
+    base_name = os.path.basename(osm_file_path).replace('.osm', '')
     output_path = f"./2D/{base_name}.png"
 
-    # 读取 OSM multipolygons 图层
+    # 读取 multipolygons
     try:
         gdf = gpd.read_file(osm_file_path, layer='multipolygons')
     except Exception as e:
         print(f"❌ 无法读取 {osm_file_path} 的 'multipolygons' 图层。")
-        try:
-            layers = fiona.listlayers(osm_file_path)
-            print(f"可用图层: {layers}")
-        except Exception:
-            pass
         raise e
 
-    # 筛选建筑要素
+    if gdf.empty:
+        print(f"⚠️ 无数据，生成空白图: {output_path}")
+        blank = np.zeros((256, 256), dtype=np.uint8)
+        plt.imsave(output_path, blank, cmap='gray', vmin=0, vmax=1)
+        return
+
+    # 获取地理边界
+    west, south, east, north = gdf.total_bounds
+
+    # 创建 256x256 的变换矩阵（从地理坐标 → 像素坐标）
+    transform = from_bounds(west, south, east, north, 256, 256)
+
+    # 筛选建筑
     if 'building' in gdf.columns:
         buildings = gdf[gdf['building'].notnull()]
     else:
-        print(f"⚠️ 警告: {osm_file_path} 中无 'building' 字段，尝试保留所有要素。")
         buildings = gdf
 
     if buildings.empty:
-        print(f"⚠️ 警告: {osm_file_path} 中未找到有效建筑，跳过生成。")
-        return
+        img = np.zeros((256, 256), dtype=np.uint8)
+    else:
+        shapes = [(geom, 1) for geom in buildings.geometry if geom is not None and not geom.is_empty]
+        img = rasterize(
+            shapes,
+            out_shape=(256, 256),
+            transform=transform,
+            fill=0,
+            dtype=np.uint8
+        )
 
-    # 绘图
-    fig, ax = plt.subplots(figsize=(12, 12))
-    # 填充建筑物内部并设置边框
-    buildings.plot(ax=ax, facecolor='white', edgecolor='white', linewidth=2.0)
-    ax.set_facecolor('black')
-    ax.set_axis_off()
-
-    # 保存图像
-    plt.savefig(
-        output_path,
-        dpi=300,
-        bbox_inches='tight',
-        pad_inches=0,
-        facecolor='black'
-    )
-    plt.close(fig)  # 防止内存泄漏
-
-    print(f"✅ 已保存: {output_path}")
+    # 保存为 PNG
+    plt.imsave(output_path, img, cmap='gray', vmin=0, vmax=1)
+    print(f"✅ 已保存 256x256 图像: {output_path}")

@@ -14,12 +14,12 @@
 
 <!-- Shapes -->
 	<shape type="ply" id="elm__2" name="elm__2">
-		<string name="filename" value="meshes/Hongkong_ground.ply"/>
+		<string name="filename" value="meshes/0001_ground.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_concrete" name="bsdf"/>
 	</shape>
 	<shape type="ply" id="elm__4" name="elm__4">
-		<string name="filename" value="meshes/Hongkong_buildings.ply"/>
+		<string name="filename" value="meshes/0001_buildings.ply"/>
 		<boolean name="face_normals" value="true"/>
 		<ref id="mat-itu_brick" name="bsdf"/>
 	</shape>

@@ -155,6 +155,7 @@ def generate_radio_maps_from_xmls(
                 cell_size=cell_size
             )
             rss_data = rm.rss.numpy()  # (num_tx, H, W)
+            print(rm.rss.shape)
             base_name = xml_file.stem
 
             # 保存无线电地图
