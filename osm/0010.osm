@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113195 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="22.2847127" minlon="114.1658521" maxlat="22.2870124" maxlon="114.1683375"/>
+ <node id="6576494609" visible="true" version="5" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2843425" lon="114.1632259"/>
+ <node id="6576494610" visible="true" version="3" changeset="172759984" timestamp="2025-10-02T17:42:18Z" user="BG2EWI" uid="22637269" lat="22.2859212" lon="114.1639870">
+  <tag k="seamark:name" v="CMDV2"/>
+  <tag k="seamark:type" v="virtual_aton"/>
+  <tag k="seamark:virtual_aton:category" v="special_purpose"/>
+  <tag k="seamark:virtual_aton:mmsi" v="994776020"/>
+  <tag k="source" v="https://www.mardep.gov.hk/en/notices/pdf/mdn19109.pdf"/>
+ </node>
+ <node id="6576494611" visible="true" version="3" changeset="172759984" timestamp="2025-10-02T17:42:18Z" user="BG2EWI" uid="22637269" lat="22.2849993" lon="114.1665762">
+  <tag k="seamark:name" v="CMDV1"/>
+  <tag k="seamark:type" v="virtual_aton"/>
+  <tag k="seamark:virtual_aton:category" v="special_purpose"/>
+  <tag k="seamark:virtual_aton:mmsi" v="994776019"/>
+  <tag k="source" v="https://www.mardep.gov.hk/en/notices/pdf/mdn19109.pdf"/>
+ </node>
+ <node id="8481456295" visible="true" version="4" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2834008" lon="114.1659649"/>
+ <way id="700310574" visible="true" version="5" changeset="167778899" timestamp="2025-06-18T11:54:12Z" user="Kovoschiz" uid="6250193">
+  <nd ref="6576494609"/>
+  <nd ref="6576494610"/>
+  <nd ref="6576494611"/>
+  <nd ref="8481456295"/>
+ </way>
+ <relation id="14937825" visible="true" version="2" changeset="161621742" timestamp="2025-01-22T03:29:37Z" user="cnvery" uid="3627342">
+  <member type="way" ref="514683581" role="outer"/>
+  <member type="way" ref="514683580" role="outer"/>
+  <member type="way" ref="1117392709" role="outer"/>
+  <member type="way" ref="1117392708" role="outer"/>
+  <member type="way" ref="700310574" role="outer"/>
+  <member type="way" ref="1117392714" role="outer"/>
+  <member type="way" ref="1117392713" role="outer"/>
+  <tag k="base" v="logistics"/>
+  <tag k="base_function" v="logistics"/>
+  <tag k="landuse" v="military"/>
+  <tag k="military" v="base"/>
+  <tag k="military_service" v="navy"/>
+  <tag k="name" v="中區軍用碼頭 Central Military Dock"/>
+  <tag k="name:en" v="Central Military Dock"/>
+  <tag k="name:zh" v="中區軍用碼頭"/>
+  <tag k="name:zh-Hans" v="中区军用码头"/>
+  <tag k="name:zh-Hant" v="中區軍用碼頭"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+ <relation id="14937828" visible="true" version="5" changeset="167912456" timestamp="2025-06-21T12:50:41Z" user="mueschel" uid="616774">
+  <member type="way" ref="700310574" role="outer"/>
+  <member type="way" ref="1117392708" role="outer"/>
+  <member type="way" ref="393124855" role="outer"/>
+  <member type="way" ref="1117392714" role="outer"/>
+  <tag k="boundary" v="yes"/>
+  <tag k="maxlength" v="60"/>
+  <tag k="maxlength:conditional" v="none @ (private)"/>
+  <tag k="mooring" v="private"/>
+  <tag k="name" v="中區軍用碼頭外圍區域 Central Military Dock Outer Area"/>
+  <tag k="name:en" v="Central Military Dock Outer Area"/>
+  <tag k="name:zh" v="中區軍用碼頭外圍區域"/>
+  <tag k="name:zh-Hans" v="中区军用码头外围区域"/>
+  <tag k="name:zh-Hant" v="中區軍用碼頭外圍區域"/>
+  <tag k="seamark:information" v="Vessels not exceeding 60 metres long may pass through, but not stay, anchor, moor or berth unless with permission. Vessels with a length of 60 meters or longer may enter, stay, anchor, moor or berth only with permission."/>
+  <tag k="seamark:name" v="Central Military Dock Outer Area"/>
+  <tag k="seamark:national_name" v="中區軍用碼頭外圍區域"/>
+  <tag k="seamark:restricted_area:category" v="military"/>
+  <tag k="seamark:restricted_area:restriction" v="restricted_anchoring;restricted_entry;restricted_stopping;restricted_landing;restricted_berthing"/>
+  <tag k="seamark:type" v="restricted_area"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+</osm>

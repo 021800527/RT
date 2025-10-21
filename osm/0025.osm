@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113222 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="22.2916117" minlon="114.1583960" maxlat="22.2939114" maxlon="114.1608814"/>
+ <node id="7945407765" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2965104" lon="114.1487934"/>
+ <node id="7945407766" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2896576" lon="114.1658908"/>
+ <node id="7945407767" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2889309" lon="114.1731616"/>
+ <node id="7945407768" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2910320" lon="114.1816053"/>
+ <node id="7945407769" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2959276" lon="114.1910870"/>
+ <node id="7945407770" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2994357" lon="114.1983237"/>
+ <node id="7945407771" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2997146" lon="114.2108698"/>
+ <node id="7945407772" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2962466" lon="114.2211090"/>
+ <node id="7945407773" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2822803" lon="114.2424535"/>
+ <node id="7945407774" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2889578" lon="114.1696081"/>
+ <node id="7945407775" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2892809" lon="114.1758252"/>
+ <node id="7945407776" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2999151" lon="114.2043926"/>
+ <node id="7945407777" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2984183" lon="114.2155389"/>
+ <node id="7945407778" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2899801" lon="114.1787833"/>
+ <node id="9806787449" visible="true" version="6" changeset="145058249" timestamp="2023-12-13T02:18:35Z" user="minghong" uid="541214" lat="22.2951873" lon="114.1764332">
+  <tag k="access" v="yes"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="尖沙咀一號梯台 Tsim Sha Tsui Landing Number 1"/>
+  <tag k="name:en" v="Tsim Sha Tsui Landing Number 1"/>
+  <tag k="name:zh" v="尖沙咀一號梯台"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="seamark:berth:restriction" v="none"/>
+  <tag k="seamark:type" v="berth"/>
+ </node>
+ <node id="9809014200" visible="true" version="8" changeset="161483438" timestamp="2025-01-18T09:19:42Z" user="cnvery" uid="3627342" lat="22.3041806" lon="114.1577826">
+  <tag k="access" v="yes"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="西九龍 West Kowloon"/>
+  <tag k="name:en" v="West Kowloon"/>
+  <tag k="name:zh" v="西九龍"/>
+  <tag k="name:zh-Hans" v="西九龙"/>
+  <tag k="name:zh-Hant" v="西九龍"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="seamark:berth:restriction" v="none"/>
+  <tag k="seamark:type" v="berth"/>
+ </node>
+ <node id="9809014201" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3052348" lon="114.1559999"/>
+ <node id="9809014202" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3055177" lon="114.1548948"/>
+ <node id="9809014203" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3055425" lon="114.1543530"/>
+ <node id="9809014204" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3054730" lon="114.1538433"/>
+ <node id="9809014205" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3053192" lon="114.1534625"/>
+ <node id="9809014206" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3050760" lon="114.1530709"/>
+ <node id="9809014207" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2944398" lon="114.1553454"/>
+ <node id="9809014208" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2908092" lon="114.1675795"/>
+ <node id="9809014209" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2942963" lon="114.1774764"/>
+ <node id="9809014210" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2946280" lon="114.1772932"/>
+ <node id="9809014211" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3047709" lon="114.1527569"/>
+ <node id="9809014213" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3034810" lon="114.1521183"/>
+ <node id="9809014214" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3028765" lon="114.1519968"/>
+ <node id="9809014215" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2996399" lon="114.1519255"/>
+ <node id="9809014216" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2907865" lon="114.1716299"/>
+ <node id="9809054517" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2911083" lon="114.1747858"/>
+ <node id="9809054518" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2913643" lon="114.1757012"/>
+ <node id="9809054519" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2917164" lon="114.1764563"/>
+ <node id="9809054520" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2936209" lon="114.1776008"/>
+ <node id="9809054521" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2948955" lon="114.1769657"/>
+ <node id="9809054522" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2931375" lon="114.1775264"/>
+ <node id="9809054523" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2921608" lon="114.1769966"/>
+ <node id="9809054525" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2911932" lon="114.1642206"/>
+ <node id="9809054526" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2929013" lon="114.1584462"/>
+ <node id="9809054527" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2938521" lon="114.1563811"/>
+ <node id="9809054528" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2953486" lon="114.1540201"/>
+ <node id="9809054529" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2957549" lon="114.1535513"/>
+ <node id="9809054530" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2971033" lon="114.1524959"/>
+ <node id="9809054531" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2967143" lon="114.1527550"/>
+ <node id="9809054532" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2948793" lon="114.1546532"/>
+ <node id="9809054533" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2919548" lon="114.1607741"/>
+ <node id="9809054534" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2918874" lon="114.1603275"/>
+ <node id="9809054535" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2941212" lon="114.1558793"/>
+ <node id="9809054536" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2962644" lon="114.1530861"/>
+ <node id="9809054537" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2988219" lon="114.1520108"/>
+ <node id="9809054538" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2981055" lon="114.1521445"/>
+ <node id="9809054539" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3009708" lon="114.1518671"/>
+ <node id="9809054540" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3019236" lon="114.1518968"/>
+ <node id="9809054541" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3002754" lon="114.1518839"/>
+ <node id="9809054542" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3038641" lon="114.1522227"/>
+ <node id="9809054543" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3043129" lon="114.1524349"/>
+ <node id="9809054545" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2975760" lon="114.1522894"/>
+ <node id="9809054548" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3054283" lon="114.1554046"/>
+ <node id="9809054655" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2926126" lon="114.1772851"/>
+ <node id="10607466447" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.3050072" lon="114.1565587"/>
+ <node id="10607466448" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.3045815" lon="114.1573566"/>
+ <node id="10607466449" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.3047647" lon="114.1570301"/>
+ <node id="11412781252" visible="true" version="1" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2914823" lon="114.1624549"/>
+ <node id="11412781253" visible="true" version="1" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2909598" lon="114.1660619"/>
+ <node id="11412781254" visible="true" version="2" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2908429" lon="114.1728199"/>
+ <node id="11579035729" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2940802" lon="114.1775574"/>
+ <node id="11579035731" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2909349" lon="114.1736398"/>
+ <node id="11579035732" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2907582" lon="114.1701440"/>
+ <way id="851848400" visible="true" version="3" changeset="160735991" timestamp="2024-12-29T02:03:31Z" user="cnvery" uid="3627342">
+  <nd ref="7945407765"/>
+  <nd ref="9809054534"/>
+  <nd ref="7945407766"/>
+  <nd ref="7945407774"/>
+  <nd ref="7945407767"/>
+  <nd ref="7945407775"/>
+  <nd ref="7945407778"/>
+  <nd ref="7945407768"/>
+  <nd ref="7945407769"/>
+  <nd ref="7945407770"/>
+  <nd ref="7945407776"/>
+  <nd ref="7945407771"/>
+  <nd ref="7945407777"/>
+  <nd ref="7945407772"/>
+  <nd ref="7945407773"/>
+  <tag k="name" v="維多利亞港 Victoria Harbour"/>
+  <tag k="name:en" v="Victoria Harbour"/>
+  <tag k="name:zh" v="維多利亞港"/>
+  <tag k="name:zh-Hans" v="维多利亚港"/>
+  <tag k="name:zh-Hant" v="維多利亞港"/>
+  <tag k="natural" v="strait"/>
+ </way>
+ <way id="1068265205" visible="true" version="11" changeset="173206092" timestamp="2025-10-13T03:44:46Z" user="Cypp0847" uid="9161716">
+  <nd ref="9806787449"/>
+  <nd ref="9809054521"/>
+  <nd ref="9809014210"/>
+  <nd ref="9809014209"/>
+  <nd ref="11579035729"/>
+  <nd ref="9809054520"/>
+  <nd ref="9809054522"/>
+  <nd ref="9809054655"/>
+  <nd ref="9809054523"/>
+  <nd ref="9809054519"/>
+  <nd ref="9809054518"/>
+  <nd ref="9809054517"/>
+  <nd ref="11579035731"/>
+  <nd ref="11412781254"/>
+  <nd ref="9809014216"/>
+  <nd ref="11579035732"/>
+  <nd ref="9809014208"/>
+  <nd ref="11412781253"/>
+  <nd ref="9809054525"/>
+  <nd ref="11412781252"/>
+  <nd ref="9809054533"/>
+  <nd ref="9809054526"/>
+  <nd ref="9809054527"/>
+  <nd ref="9809054535"/>
+  <nd ref="9809014207"/>
+  <nd ref="9809054532"/>
+  <nd ref="9809054528"/>
+  <nd ref="9809054529"/>
+  <nd ref="9809054536"/>
+  <nd ref="9809054531"/>
+  <nd ref="9809054530"/>
+  <nd ref="9809054545"/>
+  <nd ref="9809054538"/>
+  <nd ref="9809054537"/>
+  <nd ref="9809014215"/>
+  <nd ref="9809054541"/>
+  <nd ref="9809054539"/>
+  <nd ref="9809054540"/>
+  <nd ref="9809014214"/>
+  <nd ref="9809014213"/>
+  <nd ref="9809054542"/>
+  <nd ref="9809054543"/>
+  <nd ref="9809014211"/>
+  <nd ref="9809014206"/>
+  <nd ref="9809014205"/>
+  <nd ref="9809014204"/>
+  <nd ref="9809014203"/>
+  <nd ref="9809014202"/>
+  <nd ref="9809054548"/>
+  <nd ref="9809014201"/>
+  <nd ref="10607466447"/>
+  <nd ref="10607466449"/>
+  <nd ref="10607466448"/>
+  <nd ref="9809014200"/>
+  <tag k="charge" v="30.00 HKD"/>
+  <tag k="duration" v="25"/>
+  <tag k="from" v="尖東 Tsim Sha Tsui East"/>
+  <tag k="from:en" v="Tsim Sha Tsui East"/>
+  <tag k="from:zh" v="尖東"/>
+  <tag k="interval" v="02:00"/>
+  <tag k="name" v="尖東—西九龍 (水上的士) Tsim Sha Tsui East - West Kowloon (Water Taxi)"/>
+  <tag k="name:en" v="Tsim Sha Tsui East - West Kowloon (Water Taxi)"/>
+  <tag k="name:zh" v="尖東—西九龍 (水上的士)"/>
+  <tag k="name:zh-Hant" v="尖東—西九龍 (水上的士)"/>
+  <tag k="network" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="network:en" v="Hong Kong Water Taxi"/>
+  <tag k="network:zh" v="香港水上的士"/>
+  <tag k="opening_hours" v="Sa-Su,PH 10:30-12:55"/>
+  <tag k="opening_hours:backward" v="Sa-Su,PH 10:55-12:55"/>
+  <tag k="opening_hours:forward" v="Sa-Su,PH 10:30-12:30"/>
+  <tag k="operation" v="private"/>
+  <tag k="operator" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="operator:en" v="Fortune Ferry Limited"/>
+  <tag k="operator:wikidata" v="Q303135"/>
+  <tag k="operator:zh" v="富裕小輪有限公司"/>
+  <tag k="owner" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="owner:en" v="Fortune Ferry Limited"/>
+  <tag k="ownership" v="private"/>
+  <tag k="owner:wikidata" v="Q303135"/>
+  <tag k="owner:zh" v="富裕小輪有限公司"/>
+  <tag k="passenger" v="urban"/>
+  <tag k="route" v="ferry"/>
+  <tag k="service" v="tourism"/>
+  <tag k="to" v="西九龍 West Kowloon"/>
+  <tag k="to:en" v="West Kowloon"/>
+  <tag k="to:zh" v="西九龍"/>
+  <tag k="website" v="https://www.hongkongwatertaxi.com.hk"/>
+ </way>
+ <relation id="19705016" visible="true" version="1" changeset="173206092" timestamp="2025-10-13T03:44:46Z" user="Cypp0847" uid="9161716">
+  <member type="way" ref="1068265205" role=""/>
+  <member type="way" ref="1230632519" role=""/>
+  <member type="way" ref="1068558871" role=""/>
+  <member type="way" ref="1441756854" role=""/>
+  <tag k="dog" v="leashed"/>
+  <tag k="name" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="name:en" v="Hong Kong Water Taxi"/>
+  <tag k="name:zh" v="香港水上的士"/>
+  <tag k="name:zh-Hans" v="香港水上的士"/>
+  <tag k="name:zh-Hant" v="香港水上的士"/>
+  <tag k="network" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="network:en" v="Hong Kong Water Taxi"/>
+  <tag k="network:zh" v="香港水上的士"/>
+  <tag k="operation" v="private"/>
+  <tag k="operator" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="operator:en" v="Fortune Ferry Limited"/>
+  <tag k="operator:wikidata" v="Q303135"/>
+  <tag k="operator:zh" v="富裕小輪有限公司"/>
+  <tag k="owner" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="owner:en" v="Fortune Ferry Limited"/>
+  <tag k="ownership" v="private"/>
+  <tag k="owner:wikidata" v="Q303135"/>
+  <tag k="owner:zh" v="富裕小輪有限公司"/>
+  <tag k="passenger" v="urban"/>
+  <tag k="route" v="ferry"/>
+  <tag k="service" v="tourism"/>
+  <tag k="toll" v="yes"/>
+  <tag k="type" v="route"/>
+  <tag k="website" v="https://www.hongkongwatertaxi.com.hk"/>
+ </relation>
+</osm>

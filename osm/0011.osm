@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113196 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="22.2847127" minlon="114.1683375" maxlat="22.2870124" maxlon="114.1708228"/>
+ <node id="11381853567" visible="true" version="3" changeset="159265390" timestamp="2024-11-18T02:21:00Z" user="cnvery" uid="3627342" lat="22.2945396" lon="114.2006736">
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="北角 North Point"/>
+  <tag k="name:en" v="North Point"/>
+  <tag k="name:zh" v="北角"/>
+  <tag k="name:zh-Hans" v="北角"/>
+  <tag k="name:zh-Hant" v="北角"/>
+  <tag k="public_transport" v="stop_position"/>
+ </node>
+ <node id="11381853568" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2951439" lon="114.2001929"/>
+ <node id="11381874169" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2957006" lon="114.1992823"/>
+ <node id="11381874170" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2958661" lon="114.1977374"/>
+ <node id="11381874171" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2954749" lon="114.1959486"/>
+ <node id="11381874172" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2946624" lon="114.1936557"/>
+ <node id="11381874173" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2934135" lon="114.1916555"/>
+ <node id="11381874174" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2911415" lon="114.1889397"/>
+ <node id="11381874175" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2897572" lon="114.1871509"/>
+ <node id="11381874176" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2884331" lon="114.1846303"/>
+ <node id="11381874177" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2875604" lon="114.1817032"/>
+ <node id="11381874178" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2868983" lon="114.1781418"/>
+ <node id="11381874179" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2864018" lon="114.1689214"/>
+ <node id="11381874180" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2873347" lon="114.1664170"/>
+ <node id="11381874181" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2889815" lon="114.1656297"/>
+ <node id="11381874182" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2897515" lon="114.1660404"/>
+ <node id="11381874183" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2907641" lon="114.1690016"/>
+ <node id="11381874184" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2911711" lon="114.1773486"/>
+ <node id="11381874185" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2880191" lon="114.1656586"/>
+ <node id="11381874186" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2924348" lon="114.1813982"/>
+ <node id="11381874187" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2939846" lon="114.1850246"/>
+ <node id="11381874188" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2974903" lon="114.1896918"/>
+ <node id="11381874189" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2988294" lon="114.1925701"/>
+ <node id="11381874190" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3003189" lon="114.1966844"/>
+ <node id="11381874191" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3012668" lon="114.2015629"/>
+ <node id="11381874192" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3015828" lon="114.2061488"/>
+ <node id="11381874193" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3011314" lon="114.2111575"/>
+ <node id="11381874194" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2999879" lon="114.2155319"/>
+ <node id="11381874195" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2981072" lon="114.2198088"/>
+ <node id="11381874196" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2946165" lon="114.2276145"/>
+ <node id="11381874197" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2912612" lon="114.2281999"/>
+ <node id="11381874198" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2896361" lon="114.2275494"/>
+ <node id="11381874199" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2895158" lon="114.2255329"/>
+ <node id="11381874200" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2913364" lon="114.2217114"/>
+ <node id="11381874201" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2929012" lon="114.2168166"/>
+ <node id="11381874202" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2947068" lon="114.2110274"/>
+ <node id="11381874203" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2964522" lon="114.2056122"/>
+ <node id="11381874204" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2965725" lon="114.2022134"/>
+ <node id="11381874205" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2962688" lon="114.2013945"/>
+ <node id="11381874206" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2956397" lon="114.2007742"/>
+ <node id="11381874207" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2952435" lon="114.2005096"/>
+ <node id="11381874209" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2949116" lon="114.2004977"/>
+ <node id="11579035730" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2910189" lon="114.1742279"/>
+ <node id="13092494812" visible="true" version="1" changeset="170880954" timestamp="2025-08-23T13:26:59Z" user="Wright One" uid="261189" lat="22.2866833" lon="114.1695167"/>
+ <node id="13092494813" visible="true" version="1" changeset="170880954" timestamp="2025-08-23T13:26:59Z" user="Wright One" uid="261189" lat="22.2827667" lon="114.1693333"/>
+ <way id="1227387521" visible="true" version="3" changeset="159265390" timestamp="2024-11-18T02:21:00Z" user="cnvery" uid="3627342">
+  <nd ref="11381874191"/>
+  <nd ref="11381874190"/>
+  <nd ref="11381874189"/>
+  <nd ref="11381874188"/>
+  <nd ref="11381874187"/>
+  <nd ref="11381874186"/>
+  <nd ref="11381874184"/>
+  <nd ref="11579035730"/>
+  <nd ref="11381874183"/>
+  <nd ref="11381874182"/>
+  <nd ref="11381874181"/>
+  <nd ref="11381874185"/>
+  <nd ref="11381874180"/>
+  <nd ref="11381874179"/>
+  <nd ref="11381874178"/>
+  <nd ref="11381874177"/>
+  <nd ref="11381874176"/>
+  <nd ref="11381874175"/>
+  <nd ref="11381874174"/>
+  <nd ref="11381874173"/>
+  <nd ref="11381874172"/>
+  <nd ref="11381874171"/>
+  <nd ref="11381874170"/>
+  <nd ref="11381874169"/>
+  <nd ref="11381853568"/>
+  <nd ref="11381853567"/>
+  <nd ref="11381874209"/>
+  <nd ref="11381874207"/>
+  <nd ref="11381874206"/>
+  <nd ref="11381874205"/>
+  <nd ref="11381874204"/>
+  <nd ref="11381874203"/>
+  <nd ref="11381874202"/>
+  <nd ref="11381874201"/>
+  <nd ref="11381874200"/>
+  <nd ref="11381874199"/>
+  <nd ref="11381874198"/>
+  <nd ref="11381874197"/>
+  <nd ref="11381874196"/>
+  <nd ref="11381874195"/>
+  <nd ref="11381874194"/>
+  <nd ref="11381874193"/>
+  <nd ref="11381874192"/>
+  <nd ref="11381874191"/>
+  <tag k="area" v="no"/>
+  <tag k="attraction" v="boat_ride"/>
+  <tag k="duration" v="02:00"/>
+  <tag k="email" v="reserve@cruise.com.hk"/>
+  <tag k="fax" v="+852 28022881"/>
+  <tag k="name" v="洋紫荊維港遊 Harbour Cruise - Bauhinia"/>
+  <tag k="name:en" v="Harbour Cruise - Bauhinia"/>
+  <tag k="name:zh" v="洋紫荊維港遊"/>
+  <tag k="name:zh-Hans" v="洋紫荆维港游"/>
+  <tag k="name:zh-Hant" v="洋紫荊維港遊"/>
+  <tag k="operator" v="香港油蔴地小輪船有限公司 The Hongkong and Yaumati Ferry Company Limited"/>
+  <tag k="operator:en" v="The Hongkong and Yaumati Ferry Company, Limited"/>
+  <tag k="operator:zh" v="香港油蔴地小輪船有限公司"/>
+  <tag k="phone" v="+852 28022886"/>
+  <tag k="roundtrip" v="yes"/>
+  <tag k="type" v="multipolygon"/>
+  <tag k="website" v="https://www.cruise.com.hk"/>
+ </way>
+ <way id="1424402203" visible="true" version="1" changeset="170880954" timestamp="2025-08-23T13:26:59Z" user="Wright One" uid="261189">
+  <nd ref="13092494813"/>
+  <nd ref="13092494812"/>
+  <tag k="layer" v="-1"/>
+  <tag k="location" v="underground"/>
+  <tag k="man_made" v="pipeline"/>
+  <tag k="seamark:pipeline_submarine:category" v="outfall"/>
+  <tag k="seamark:pipeline_submarine:product" v="stormwater"/>
+  <tag k="seamark:type" v="pipeline_submarine"/>
+  <tag k="source" v="Guesswork"/>
+  <tag k="substance" v="stormwater"/>
+  <tag k="usage" v="outfall"/>
+  <tag k="utility" v="sewerage"/>
+ </way>
+</osm>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113208 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="22.2847127" minlon="114.1633667" maxlat="22.2870124" maxlon="114.1658521"/>
+ <node id="3963389187" visible="true" version="5" changeset="135809538" timestamp="2023-05-07T12:37:15Z" user="Wright One" uid="261189" lat="22.2850500" lon="114.1639167">
+  <tag k="seamark:buoy_special_purpose:colour" v="yellow"/>
+  <tag k="seamark:buoy_special_purpose:shape" v="pillar"/>
+  <tag k="seamark:light:character" v="Q"/>
+  <tag k="seamark:light:colour" v="yellow"/>
+  <tag k="seamark:light:group" v="5"/>
+  <tag k="seamark:light:period" v="10"/>
+  <tag k="seamark:name" v="CMD2"/>
+  <tag k="seamark:topmark:colour" v="yellow"/>
+  <tag k="seamark:topmark:shape" v="x-shape"/>
+  <tag k="seamark:type" v="buoy_special_purpose"/>
+  <tag k="source" v="https://www.mardep.gov.hk/en/notices/pdf/mdn19109.pdf"/>
+ </node>
+ <node id="3963389193" visible="true" version="5" changeset="135809538" timestamp="2023-05-07T12:37:15Z" user="Wright One" uid="261189" lat="22.2842833" lon="114.1659833">
+  <tag k="seamark:buoy_special_purpose:colour" v="yellow"/>
+  <tag k="seamark:buoy_special_purpose:shape" v="pillar"/>
+  <tag k="seamark:light:character" v="Q"/>
+  <tag k="seamark:light:colour" v="yellow"/>
+  <tag k="seamark:light:group" v="4"/>
+  <tag k="seamark:light:period" v="10"/>
+  <tag k="seamark:name" v="CMD1"/>
+  <tag k="seamark:topmark:colour" v="yellow"/>
+  <tag k="seamark:topmark:shape" v="x-shape"/>
+  <tag k="seamark:type" v="buoy_special_purpose"/>
+  <tag k="source" v="https://www.mardep.gov.hk/en/notices/pdf/mdn19109.pdf"/>
+ </node>
+ <node id="5027801443" visible="true" version="6" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2842199" lon="114.1635535"/>
+ <node id="5027801449" visible="true" version="6" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2834464" lon="114.1656205"/>
+ <node id="6576494609" visible="true" version="5" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2843425" lon="114.1632259"/>
+ <node id="6576494610" visible="true" version="3" changeset="172759984" timestamp="2025-10-02T17:42:18Z" user="BG2EWI" uid="22637269" lat="22.2859212" lon="114.1639870">
+  <tag k="seamark:name" v="CMDV2"/>
+  <tag k="seamark:type" v="virtual_aton"/>
+  <tag k="seamark:virtual_aton:category" v="special_purpose"/>
+  <tag k="seamark:virtual_aton:mmsi" v="994776020"/>
+  <tag k="source" v="https://www.mardep.gov.hk/en/notices/pdf/mdn19109.pdf"/>
+ </node>
+ <node id="6576494611" visible="true" version="3" changeset="172759984" timestamp="2025-10-02T17:42:18Z" user="BG2EWI" uid="22637269" lat="22.2849993" lon="114.1665762">
+  <tag k="seamark:name" v="CMDV1"/>
+  <tag k="seamark:type" v="virtual_aton"/>
+  <tag k="seamark:virtual_aton:category" v="special_purpose"/>
+  <tag k="seamark:virtual_aton:mmsi" v="994776019"/>
+  <tag k="source" v="https://www.mardep.gov.hk/en/notices/pdf/mdn19109.pdf"/>
+ </node>
+ <node id="8481456295" visible="true" version="4" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2834008" lon="114.1659649"/>
+ <node id="8916269793" visible="true" version="4" changeset="145058426" timestamp="2023-12-13T02:31:37Z" user="minghong" uid="541214" lat="22.2846866" lon="114.1738947">
+  <tag k="access" v="yes"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="灣仔會議展覽中心梯台 Hong Kong Convention &amp; Exhibition Centre Landing"/>
+  <tag k="name:en" v="Hong Kong Convention &amp; Exhibition Centre Landing"/>
+  <tag k="name:zh" v="灣仔會議展覽中心梯台"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="seamark:berth:restriction" v="none"/>
+  <tag k="seamark:type" v="berth"/>
+  <tag k="short_name" v="灣仔公眾碼頭 Wan Chai Public Pier"/>
+  <tag k="short_name:en" v="Wan Chai Public Pier"/>
+  <tag k="short_name:zh" v="灣仔公眾碼頭"/>
+ </node>
+ <node id="9806787474" visible="true" version="9" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2861669" lon="114.1626573">
+  <tag k="access" v="yes"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="中環九號碼頭 Central Pier Number 9"/>
+  <tag k="name:en" v="Central Pier Number 9"/>
+  <tag k="name:zh" v="中環九號碼頭"/>
+  <tag k="name:zh-Hans" v="中环9号码头"/>
+  <tag k="name:zh-Hant" v="中環九號碼頭"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="public_transport:ferry" v="yes"/>
+  <tag k="seamark:berth:restriction" v="none"/>
+  <tag k="seamark:type" v="berth"/>
+ </node>
+ <node id="9809054637" visible="true" version="2" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2869317" lon="114.1636532"/>
+ <node id="9809054638" visible="true" version="2" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2864353" lon="114.1629640"/>
+ <node id="9809054640" visible="true" version="2" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2873115" lon="114.1643146"/>
+ <node id="9809054641" visible="true" version="2" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2866401" lon="114.1632235"/>
+ <node id="10607466452" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2880973" lon="114.1661551"/>
+ <node id="10607466453" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2882527" lon="114.1669944"/>
+ <node id="10607466454" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2882998" lon="114.1676569"/>
+ <node id="10607466455" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2883023" lon="114.1682953"/>
+ <node id="10607466456" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2881360" lon="114.1701004"/>
+ <node id="10607466457" visible="true" version="2" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2873298" lon="114.1724853"/>
+ <node id="10607466458" visible="true" version="3" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2864077" lon="114.1735026"/>
+ <node id="10607466459" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2860539" lon="114.1736726"/>
+ <node id="10607466460" visible="true" version="3" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2852553" lon="114.1738432"/>
+ <node id="10607466472" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2856341" lon="114.1737611"/>
+ <node id="10607466473" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2879252" lon="114.1656454"/>
+ <node id="10607466474" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2882679" lon="114.1690959"/>
+ <node id="10607466475" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2882020" lon="114.1696983"/>
+ <node id="10607466476" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2880015" lon="114.1707836"/>
+ <node id="10607466477" visible="true" version="2" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2878440" lon="114.1713298"/>
+ <node id="10607466478" visible="true" version="2" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2876686" lon="114.1717911"/>
+ <node id="10607466479" visible="true" version="3" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2871149" lon="114.1728183"/>
+ <node id="10607517905" visible="true" version="2" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2875048" lon="114.1721921"/>
+ <node id="10607517906" visible="true" version="3" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2869039" lon="114.1730719"/>
+ <node id="10607517907" visible="true" version="3" changeset="145043481" timestamp="2023-12-12T15:48:10Z" user="minghong" uid="541214" lat="22.2866948" lon="114.1732879"/>
+ <node id="10607517908" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2877999" lon="114.1653361"/>
+ <node id="10607517909" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2875684" lon="114.1648404"/>
+ <node id="10607517910" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2882812" lon="114.1672881"/>
+ <node id="10607517911" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.2882041" lon="114.1666551"/>
+ <way id="393124855" visible="true" version="8" changeset="167778899" timestamp="2025-06-18T11:54:12Z" user="Kovoschiz" uid="6250193">
+  <nd ref="5027801449"/>
+  <nd ref="3963389193"/>
+  <nd ref="3963389187"/>
+  <nd ref="5027801443"/>
+ </way>
+ <way id="700310574" visible="true" version="5" changeset="167778899" timestamp="2025-06-18T11:54:12Z" user="Kovoschiz" uid="6250193">
+  <nd ref="6576494609"/>
+  <nd ref="6576494610"/>
+  <nd ref="6576494611"/>
+  <nd ref="8481456295"/>
+ </way>
+ <way id="1068558871" visible="true" version="10" changeset="173206092" timestamp="2025-10-13T03:44:46Z" user="Cypp0847" uid="9161716">
+  <nd ref="8916269793"/>
+  <nd ref="10607466460"/>
+  <nd ref="10607466472"/>
+  <nd ref="10607466459"/>
+  <nd ref="10607466458"/>
+  <nd ref="10607517907"/>
+  <nd ref="10607517906"/>
+  <nd ref="10607466479"/>
+  <nd ref="10607466457"/>
+  <nd ref="10607517905"/>
+  <nd ref="10607466478"/>
+  <nd ref="10607466477"/>
+  <nd ref="10607466476"/>
+  <nd ref="10607466456"/>
+  <nd ref="10607466475"/>
+  <nd ref="10607466474"/>
+  <nd ref="10607466455"/>
+  <nd ref="10607466454"/>
+  <nd ref="10607517910"/>
+  <nd ref="10607466453"/>
+  <nd ref="10607517911"/>
+  <nd ref="10607466452"/>
+  <nd ref="10607466473"/>
+  <nd ref="10607517908"/>
+  <nd ref="10607517909"/>
+  <nd ref="9809054640"/>
+  <nd ref="9809054637"/>
+  <nd ref="9809054641"/>
+  <nd ref="9809054638"/>
+  <nd ref="9806787474"/>
+  <tag k="charge" v="30.00 HKD"/>
+  <tag k="duration" v="15"/>
+  <tag k="from" v="灣仔 Wan Chai"/>
+  <tag k="from:en" v="Wan Chai"/>
+  <tag k="from:zh" v="灣仔"/>
+  <tag k="interval" v="01:00"/>
+  <tag k="name" v="灣仔—中環 (水上的士) Wan Chai - Central (Water Taxi)"/>
+  <tag k="name:en" v="Wan Chai - Central (Water Taxi)"/>
+  <tag k="name:zh" v="灣仔—中環 (水上的士)"/>
+  <tag k="name:zh-Hant" v="灣仔—中環 (水上的士)"/>
+  <tag k="network" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="network:en" v="Hong Kong Water Taxi"/>
+  <tag k="network:zh" v="香港水上的士"/>
+  <tag k="opening_hours" v="Mo-Su 11:35-18:50"/>
+  <tag k="opening_hours:backward" v="Mo-Su 11:50-18:50"/>
+  <tag k="opening_hours:forward" v="Mo-Su 11:35-18:35"/>
+  <tag k="operation" v="private"/>
+  <tag k="operator" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="operator:en" v="Fortune Ferry Limited"/>
+  <tag k="operator:wikidata" v="Q303135"/>
+  <tag k="operator:zh" v="富裕小輪有限公司"/>
+  <tag k="owner" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="owner:en" v="Fortune Ferry Limited"/>
+  <tag k="ownership" v="private"/>
+  <tag k="owner:wikidata" v="Q303135"/>
+  <tag k="owner:zh" v="富裕小輪有限公司"/>
+  <tag k="passenger" v="urban"/>
+  <tag k="route" v="ferry"/>
+  <tag k="service" v="tourism"/>
+  <tag k="to" v="中環 Central"/>
+  <tag k="to:en" v="Central"/>
+  <tag k="to:zh" v="中環"/>
+  <tag k="website" v="https://www.hongkongwatertaxi.com.hk"/>
+ </way>
+ <relation id="14937825" visible="true" version="2" changeset="161621742" timestamp="2025-01-22T03:29:37Z" user="cnvery" uid="3627342">
+  <member type="way" ref="514683581" role="outer"/>
+  <member type="way" ref="514683580" role="outer"/>
+  <member type="way" ref="1117392709" role="outer"/>
+  <member type="way" ref="1117392708" role="outer"/>
+  <member type="way" ref="700310574" role="outer"/>
+  <member type="way" ref="1117392714" role="outer"/>
+  <member type="way" ref="1117392713" role="outer"/>
+  <tag k="base" v="logistics"/>
+  <tag k="base_function" v="logistics"/>
+  <tag k="landuse" v="military"/>
+  <tag k="military" v="base"/>
+  <tag k="military_service" v="navy"/>
+  <tag k="name" v="中區軍用碼頭 Central Military Dock"/>
+  <tag k="name:en" v="Central Military Dock"/>
+  <tag k="name:zh" v="中區軍用碼頭"/>
+  <tag k="name:zh-Hans" v="中区军用码头"/>
+  <tag k="name:zh-Hant" v="中區軍用碼頭"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+ <relation id="14937827" visible="true" version="2" changeset="161621742" timestamp="2025-01-22T03:29:37Z" user="cnvery" uid="3627342">
+  <member type="way" ref="1117392713" role="outer"/>
+  <member type="way" ref="393124855" role="outer"/>
+  <member type="way" ref="1117392709" role="outer"/>
+  <member type="way" ref="1117392710" role="outer"/>
+  <member type="way" ref="1117392711" role="outer"/>
+  <member type="way" ref="1117392712" role="outer"/>
+  <tag k="access" v="no"/>
+  <tag k="boundary" v="yes"/>
+  <tag k="name" v="中區軍用碼頭內圍區域 Central Military Dock Inner Area"/>
+  <tag k="name:en" v="Central Military Dock Inner Area"/>
+  <tag k="name:zh" v="中區軍用碼頭內圍區域"/>
+  <tag k="name:zh-Hans" v="中区军用码头内围区域"/>
+  <tag k="name:zh-Hant" v="中區軍用碼頭內圍區域"/>
+  <tag k="seamark:name" v="Central Military Dock Inner Area"/>
+  <tag k="seamark:national_name" v="中區軍用碼頭內圍區域"/>
+  <tag k="seamark:restricted_area:category" v="military"/>
+  <tag k="seamark:restricted_area:restriction" v="no_entry"/>
+  <tag k="seamark:type" v="restricted_area"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+ <relation id="14937828" visible="true" version="5" changeset="167912456" timestamp="2025-06-21T12:50:41Z" user="mueschel" uid="616774">
+  <member type="way" ref="700310574" role="outer"/>
+  <member type="way" ref="1117392708" role="outer"/>
+  <member type="way" ref="393124855" role="outer"/>
+  <member type="way" ref="1117392714" role="outer"/>
+  <tag k="boundary" v="yes"/>
+  <tag k="maxlength" v="60"/>
+  <tag k="maxlength:conditional" v="none @ (private)"/>
+  <tag k="mooring" v="private"/>
+  <tag k="name" v="中區軍用碼頭外圍區域 Central Military Dock Outer Area"/>
+  <tag k="name:en" v="Central Military Dock Outer Area"/>
+  <tag k="name:zh" v="中區軍用碼頭外圍區域"/>
+  <tag k="name:zh-Hans" v="中区军用码头外围区域"/>
+  <tag k="name:zh-Hant" v="中區軍用碼頭外圍區域"/>
+  <tag k="seamark:information" v="Vessels not exceeding 60 metres long may pass through, but not stay, anchor, moor or berth unless with permission. Vessels with a length of 60 meters or longer may enter, stay, anchor, moor or berth only with permission."/>
+  <tag k="seamark:name" v="Central Military Dock Outer Area"/>
+  <tag k="seamark:national_name" v="中區軍用碼頭外圍區域"/>
+  <tag k="seamark:restricted_area:category" v="military"/>
+  <tag k="seamark:restricted_area:restriction" v="restricted_anchoring;restricted_entry;restricted_stopping;restricted_landing;restricted_berthing"/>
+  <tag k="seamark:type" v="restricted_area"/>
+  <tag k="type" v="multipolygon"/>
+ </relation>
+ <relation id="19705016" visible="true" version="1" changeset="173206092" timestamp="2025-10-13T03:44:46Z" user="Cypp0847" uid="9161716">
+  <member type="way" ref="1068265205" role=""/>
+  <member type="way" ref="1230632519" role=""/>
+  <member type="way" ref="1068558871" role=""/>
+  <member type="way" ref="1441756854" role=""/>
+  <tag k="dog" v="leashed"/>
+  <tag k="name" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="name:en" v="Hong Kong Water Taxi"/>
+  <tag k="name:zh" v="香港水上的士"/>
+  <tag k="name:zh-Hans" v="香港水上的士"/>
+  <tag k="name:zh-Hant" v="香港水上的士"/>
+  <tag k="network" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="network:en" v="Hong Kong Water Taxi"/>
+  <tag k="network:zh" v="香港水上的士"/>
+  <tag k="operation" v="private"/>
+  <tag k="operator" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="operator:en" v="Fortune Ferry Limited"/>
+  <tag k="operator:wikidata" v="Q303135"/>
+  <tag k="operator:zh" v="富裕小輪有限公司"/>
+  <tag k="owner" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="owner:en" v="Fortune Ferry Limited"/>
+  <tag k="ownership" v="private"/>
+  <tag k="owner:wikidata" v="Q303135"/>
+  <tag k="owner:zh" v="富裕小輪有限公司"/>
+  <tag k="passenger" v="urban"/>
+  <tag k="route" v="ferry"/>
+  <tag k="service" v="tourism"/>
+  <tag k="toll" v="yes"/>
+  <tag k="type" v="route"/>
+  <tag k="website" v="https://www.hongkongwatertaxi.com.hk"/>
+ </relation>
+</osm>

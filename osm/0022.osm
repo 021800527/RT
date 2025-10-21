@@ -1,0 +1,1199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (2643841 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="22.2893120" minlon="114.1658521" maxlat="22.2916117" maxlon="114.1683375"/>
+ <node id="30745874" visible="true" version="4" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2920983" lon="114.1672315"/>
+ <node id="30745875" visible="true" version="5" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2916373" lon="114.1667199"/>
+ <node id="30745876" visible="true" version="6" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2898308" lon="114.1632772"/>
+ <node id="30745877" visible="true" version="6" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2887268" lon="114.1618268"/>
+ <node id="30745878" visible="true" version="5" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2881606" lon="114.1614273"/>
+ <node id="30745879" visible="true" version="3" changeset="25427881" timestamp="2014-09-14T09:36:52Z" user="jc86035" uid="1242214" lat="22.2876188" lon="114.1611536"/>
+ <node id="30745880" visible="true" version="16" changeset="161655799" timestamp="2025-01-22T23:07:29Z" user="cnvery" uid="3627342" lat="22.2871201" lon="114.1610833">
+  <tag k="access:ferry" v="private"/>
+  <tag k="boat" v="no"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="loc_ref" v="7"/>
+  <tag k="name" v="中環 Central"/>
+  <tag k="name:en" v="Central"/>
+  <tag k="name:zh" v="中環"/>
+  <tag k="name:zh-Hans" v="中环"/>
+  <tag k="name:zh-Hant" v="中環"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="public_transport:ferry" v="yes"/>
+  <tag k="seamark:berth:restriction" v="restricted_berthing"/>
+  <tag k="seamark:type" v="berth"/>
+  <tag k="ship" v="no"/>
+ </node>
+ <node id="1819732456" visible="true" version="2" changeset="73614006" timestamp="2019-08-22T09:44:03Z" user="minghong" uid="541214" lat="22.2974808" lon="114.1495117"/>
+ <node id="1819732463" visible="true" version="2" changeset="73614006" timestamp="2019-08-22T09:44:03Z" user="minghong" uid="541214" lat="22.2880501" lon="114.1743000"/>
+ <node id="2000002299" visible="true" version="3" changeset="73614006" timestamp="2019-08-22T09:44:03Z" user="minghong" uid="541214" lat="22.2906617" lon="114.1674366"/>
+ <node id="2173359525" visible="true" version="6" changeset="56630971" timestamp="2018-02-24T08:46:39Z" user="Wright One" uid="261189" lat="22.2974167" lon="114.1404167">
+  <tag k="seamark:buoy_cardinal:category" v="east"/>
+  <tag k="seamark:buoy_cardinal:colour" v="black;yellow;black"/>
+  <tag k="seamark:buoy_cardinal:colour_pattern" v="horizontal"/>
+  <tag k="seamark:buoy_cardinal:shape" v="pillar"/>
+  <tag k="seamark:light:character" v="VQ"/>
+  <tag k="seamark:light:colour" v="white"/>
+  <tag k="seamark:light:group" v="3"/>
+  <tag k="seamark:light:period" v="5"/>
+  <tag k="seamark:name" v="Victoria"/>
+  <tag k="seamark:national_name" v="維多利亞"/>
+  <tag k="seamark:topmark:colour" v="black"/>
+  <tag k="seamark:topmark:shape" v="2 cones base together"/>
+  <tag k="seamark:type" v="buoy_cardinal"/>
+ </node>
+ <node id="2181491050" visible="true" version="2" changeset="56650942" timestamp="2018-02-25T03:09:46Z" user="Wright One" uid="261189" lat="22.2879000" lon="114.1672667"/>
+ <node id="2181491052" visible="true" version="2" changeset="92116140" timestamp="2020-10-07T13:31:02Z" user="Wright One" uid="261189" lat="22.2880500" lon="114.1744000"/>
+ <node id="2181491058" visible="true" version="2" changeset="56650942" timestamp="2018-02-25T03:09:46Z" user="Wright One" uid="261189" lat="22.2912667" lon="114.1677833"/>
+ <node id="2181491059" visible="true" version="2" changeset="92116140" timestamp="2020-10-07T13:31:02Z" user="Wright One" uid="261189" lat="22.2913833" lon="114.1734333"/>
+ <node id="2181491060" visible="true" version="2" changeset="56650942" timestamp="2018-02-25T03:09:46Z" user="Wright One" uid="261189" lat="22.2929167" lon="114.1455167"/>
+ <node id="2181491061" visible="true" version="2" changeset="56650942" timestamp="2018-02-25T03:09:46Z" user="Wright One" uid="261189" lat="22.2937667" lon="114.1568833"/>
+ <node id="2181491063" visible="true" version="2" changeset="92116140" timestamp="2020-10-07T13:31:02Z" user="Wright One" uid="261189" lat="22.2954167" lon="114.1901000"/>
+ <node id="2181491064" visible="true" version="2" changeset="92116140" timestamp="2020-10-07T13:31:02Z" user="Wright One" uid="261189" lat="22.2956833" lon="114.2074500"/>
+ <node id="2181491065" visible="true" version="3" changeset="56652907" timestamp="2018-02-25T06:37:43Z" user="Wright One" uid="261189" lat="22.3000000" lon="114.1429833">
+  <tag k="seamark:buoy_lateral:category" v="starboard"/>
+  <tag k="seamark:buoy_lateral:colour" v="green"/>
+  <tag k="seamark:buoy_lateral:shape" v="conical"/>
+  <tag k="seamark:buoy_lateral:system" v="iala-a"/>
+  <tag k="seamark:light:character" v="Fl"/>
+  <tag k="seamark:light:colour" v="green"/>
+  <tag k="seamark:light:group" v="3"/>
+  <tag k="seamark:light:period" v="15"/>
+  <tag k="seamark:name" v="Northern 1"/>
+  <tag k="seamark:national_name" v="北航1"/>
+  <tag k="seamark:type" v="buoy_lateral"/>
+ </node>
+ <node id="2181491067" visible="true" version="2" changeset="56650942" timestamp="2018-02-25T03:09:46Z" user="Wright One" uid="261189" lat="22.2976333" lon="114.1516167"/>
+ <node id="2181491068" visible="true" version="2" changeset="56650942" timestamp="2018-02-25T03:09:46Z" user="Wright One" uid="261189" lat="22.2976333" lon="114.1532833"/>
+ <node id="2181491069" visible="true" version="2" changeset="92116140" timestamp="2020-10-07T13:31:02Z" user="Wright One" uid="261189" lat="22.2995833" lon="114.1909333"/>
+ <node id="2181491070" visible="true" version="2" changeset="92116140" timestamp="2020-10-07T13:31:02Z" user="Wright One" uid="261189" lat="22.2995833" lon="114.2074500"/>
+ <node id="2335541063" visible="true" version="2" changeset="25427881" timestamp="2014-09-14T09:36:52Z" user="jc86035" uid="1242214" lat="22.2873015" lon="114.1610662"/>
+ <node id="2335541068" visible="true" version="5" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2893588" lon="114.1625196"/>
+ <node id="2335541096" visible="true" version="2" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2926755" lon="114.1677011"/>
+ <node id="2335541100" visible="true" version="1" changeset="16459241" timestamp="2013-06-07T16:34:40Z" user="jfd553" uid="101184" lat="22.2932644" lon="114.1681169"/>
+ <node id="2335541101" visible="true" version="1" changeset="16459241" timestamp="2013-06-07T16:34:40Z" user="jfd553" uid="101184" lat="22.2934206" lon="114.1682272"/>
+ <node id="2335541103" visible="true" version="1" changeset="16459241" timestamp="2013-06-07T16:34:40Z" user="jfd553" uid="101184" lat="22.2935493" lon="114.1682410"/>
+ <node id="3946054647" visible="true" version="2" changeset="73614006" timestamp="2019-08-22T09:44:03Z" user="minghong" uid="541214" lat="22.2938684" lon="114.1863289"/>
+ <node id="4443950090" visible="true" version="6" changeset="142910648" timestamp="2023-10-21T07:19:47Z" user="tg4567" uid="12500589" lat="22.2906170" lon="114.1676469">
+  <tag k="name" v="幻彩詠香江 Symphony of Lights"/>
+  <tag k="name:en" v="Symphony of Lights"/>
+  <tag k="name:ko" v="심포니 오브 라이츠"/>
+  <tag k="name:zh" v="幻彩詠香江"/>
+  <tag k="tourism" v="attraction"/>
+  <tag k="wikidata" v="Q1068874"/>
+  <tag k="wikipedia" v="en:A Symphony of Lights"/>
+ </node>
+ <node id="6919485769" visible="true" version="2" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2912421" lon="114.1661507"/>
+ <node id="6980052498" visible="true" version="7" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193" lat="22.2936223" lon="114.1681572">
+  <tag k="access:ferry" v="private"/>
+  <tag k="boat" v="no"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="尖沙咀 Tsim Sha Tsui"/>
+  <tag k="name:en" v="Tsim Sha Tsui"/>
+  <tag k="name:zh" v="尖沙咀"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="public_transport:ferry" v="yes"/>
+  <tag k="repeat_on" v="0;1"/>
+  <tag k="seamark:berth:restriction" v="restricted_berthing"/>
+  <tag k="seamark:type" v="berth"/>
+  <tag k="ship" v="no"/>
+ </node>
+ <node id="7945407765" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2965104" lon="114.1487934"/>
+ <node id="7945407766" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2896576" lon="114.1658908"/>
+ <node id="7945407767" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2889309" lon="114.1731616"/>
+ <node id="7945407768" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2910320" lon="114.1816053"/>
+ <node id="7945407769" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2959276" lon="114.1910870"/>
+ <node id="7945407770" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2994357" lon="114.1983237"/>
+ <node id="7945407771" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2997146" lon="114.2108698"/>
+ <node id="7945407772" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2962466" lon="114.2211090"/>
+ <node id="7945407773" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2822803" lon="114.2424535"/>
+ <node id="7945407774" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2889578" lon="114.1696081"/>
+ <node id="7945407775" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2892809" lon="114.1758252"/>
+ <node id="7945407776" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2999151" lon="114.2043926"/>
+ <node id="7945407777" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2984183" lon="114.2155389"/>
+ <node id="7945407778" visible="true" version="1" changeset="91555508" timestamp="2020-09-26T15:27:32Z" user="Lepuse" uid="9560399" lat="22.2899801" lon="114.1787833"/>
+ <node id="9806787449" visible="true" version="6" changeset="145058249" timestamp="2023-12-13T02:18:35Z" user="minghong" uid="541214" lat="22.2951873" lon="114.1764332">
+  <tag k="access" v="yes"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="尖沙咀一號梯台 Tsim Sha Tsui Landing Number 1"/>
+  <tag k="name:en" v="Tsim Sha Tsui Landing Number 1"/>
+  <tag k="name:zh" v="尖沙咀一號梯台"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="seamark:berth:restriction" v="none"/>
+  <tag k="seamark:type" v="berth"/>
+ </node>
+ <node id="9809014200" visible="true" version="8" changeset="161483438" timestamp="2025-01-18T09:19:42Z" user="cnvery" uid="3627342" lat="22.3041806" lon="114.1577826">
+  <tag k="access" v="yes"/>
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="西九龍 West Kowloon"/>
+  <tag k="name:en" v="West Kowloon"/>
+  <tag k="name:zh" v="西九龍"/>
+  <tag k="name:zh-Hans" v="西九龙"/>
+  <tag k="name:zh-Hant" v="西九龍"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="seamark:berth:restriction" v="none"/>
+  <tag k="seamark:type" v="berth"/>
+ </node>
+ <node id="9809014201" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3052348" lon="114.1559999"/>
+ <node id="9809014202" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3055177" lon="114.1548948"/>
+ <node id="9809014203" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3055425" lon="114.1543530"/>
+ <node id="9809014204" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3054730" lon="114.1538433"/>
+ <node id="9809014205" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3053192" lon="114.1534625"/>
+ <node id="9809014206" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3050760" lon="114.1530709"/>
+ <node id="9809014207" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2944398" lon="114.1553454"/>
+ <node id="9809014208" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2908092" lon="114.1675795"/>
+ <node id="9809014209" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2942963" lon="114.1774764"/>
+ <node id="9809014210" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2946280" lon="114.1772932"/>
+ <node id="9809014211" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3047709" lon="114.1527569"/>
+ <node id="9809014213" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3034810" lon="114.1521183"/>
+ <node id="9809014214" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3028765" lon="114.1519968"/>
+ <node id="9809014215" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2996399" lon="114.1519255"/>
+ <node id="9809014216" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2907865" lon="114.1716299"/>
+ <node id="9809054517" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2911083" lon="114.1747858"/>
+ <node id="9809054518" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2913643" lon="114.1757012"/>
+ <node id="9809054519" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2917164" lon="114.1764563"/>
+ <node id="9809054520" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2936209" lon="114.1776008"/>
+ <node id="9809054521" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2948955" lon="114.1769657"/>
+ <node id="9809054522" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2931375" lon="114.1775264"/>
+ <node id="9809054523" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2921608" lon="114.1769966"/>
+ <node id="9809054525" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2911932" lon="114.1642206"/>
+ <node id="9809054526" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2929013" lon="114.1584462"/>
+ <node id="9809054527" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2938521" lon="114.1563811"/>
+ <node id="9809054528" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2953486" lon="114.1540201"/>
+ <node id="9809054529" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2957549" lon="114.1535513"/>
+ <node id="9809054530" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2971033" lon="114.1524959"/>
+ <node id="9809054531" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2967143" lon="114.1527550"/>
+ <node id="9809054532" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2948793" lon="114.1546532"/>
+ <node id="9809054533" visible="true" version="2" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2919548" lon="114.1607741"/>
+ <node id="9809054534" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2918874" lon="114.1603275"/>
+ <node id="9809054535" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2941212" lon="114.1558793"/>
+ <node id="9809054536" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2962644" lon="114.1530861"/>
+ <node id="9809054537" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2988219" lon="114.1520108"/>
+ <node id="9809054538" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2981055" lon="114.1521445"/>
+ <node id="9809054539" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3009708" lon="114.1518671"/>
+ <node id="9809054540" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3019236" lon="114.1518968"/>
+ <node id="9809054541" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3002754" lon="114.1518839"/>
+ <node id="9809054542" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3038641" lon="114.1522227"/>
+ <node id="9809054543" visible="true" version="2" changeset="132296374" timestamp="2023-02-09T09:30:15Z" user="samsung galaxy s6" uid="3691120" lat="22.3043129" lon="114.1524349"/>
+ <node id="9809054545" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.2975760" lon="114.1522894"/>
+ <node id="9809054548" visible="true" version="1" changeset="122215278" timestamp="2022-06-10T15:04:04Z" user="samsung galaxy s6" uid="3691120" lat="22.3054283" lon="114.1554046"/>
+ <node id="9809054655" visible="true" version="3" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2926126" lon="114.1772851"/>
+ <node id="10002090437" visible="true" version="1" changeset="125814142" timestamp="2022-09-05T12:48:09Z" user="samsung galaxy s6" uid="3691120" lat="22.2915836" lon="114.1512964"/>
+ <node id="10607466447" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.3050072" lon="114.1565587"/>
+ <node id="10607466448" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.3045815" lon="114.1573566"/>
+ <node id="10607466449" visible="true" version="1" changeset="132097696" timestamp="2023-02-05T05:32:39Z" user="samsung galaxy s6" uid="3691120" lat="22.3047647" lon="114.1570301"/>
+ <node id="10806920447" visible="true" version="2" changeset="162375140" timestamp="2025-02-11T04:03:40Z" user="minghong" uid="541214" lat="22.2832118" lon="114.1674306"/>
+ <node id="11381853567" visible="true" version="3" changeset="159265390" timestamp="2024-11-18T02:21:00Z" user="cnvery" uid="3627342" lat="22.2945396" lon="114.2006736">
+  <tag k="ferry" v="yes"/>
+  <tag k="name" v="北角 North Point"/>
+  <tag k="name:en" v="North Point"/>
+  <tag k="name:zh" v="北角"/>
+  <tag k="name:zh-Hans" v="北角"/>
+  <tag k="name:zh-Hant" v="北角"/>
+  <tag k="public_transport" v="stop_position"/>
+ </node>
+ <node id="11381853568" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2951439" lon="114.2001929"/>
+ <node id="11381874169" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2957006" lon="114.1992823"/>
+ <node id="11381874170" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2958661" lon="114.1977374"/>
+ <node id="11381874171" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2954749" lon="114.1959486"/>
+ <node id="11381874172" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2946624" lon="114.1936557"/>
+ <node id="11381874173" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2934135" lon="114.1916555"/>
+ <node id="11381874174" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2911415" lon="114.1889397"/>
+ <node id="11381874175" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2897572" lon="114.1871509"/>
+ <node id="11381874176" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2884331" lon="114.1846303"/>
+ <node id="11381874177" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2875604" lon="114.1817032"/>
+ <node id="11381874178" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2868983" lon="114.1781418"/>
+ <node id="11381874179" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2864018" lon="114.1689214"/>
+ <node id="11381874180" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2873347" lon="114.1664170"/>
+ <node id="11381874181" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2889815" lon="114.1656297"/>
+ <node id="11381874182" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2897515" lon="114.1660404"/>
+ <node id="11381874183" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2907641" lon="114.1690016"/>
+ <node id="11381874184" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2911711" lon="114.1773486"/>
+ <node id="11381874185" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2880191" lon="114.1656586"/>
+ <node id="11381874186" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2924348" lon="114.1813982"/>
+ <node id="11381874187" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2939846" lon="114.1850246"/>
+ <node id="11381874188" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2974903" lon="114.1896918"/>
+ <node id="11381874189" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2988294" lon="114.1925701"/>
+ <node id="11381874190" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3003189" lon="114.1966844"/>
+ <node id="11381874191" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3012668" lon="114.2015629"/>
+ <node id="11381874192" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3015828" lon="114.2061488"/>
+ <node id="11381874193" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.3011314" lon="114.2111575"/>
+ <node id="11381874194" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2999879" lon="114.2155319"/>
+ <node id="11381874195" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2981072" lon="114.2198088"/>
+ <node id="11381874196" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2946165" lon="114.2276145"/>
+ <node id="11381874197" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2912612" lon="114.2281999"/>
+ <node id="11381874198" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2896361" lon="114.2275494"/>
+ <node id="11381874199" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2895158" lon="114.2255329"/>
+ <node id="11381874200" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2913364" lon="114.2217114"/>
+ <node id="11381874201" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2929012" lon="114.2168166"/>
+ <node id="11381874202" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2947068" lon="114.2110274"/>
+ <node id="11381874203" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2964522" lon="114.2056122"/>
+ <node id="11381874204" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2965725" lon="114.2022134"/>
+ <node id="11381874205" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2962688" lon="114.2013945"/>
+ <node id="11381874206" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2956397" lon="114.2007742"/>
+ <node id="11381874207" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2952435" lon="114.2005096"/>
+ <node id="11381874209" visible="true" version="1" changeset="144554997" timestamp="2023-11-28T15:55:31Z" user="minghong" uid="541214" lat="22.2949116" lon="114.2004977"/>
+ <node id="11412781252" visible="true" version="1" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2914823" lon="114.1624549"/>
+ <node id="11412781253" visible="true" version="1" changeset="145043207" timestamp="2023-12-12T15:39:20Z" user="minghong" uid="541214" lat="22.2909598" lon="114.1660619"/>
+ <node id="11412781254" visible="true" version="2" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2908429" lon="114.1728199"/>
+ <node id="11579035728" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2907731" lon="114.1652858"/>
+ <node id="11579035729" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2940802" lon="114.1775574"/>
+ <node id="11579035730" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2910189" lon="114.1742279"/>
+ <node id="11579035731" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2909349" lon="114.1736398"/>
+ <node id="11579035732" visible="true" version="1" changeset="146985263" timestamp="2024-02-02T13:23:59Z" user="samsung galaxy s6" uid="3691120" lat="22.2907582" lon="114.1701440"/>
+ <way id="189362626" visible="true" version="5" changeset="134850104" timestamp="2023-04-13T08:15:52Z" user="Aleksandar Matejevic" uid="8724788">
+  <nd ref="2000002299"/>
+  <nd ref="1819732456"/>
+  <tag k="admin_level" v="5"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="maritime" v="yes"/>
+ </way>
+ <way id="207904961" visible="true" version="1" changeset="15222835" timestamp="2013-03-02T15:51:20Z" user="hlaw" uid="169827">
+  <nd ref="2181491058"/>
+  <nd ref="2181491061"/>
+  <nd ref="2181491068"/>
+  <tag k="seamark:information" v="Northern Boundary, Central Fairway"/>
+  <tag k="seamark:type" v="separation_boundary"/>
+  <tag k="source" v="Boundaries of the Central Fairway, Sch 3, Cap 313A"/>
+ </way>
+ <way id="207904968" visible="true" version="1" changeset="15222835" timestamp="2013-03-02T15:51:20Z" user="hlaw" uid="169827">
+  <nd ref="2181491070"/>
+  <nd ref="2181491069"/>
+  <nd ref="2181491059"/>
+  <nd ref="2181491058"/>
+  <tag k="seamark:information" v="Northern Boundary, Hung Hom Fairway"/>
+  <tag k="seamark:type" v="separation_boundary"/>
+  <tag k="source" v="Boundaries of the Hung Hom Fairway, Sch 3, Cap 313A"/>
+ </way>
+ <way id="207927155" visible="true" version="4" changeset="92116140" timestamp="2020-10-07T13:31:02Z" user="Wright One" uid="261189">
+  <nd ref="2181491070"/>
+  <nd ref="2181491064"/>
+  <nd ref="2181491063"/>
+  <nd ref="2181491052"/>
+  <nd ref="2181491050"/>
+  <nd ref="2181491058"/>
+  <nd ref="2181491059"/>
+  <nd ref="2181491069"/>
+  <nd ref="2181491070"/>
+  <tag k="area" v="yes"/>
+  <tag k="seamark:name" v="Hung Hom Fairway"/>
+  <tag k="seamark:national_name" v="紅磡航道"/>
+  <tag k="seamark:type" v="fairway"/>
+ </way>
+ <way id="207927157" visible="true" version="6" changeset="125814142" timestamp="2022-09-05T12:48:09Z" user="samsung galaxy s6" uid="3691120">
+  <nd ref="2181491065"/>
+  <nd ref="2173359525"/>
+  <nd ref="2181491060"/>
+  <nd ref="10002090437"/>
+  <nd ref="2181491050"/>
+  <nd ref="2181491058"/>
+  <nd ref="2181491061"/>
+  <nd ref="2181491068"/>
+  <nd ref="2181491067"/>
+  <nd ref="2181491065"/>
+  <tag k="area" v="yes"/>
+  <tag k="seamark:name" v="Central Fairway"/>
+  <tag k="seamark:national_name" v="中航道"/>
+  <tag k="seamark:type" v="fairway"/>
+ </way>
+ <way id="224759247" visible="true" version="22" changeset="164922984" timestamp="2025-04-14T06:43:41Z" user="Dragonhk" uid="15230995">
+  <nd ref="30745880"/>
+  <nd ref="2335541063"/>
+  <nd ref="30745879"/>
+  <nd ref="30745878"/>
+  <nd ref="30745877"/>
+  <nd ref="2335541068"/>
+  <nd ref="30745876"/>
+  <nd ref="11579035728"/>
+  <nd ref="6919485769"/>
+  <nd ref="30745875"/>
+  <nd ref="30745874"/>
+  <nd ref="2335541096"/>
+  <nd ref="2335541100"/>
+  <nd ref="2335541101"/>
+  <nd ref="2335541103"/>
+  <nd ref="6980052498"/>
+  <tag k="bicycle" v="no"/>
+  <tag k="brand" v="天星小輪 Star Ferry"/>
+  <tag k="brand:en" v="Star Ferry"/>
+  <tag k="brand:zh" v="天星小輪"/>
+  <tag k="charge" v="5.60 HKD"/>
+  <tag k="charge:conditional" v="6.50 HKD @ (Sa-Su, PH)"/>
+  <tag k="duration" v="09"/>
+  <tag k="foot" v="yes"/>
+  <tag k="from" v="中環 Central"/>
+  <tag k="from:en" v="Central"/>
+  <tag k="from:zh" v="中環"/>
+  <tag k="historic" v="yes"/>
+  <tag k="horse" v="no"/>
+  <tag k="interval" v="10"/>
+  <tag k="motor_vehicle" v="no"/>
+  <tag k="name" v="中環—尖沙咀 Central - Tsim Sha Tsui"/>
+  <tag k="name:en" v="Central - Tsim Sha Tsui"/>
+  <tag k="name:zh" v="中環—尖沙咀"/>
+  <tag k="name:zh-Hans" v="中环—尖沙咀"/>
+  <tag k="name:zh-Hant" v="中環—尖沙咀"/>
+  <tag k="opening_hours" v="Mo-Su 06:30-23:30"/>
+  <tag k="operation" v="private"/>
+  <tag k="operator" v="天星小輪有限公司 The “Star Ferry” Company, Limited"/>
+  <tag k="operator:en" v="The “Star Ferry” Company, Limited"/>
+  <tag k="operator:wikidata" v="Q1859131"/>
+  <tag k="operator:zh" v="天星小輪有限公司"/>
+  <tag k="owner" v="天星小輪有限公司 The “Star Ferry” Company, Limited"/>
+  <tag k="owner:en" v="The “Star Ferry” Company, Limited"/>
+  <tag k="ownership" v="private"/>
+  <tag k="owner:wikidata" v="Q1859131"/>
+  <tag k="owner:zh" v="天星小輪有限公司"/>
+  <tag k="passenger" v="urban"/>
+  <tag k="payment:alipay" v="yes"/>
+  <tag k="payment:cash" v="yes"/>
+  <tag k="payment:octopus" v="yes"/>
+  <tag k="route" v="ferry"/>
+  <tag k="service" v="ordinary"/>
+  <tag k="to" v="尖沙咀 Tsim Sha Tsui"/>
+  <tag k="to:en" v="Tsim Sha Tsui"/>
+  <tag k="tourism" v="yes"/>
+  <tag k="to:zh" v="尖沙咀"/>
+  <tag k="website" v="https://www.starferry.com.hk"/>
+ </way>
+ <way id="453485426" visible="true" version="4" changeset="134850104" timestamp="2023-04-13T08:15:52Z" user="Aleksandar Matejevic" uid="8724788">
+  <nd ref="3946054647"/>
+  <nd ref="1819732463"/>
+  <nd ref="2000002299"/>
+  <tag k="admin_level" v="5"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="maritime" v="yes"/>
+ </way>
+ <way id="851848400" visible="true" version="3" changeset="160735991" timestamp="2024-12-29T02:03:31Z" user="cnvery" uid="3627342">
+  <nd ref="7945407765"/>
+  <nd ref="9809054534"/>
+  <nd ref="7945407766"/>
+  <nd ref="7945407774"/>
+  <nd ref="7945407767"/>
+  <nd ref="7945407775"/>
+  <nd ref="7945407778"/>
+  <nd ref="7945407768"/>
+  <nd ref="7945407769"/>
+  <nd ref="7945407770"/>
+  <nd ref="7945407776"/>
+  <nd ref="7945407771"/>
+  <nd ref="7945407777"/>
+  <nd ref="7945407772"/>
+  <nd ref="7945407773"/>
+  <tag k="name" v="維多利亞港 Victoria Harbour"/>
+  <tag k="name:en" v="Victoria Harbour"/>
+  <tag k="name:zh" v="維多利亞港"/>
+  <tag k="name:zh-Hans" v="维多利亚港"/>
+  <tag k="name:zh-Hant" v="維多利亞港"/>
+  <tag k="natural" v="strait"/>
+ </way>
+ <way id="1068265205" visible="true" version="11" changeset="173206092" timestamp="2025-10-13T03:44:46Z" user="Cypp0847" uid="9161716">
+  <nd ref="9806787449"/>
+  <nd ref="9809054521"/>
+  <nd ref="9809014210"/>
+  <nd ref="9809014209"/>
+  <nd ref="11579035729"/>
+  <nd ref="9809054520"/>
+  <nd ref="9809054522"/>
+  <nd ref="9809054655"/>
+  <nd ref="9809054523"/>
+  <nd ref="9809054519"/>
+  <nd ref="9809054518"/>
+  <nd ref="9809054517"/>
+  <nd ref="11579035731"/>
+  <nd ref="11412781254"/>
+  <nd ref="9809014216"/>
+  <nd ref="11579035732"/>
+  <nd ref="9809014208"/>
+  <nd ref="11412781253"/>
+  <nd ref="9809054525"/>
+  <nd ref="11412781252"/>
+  <nd ref="9809054533"/>
+  <nd ref="9809054526"/>
+  <nd ref="9809054527"/>
+  <nd ref="9809054535"/>
+  <nd ref="9809014207"/>
+  <nd ref="9809054532"/>
+  <nd ref="9809054528"/>
+  <nd ref="9809054529"/>
+  <nd ref="9809054536"/>
+  <nd ref="9809054531"/>
+  <nd ref="9809054530"/>
+  <nd ref="9809054545"/>
+  <nd ref="9809054538"/>
+  <nd ref="9809054537"/>
+  <nd ref="9809014215"/>
+  <nd ref="9809054541"/>
+  <nd ref="9809054539"/>
+  <nd ref="9809054540"/>
+  <nd ref="9809014214"/>
+  <nd ref="9809014213"/>
+  <nd ref="9809054542"/>
+  <nd ref="9809054543"/>
+  <nd ref="9809014211"/>
+  <nd ref="9809014206"/>
+  <nd ref="9809014205"/>
+  <nd ref="9809014204"/>
+  <nd ref="9809014203"/>
+  <nd ref="9809014202"/>
+  <nd ref="9809054548"/>
+  <nd ref="9809014201"/>
+  <nd ref="10607466447"/>
+  <nd ref="10607466449"/>
+  <nd ref="10607466448"/>
+  <nd ref="9809014200"/>
+  <tag k="charge" v="30.00 HKD"/>
+  <tag k="duration" v="25"/>
+  <tag k="from" v="尖東 Tsim Sha Tsui East"/>
+  <tag k="from:en" v="Tsim Sha Tsui East"/>
+  <tag k="from:zh" v="尖東"/>
+  <tag k="interval" v="02:00"/>
+  <tag k="name" v="尖東—西九龍 (水上的士) Tsim Sha Tsui East - West Kowloon (Water Taxi)"/>
+  <tag k="name:en" v="Tsim Sha Tsui East - West Kowloon (Water Taxi)"/>
+  <tag k="name:zh" v="尖東—西九龍 (水上的士)"/>
+  <tag k="name:zh-Hant" v="尖東—西九龍 (水上的士)"/>
+  <tag k="network" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="network:en" v="Hong Kong Water Taxi"/>
+  <tag k="network:zh" v="香港水上的士"/>
+  <tag k="opening_hours" v="Sa-Su,PH 10:30-12:55"/>
+  <tag k="opening_hours:backward" v="Sa-Su,PH 10:55-12:55"/>
+  <tag k="opening_hours:forward" v="Sa-Su,PH 10:30-12:30"/>
+  <tag k="operation" v="private"/>
+  <tag k="operator" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="operator:en" v="Fortune Ferry Limited"/>
+  <tag k="operator:wikidata" v="Q303135"/>
+  <tag k="operator:zh" v="富裕小輪有限公司"/>
+  <tag k="owner" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="owner:en" v="Fortune Ferry Limited"/>
+  <tag k="ownership" v="private"/>
+  <tag k="owner:wikidata" v="Q303135"/>
+  <tag k="owner:zh" v="富裕小輪有限公司"/>
+  <tag k="passenger" v="urban"/>
+  <tag k="route" v="ferry"/>
+  <tag k="service" v="tourism"/>
+  <tag k="to" v="西九龍 West Kowloon"/>
+  <tag k="to:en" v="West Kowloon"/>
+  <tag k="to:zh" v="西九龍"/>
+  <tag k="website" v="https://www.hongkongwatertaxi.com.hk"/>
+ </way>
+ <way id="1161999514" visible="true" version="1" changeset="134850104" timestamp="2023-04-13T08:15:52Z" user="Aleksandar Matejevic" uid="8724788">
+  <nd ref="2000002299"/>
+  <nd ref="10806920447"/>
+  <tag k="admin_level" v="6"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="maritime" v="yes"/>
+ </way>
+ <way id="1227387521" visible="true" version="3" changeset="159265390" timestamp="2024-11-18T02:21:00Z" user="cnvery" uid="3627342">
+  <nd ref="11381874191"/>
+  <nd ref="11381874190"/>
+  <nd ref="11381874189"/>
+  <nd ref="11381874188"/>
+  <nd ref="11381874187"/>
+  <nd ref="11381874186"/>
+  <nd ref="11381874184"/>
+  <nd ref="11579035730"/>
+  <nd ref="11381874183"/>
+  <nd ref="11381874182"/>
+  <nd ref="11381874181"/>
+  <nd ref="11381874185"/>
+  <nd ref="11381874180"/>
+  <nd ref="11381874179"/>
+  <nd ref="11381874178"/>
+  <nd ref="11381874177"/>
+  <nd ref="11381874176"/>
+  <nd ref="11381874175"/>
+  <nd ref="11381874174"/>
+  <nd ref="11381874173"/>
+  <nd ref="11381874172"/>
+  <nd ref="11381874171"/>
+  <nd ref="11381874170"/>
+  <nd ref="11381874169"/>
+  <nd ref="11381853568"/>
+  <nd ref="11381853567"/>
+  <nd ref="11381874209"/>
+  <nd ref="11381874207"/>
+  <nd ref="11381874206"/>
+  <nd ref="11381874205"/>
+  <nd ref="11381874204"/>
+  <nd ref="11381874203"/>
+  <nd ref="11381874202"/>
+  <nd ref="11381874201"/>
+  <nd ref="11381874200"/>
+  <nd ref="11381874199"/>
+  <nd ref="11381874198"/>
+  <nd ref="11381874197"/>
+  <nd ref="11381874196"/>
+  <nd ref="11381874195"/>
+  <nd ref="11381874194"/>
+  <nd ref="11381874193"/>
+  <nd ref="11381874192"/>
+  <nd ref="11381874191"/>
+  <tag k="area" v="no"/>
+  <tag k="attraction" v="boat_ride"/>
+  <tag k="duration" v="02:00"/>
+  <tag k="email" v="reserve@cruise.com.hk"/>
+  <tag k="fax" v="+852 28022881"/>
+  <tag k="name" v="洋紫荊維港遊 Harbour Cruise - Bauhinia"/>
+  <tag k="name:en" v="Harbour Cruise - Bauhinia"/>
+  <tag k="name:zh" v="洋紫荊維港遊"/>
+  <tag k="name:zh-Hans" v="洋紫荆维港游"/>
+  <tag k="name:zh-Hant" v="洋紫荊維港遊"/>
+  <tag k="operator" v="香港油蔴地小輪船有限公司 The Hongkong and Yaumati Ferry Company Limited"/>
+  <tag k="operator:en" v="The Hongkong and Yaumati Ferry Company, Limited"/>
+  <tag k="operator:zh" v="香港油蔴地小輪船有限公司"/>
+  <tag k="phone" v="+852 28022886"/>
+  <tag k="roundtrip" v="yes"/>
+  <tag k="type" v="multipolygon"/>
+  <tag k="website" v="https://www.cruise.com.hk"/>
+ </way>
+ <relation id="913110" visible="true" version="210" changeset="173515240" timestamp="2025-10-20T01:44:34Z" user="minghong" uid="541214">
+  <member type="way" ref="144723222" role="outer"/>
+  <member type="way" ref="98683064" role="outer"/>
+  <member type="way" ref="1009065156" role="outer"/>
+  <member type="way" ref="363253972" role="outer"/>
+  <member type="way" ref="769275792" role="outer"/>
+  <member type="way" ref="414794194" role="outer"/>
+  <member type="way" ref="611444545" role="outer"/>
+  <member type="way" ref="407709474" role="outer"/>
+  <member type="way" ref="751417019" role="outer"/>
+  <member type="way" ref="693047663" role="outer"/>
+  <member type="way" ref="98683065" role="outer"/>
+  <member type="way" ref="1016602434" role="outer"/>
+  <member type="way" ref="630206698" role="outer"/>
+  <member type="way" ref="1080099927" role="outer"/>
+  <member type="way" ref="1007505180" role="outer"/>
+  <member type="way" ref="751417018" role="outer"/>
+  <member type="way" ref="751981003" role="outer"/>
+  <member type="way" ref="222880571" role="outer"/>
+  <member type="way" ref="769357456" role="outer"/>
+  <member type="way" ref="630844160" role="outer"/>
+  <member type="way" ref="577605760" role="outer"/>
+  <member type="way" ref="703967404" role="outer"/>
+  <member type="way" ref="630844159" role="outer"/>
+  <member type="way" ref="769275793" role="outer"/>
+  <member type="way" ref="658684399" role="outer"/>
+  <member type="way" ref="98683066" role="outer"/>
+  <member type="way" ref="98699344" role="outer"/>
+  <member type="way" ref="727889409" role="outer"/>
+  <member type="way" ref="705910574" role="outer"/>
+  <member type="way" ref="98699345" role="outer"/>
+  <member type="way" ref="909226114" role="outer"/>
+  <member type="way" ref="28291441" role="outer"/>
+  <member type="way" ref="380279207" role="outer"/>
+  <member type="way" ref="1326167175" role="outer"/>
+  <member type="way" ref="620566159" role="outer"/>
+  <member type="way" ref="1326178004" role="outer"/>
+  <member type="way" ref="747988485" role="outer"/>
+  <member type="way" ref="1327216881" role="outer"/>
+  <member type="way" ref="747988484" role="outer"/>
+  <member type="way" ref="747988487" role="outer"/>
+  <member type="way" ref="747988488" role="outer"/>
+  <member type="way" ref="693441162" role="outer"/>
+  <member type="way" ref="693441164" role="outer"/>
+  <member type="way" ref="666131632" role="outer"/>
+  <member type="way" ref="1443383772" role="outer"/>
+  <member type="way" ref="1443383755" role="outer"/>
+  <member type="way" ref="1443383770" role="outer"/>
+  <member type="way" ref="1443383767" role="outer"/>
+  <member type="way" ref="1443383765" role="outer"/>
+  <member type="way" ref="1443383757" role="outer"/>
+  <member type="way" ref="1443383759" role="outer"/>
+  <member type="way" ref="1443383761" role="outer"/>
+  <member type="way" ref="535581787" role="outer"/>
+  <member type="way" ref="738491610" role="outer"/>
+  <member type="way" ref="738491611" role="outer"/>
+  <member type="way" ref="738491607" role="outer"/>
+  <member type="way" ref="738491608" role="outer"/>
+  <member type="way" ref="1443374758" role="outer"/>
+  <member type="way" ref="1443374760" role="outer"/>
+  <member type="way" ref="535568984" role="outer"/>
+  <member type="way" ref="535567416" role="outer"/>
+  <member type="way" ref="1108955607" role="outer"/>
+  <member type="way" ref="738491604" role="outer"/>
+  <member type="way" ref="1443374753" role="outer"/>
+  <member type="way" ref="1443374755" role="outer"/>
+  <member type="way" ref="738491605" role="outer"/>
+  <member type="way" ref="625132436" role="outer"/>
+  <member type="way" ref="623890626" role="outer"/>
+  <member type="way" ref="1443374742" role="outer"/>
+  <member type="way" ref="1443374748" role="outer"/>
+  <member type="way" ref="1443374743" role="outer"/>
+  <member type="way" ref="1021861249" role="outer"/>
+  <member type="way" ref="1022800928" role="outer"/>
+  <member type="way" ref="738491598" role="outer"/>
+  <member type="way" ref="666091457" role="outer"/>
+  <member type="way" ref="741632649" role="outer"/>
+  <member type="way" ref="738491594" role="outer"/>
+  <member type="way" ref="380354682" role="outer"/>
+  <member type="way" ref="1154421366" role="outer"/>
+  <member type="way" ref="909074084" role="outer"/>
+  <member type="way" ref="703347745" role="outer"/>
+  <member type="way" ref="611541224" role="outer"/>
+  <member type="way" ref="1154283277" role="outer"/>
+  <member type="way" ref="751821119" role="outer"/>
+  <member type="way" ref="909074085" role="outer"/>
+  <member type="way" ref="703347742" role="outer"/>
+  <member type="way" ref="668820104" role="outer"/>
+  <member type="way" ref="1281815251" role="outer"/>
+  <member type="way" ref="1281815253" role="outer"/>
+  <member type="way" ref="1281815248" role="outer"/>
+  <member type="way" ref="1281815254" role="outer"/>
+  <member type="way" ref="1281815249" role="outer"/>
+  <member type="way" ref="1281815252" role="outer"/>
+  <member type="way" ref="407708241" role="outer"/>
+  <member type="way" ref="414794203" role="outer"/>
+  <member type="way" ref="414794201" role="outer"/>
+  <member type="way" ref="414794198" role="outer"/>
+  <member type="way" ref="414794199" role="outer"/>
+  <member type="way" ref="414794204" role="outer"/>
+  <member type="way" ref="414794197" role="outer"/>
+  <member type="way" ref="414794200" role="outer"/>
+  <member type="node" ref="7414774650" role="admin_centre"/>
+  <member type="node" ref="24330691" role="label"/>
+  <member type="relation" ref="8480823" role="subarea"/>
+  <member type="relation" ref="9159733" role="subarea"/>
+  <member type="relation" ref="8480494" role="subarea"/>
+  <member type="relation" ref="9159737" role="subarea"/>
+  <member type="relation" ref="7351646" role="subarea"/>
+  <member type="relation" ref="8189562" role="subarea"/>
+  <member type="relation" ref="8368100" role="subarea"/>
+  <member type="relation" ref="2800276" role="subarea"/>
+  <member type="relation" ref="2800200" role="subarea"/>
+  <member type="relation" ref="2800277" role="subarea"/>
+  <member type="relation" ref="2670978" role="subarea"/>
+  <member type="relation" ref="2558879" role="subarea"/>
+  <member type="relation" ref="2558880" role="subarea"/>
+  <member type="relation" ref="2558881" role="subarea"/>
+  <member type="relation" ref="2558883" role="subarea"/>
+  <member type="relation" ref="2800201" role="subarea"/>
+  <member type="relation" ref="8477820" role="subarea"/>
+  <member type="relation" ref="8191142" role="subarea"/>
+  <tag k="admin_level" v="3"/>
+  <tag k="alt_name:cs" v="Siang-kang;Voňavý přístav"/>
+  <tag k="alt_name:eo" v="Hongkongo"/>
+  <tag k="alt_name:vi" v="Hương Cảng"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="driving_side" v="left"/>
+  <tag k="flag" v="File:Flag_of_Hong_Kong.svg"/>
+  <tag k="is_in:country" v="China"/>
+  <tag k="ISO3166-1" v="HK"/>
+  <tag k="ISO3166-1:alpha2" v="HK"/>
+  <tag k="ISO3166-1:alpha3" v="HKG"/>
+  <tag k="ISO3166-1:numeric" v="344"/>
+  <tag k="ISO3166-2" v="CN-HK"/>
+  <tag k="name" v="香港 Hong Kong"/>
+  <tag k="name:ab" v="Гонконг"/>
+  <tag k="name:ace" v="Hong Kong"/>
+  <tag k="name:af" v="Hongkong"/>
+  <tag k="name:ak" v="Hong Kong"/>
+  <tag k="name:am" v="ሆንግ ኮንግ"/>
+  <tag k="name:an" v="Hong Kong"/>
+  <tag k="name:ar" v="هونغ كونغ"/>
+  <tag k="name:as" v="হংকং"/>
+  <tag k="name:az" v="Honkonq"/>
+  <tag k="name:ba" v="Гонконг"/>
+  <tag k="name:be" v="Ганконг"/>
+  <tag k="name:bg" v="Хонконг"/>
+  <tag k="name:bh" v="हांगकांग"/>
+  <tag k="name:bi" v="Hong Kong"/>
+  <tag k="name:bm" v="Hong Kong"/>
+  <tag k="name:bn" v="হংকং"/>
+  <tag k="name:bo" v="ཧོང་ཀོང་།"/>
+  <tag k="name:br" v="Hong Kong"/>
+  <tag k="name:bs" v="Hong Kong"/>
+  <tag k="name:bug" v="ᨖᨚᨊᨁ ᨀᨚᨊᨁ"/>
+  <tag k="name:ca" v="Hong Kong"/>
+  <tag k="name:cdo" v="Hiông-kóng"/>
+  <tag k="name:ce" v="Гонконг"/>
+  <tag k="name:chr" v="ᎰᏂᎩ ᎪᏂᎩ"/>
+  <tag k="name:chy" v="Hong Kong"/>
+  <tag k="name:ckb" v="ھۆنگ کۆنگ"/>
+  <tag k="name:cmn" v="香港"/>
+  <tag k="name:cmn-Hant" v="香港"/>
+  <tag k="name:cmn-Latn" v="Xiang gang"/>
+  <tag k="name:cmn-Latn-pinyin" v="Xiāng gǎng"/>
+  <tag k="name:cs" v="Hongkong"/>
+  <tag k="name:cv" v="Гонконг"/>
+  <tag k="name:cy" v="Hong Cong"/>
+  <tag k="name:da" v="Hongkong"/>
+  <tag k="name:de" v="Hongkong"/>
+  <tag k="name:dv" v="ހޮންކޮންގު"/>
+  <tag k="name:ee" v="Hong Kong"/>
+  <tag k="name:el" v="Χονγκ Κονγκ"/>
+  <tag k="name:en" v="Hong Kong"/>
+  <tag k="name:eo" v="Hongkongo"/>
+  <tag k="name:es" v="Hong Kong"/>
+  <tag k="name:et" v="Hongkong"/>
+  <tag k="name:eu" v="Hong Kong"/>
+  <tag k="name:fa" v="هنگ‌کنگ"/>
+  <tag k="name:fi" v="Hongkong"/>
+  <tag k="name:fo" v="Hongkong"/>
+  <tag k="name:fr" v="Hong Kong"/>
+  <tag k="name:fy" v="Hongkong"/>
+  <tag k="name:ga" v="Hong Cong"/>
+  <tag k="name:gan" v="香港"/>
+  <tag k="name:gd" v="Hong Kong"/>
+  <tag k="name:gl" v="Hong Kong"/>
+  <tag k="name:gn" v="Hong Kong"/>
+  <tag k="name:got" v="𐌷𐌰𐌿𐌲𐌺𐌰𐌿𐌲𐌲"/>
+  <tag k="name:gu" v="હોંગકોંગ"/>
+  <tag k="name:ha" v="Hong Kong"/>
+  <tag k="name:hak" v="Hiông-kóng"/>
+  <tag k="name:haw" v="Hong Kong"/>
+  <tag k="name:he" v="הונג קונג"/>
+  <tag k="name:hi" v="हांगकांग"/>
+  <tag k="name:hif" v="Hong Kong"/>
+  <tag k="name:hr" v="Hong Kong"/>
+  <tag k="name:ht" v="Hong Kong"/>
+  <tag k="name:hu" v="Hong Kong"/>
+  <tag k="name:hy" v="Հոնկոնգ"/>
+  <tag k="name:ia" v="Hong Kong"/>
+  <tag k="name:id" v="Hong Kong"/>
+  <tag k="name:ie" v="Hongkong"/>
+  <tag k="name:ig" v="Hong Kong"/>
+  <tag k="name:io" v="Hong Kong"/>
+  <tag k="name:is" v="Hong Kong"/>
+  <tag k="name:it" v="Hong Kong"/>
+  <tag k="name:ja" v="香港"/>
+  <tag k="name:jv" v="Hong Kong"/>
+  <tag k="name:ka" v="ჰონგ-კონგი"/>
+  <tag k="name:kbp" v="Hɔŋkɔŋ"/>
+  <tag k="name:kcg" v="Hong Kong"/>
+  <tag k="name:ki" v="Hong Kong"/>
+  <tag k="name:kk" v="Гонконг"/>
+  <tag k="name:kl" v="Hongkong"/>
+  <tag k="name:km" v="ហុងកុង"/>
+  <tag k="name:kn" v="ಹಾಂಗ್ಕಾಂಗ್"/>
+  <tag k="name:ko" v="홍콩"/>
+  <tag k="name:ku" v="Hong Kong"/>
+  <tag k="name:kw" v="Hong Kong"/>
+  <tag k="name:ky" v="Гонконг"/>
+  <tag k="name:la" v="Hongcongum"/>
+  <tag k="name:lb" v="Hong Kong"/>
+  <tag k="name:lfn" v="Hongkong"/>
+  <tag k="name:li" v="Hong Kong"/>
+  <tag k="name:ln" v="Hong Kong"/>
+  <tag k="name:lo" v="ຮົງກົງ"/>
+  <tag k="name:lt" v="Honkongas"/>
+  <tag k="name:lv" v="Honkonga"/>
+  <tag k="name:mg" v="Hong Kong"/>
+  <tag k="name:mi" v="Hongipua"/>
+  <tag k="name:mk" v="Хонгконг"/>
+  <tag k="name:ml" v="ഹോങ്കോങ്"/>
+  <tag k="name:mn" v="Хонконг"/>
+  <tag k="name:mni" v="ꯍꯣꯡ ꯀꯣꯡ"/>
+  <tag k="name:mr" v="हाँग काँग"/>
+  <tag k="name:ms" v="Hong Kong"/>
+  <tag k="name:my" v="ဟောင်ကောင်"/>
+  <tag k="name:nan" v="Hiong-káng"/>
+  <tag k="name:nan-Hant" v="香港"/>
+  <tag k="name:nan-Latn-pehoeji" v="Hiong-káng"/>
+  <tag k="name:nan-Latn-tailo" v="Hiong-káng"/>
+  <tag k="name:ne" v="हङकङ"/>
+  <tag k="name:nl" v="Hongkong"/>
+  <tag k="name:nn" v="Hongkong"/>
+  <tag k="name:no" v="Hongkong"/>
+  <tag k="name:ny" v="Hong Kong"/>
+  <tag k="name:oc" v="Hongkong"/>
+  <tag k="name:or" v="ହଂକଂ"/>
+  <tag k="name:os" v="Гонконг"/>
+  <tag k="name:pa" v="ਹਾਂਗਕਾਂਗ"/>
+  <tag k="name:pih" v="Hong Kong"/>
+  <tag k="name:pl" v="Hongkong"/>
+  <tag k="name:ps" v="هنګ کنګ"/>
+  <tag k="name:pt" v="Hong Kong"/>
+  <tag k="name:qu" v="Hong Kong"/>
+  <tag k="name:ro" v="Hong Kong"/>
+  <tag k="name:ru" v="Гонконг"/>
+  <tag k="name:rw" v="Hongo Kongo"/>
+  <tag k="name:sa" v="हांग् कांग् नगरम्"/>
+  <tag k="name:sc" v="Hong Kong"/>
+  <tag k="name:si" v="හොංකොං"/>
+  <tag k="name:sk" v="Hongkong"/>
+  <tag k="name:sl" v="Hong Kong"/>
+  <tag k="name:so" v="Hong Kong"/>
+  <tag k="name:sq" v="Hong Kong"/>
+  <tag k="name:sr" v="Хонгконг"/>
+  <tag k="name:st" v="Hong Kong"/>
+  <tag k="name:su" v="Hong Kong"/>
+  <tag k="name:sv" v="Hongkong"/>
+  <tag k="name:sw" v="Hong Kong"/>
+  <tag k="name:szl" v="Hůngkůng"/>
+  <tag k="name:ta" v="ஃகொங்கொங்"/>
+  <tag k="name:te" v="హాంగ్‌కాంగ్"/>
+  <tag k="name:tg" v="Ҳонгконг"/>
+  <tag k="name:th" v="ฮ่องกง"/>
+  <tag k="name:ti" v="ሆንግ ኮንግ"/>
+  <tag k="name:tk" v="Gonkong"/>
+  <tag k="name:tl" v="Hong Kong"/>
+  <tag k="name:tn" v="Hong Kong"/>
+  <tag k="name:tr" v="Hong Kong"/>
+  <tag k="name:tt" v="Һоң Коң"/>
+  <tag k="name:tw" v="Hong Kong"/>
+  <tag k="name:ug" v="شياڭگاڭ"/>
+  <tag k="name:uk" v="Гонконґ"/>
+  <tag k="name:ur" v="ہانگ کانگ"/>
+  <tag k="name:uz" v="Hong Kong"/>
+  <tag k="name:vi" v="Hồng Kông"/>
+  <tag k="name:vo" v="Honkeän"/>
+  <tag k="name:wa" v="Hong Kong"/>
+  <tag k="name:wo" v="Ooŋ Koŋ"/>
+  <tag k="name:wuu" v="香港"/>
+  <tag k="name:xh" v="Hong Kong"/>
+  <tag k="name:yi" v="האנג קאנג"/>
+  <tag k="name:yo" v="Họ́ng Kọng"/>
+  <tag k="name:yue" v="香港"/>
+  <tag k="name:yue-Hant" v="香港"/>
+  <tag k="name:yue-Latn" v="Heung Gong"/>
+  <tag k="name:yue-Latn-jyutping" v="Hoeng1 gong2"/>
+  <tag k="name:za" v="Yanghgangj"/>
+  <tag k="name:zh" v="香港"/>
+  <tag k="name:zh-Hans" v="香港"/>
+  <tag k="name:zh-Hant" v="香港"/>
+  <tag k="name:zh-Latn-pinyin" v="Xiāng gǎng"/>
+  <tag k="name:zu" v="Hong Kong"/>
+  <tag k="ne:brk_a3" v="B96"/>
+  <tag k="ne_id" v="1746708389"/>
+  <tag k="official_name" v="香港特別行政區 Hong Kong Special Administrative Region"/>
+  <tag k="official_name:ar" v="منطقة هونغ كونغ الإدارية الخاصة"/>
+  <tag k="official_name:cs" v="Zvláštní administrativní oblast Hongkong"/>
+  <tag k="official_name:de" v="Sonderverwaltungszone Hongkong"/>
+  <tag k="official_name:en" v="Hong Kong Special Administrative Region"/>
+  <tag k="official_name:eo" v="Speciala Administra Regiono de Honkongo"/>
+  <tag k="official_name:fr" v="Région administrative spéciale de Hong Kong"/>
+  <tag k="official_name:hr" v="Posebna upravna regija Hong Kong"/>
+  <tag k="official_name:nan" v="hiong-káng Tek-pia̍t Hêng-chèng-khu"/>
+  <tag k="official_name:nan-Hant" v="香港特別行政區"/>
+  <tag k="official_name:nan-Latn-pehoeji" v="Hiong-káng Te̍k-pia̍t Hêng-chèng-khu"/>
+  <tag k="official_name:nan-Latn-tailo" v="Hiong-káng Ti̍k-pia̍t Hîng-tsìng-khu"/>
+  <tag k="official_name:nl" v="Speciale Administratieve Regio Hongkong"/>
+  <tag k="official_name:short_name" v="香港特區 Hong Kong SAR"/>
+  <tag k="official_name:short_name:en" v="Hong Kong SAR"/>
+  <tag k="official_name:short_name:nan" v="Hiong-káng Te̍k-khu"/>
+  <tag k="official_name:short_name:nan-Hant" v="香港特區"/>
+  <tag k="official_name:short_name:nan-Latn-pehoeji" v="Hiong-káng Te̍k-khu"/>
+  <tag k="official_name:short_name:nan-Latn-tailo" v="Hiong-káng Ti̍k-khu"/>
+  <tag k="official_name:short_name:zh" v="香港特區"/>
+  <tag k="official_name:uk" v="Особливий адміністративний район Гонконґ"/>
+  <tag k="official_name:za" v="Yanghgangj Dwzbez Hingzcwnggih"/>
+  <tag k="official_name:zh" v="香港特別行政區"/>
+  <tag k="official_name:zh-Hans" v="香港特别行政区"/>
+  <tag k="official_name:zh-Hant" v="香港特別行政區"/>
+  <tag k="official_ref" v="HKSAR"/>
+  <tag k="official_ref:en" v="HKSAR"/>
+  <tag k="population" v="7291600"/>
+  <tag k="population:date" v="2022"/>
+  <tag k="ref" v="港"/>
+  <tag k="ref:en" v="HK"/>
+  <tag k="ref:vi" v="Cảng"/>
+  <tag k="ref:zh" v="港"/>
+  <tag k="shortest_name" v="HK"/>
+  <tag k="short_name" v="HK"/>
+  <tag k="short_name:en" v="HK"/>
+  <tag k="source" v="Cap 1;Cap 591"/>
+  <tag k="source:name:br" v="ofis publik ar brezhoneg"/>
+  <tag k="source:population" v="https://www.censtatd.gov.hk/tc/scode150.html"/>
+  <tag k="timezone" v="Asia/Hong_Kong"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q8646"/>
+  <tag k="wikipedia" v="zh:香港"/>
+ </relation>
+ <relation id="2558879" visible="true" version="22" changeset="172427346" timestamp="2025-09-25T08:21:41Z" user="Tewuzij" uid="16194143">
+  <member type="node" ref="26412835" role="admin_centre"/>
+  <member type="way" ref="171475580" role="outer"/>
+  <member type="way" ref="170838215" role="outer"/>
+  <member type="way" ref="1161999515" role="outer"/>
+  <member type="way" ref="189362625" role="outer"/>
+  <member type="way" ref="189361607" role="outer"/>
+  <member type="way" ref="1161999514" role="outer"/>
+  <member type="way" ref="189362626" role="outer"/>
+  <member type="node" ref="13169032643" role="label"/>
+  <tag k="admin_level" v="6"/>
+  <tag k="alt_name:ko" v="중서구"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="中西區 Central and Western District"/>
+  <tag k="name:en" v="Central and Western District"/>
+  <tag k="name:ja" v="中西区"/>
+  <tag k="name:ko" v="중시구"/>
+  <tag k="name:ru" v="Центральный и Западный округ"/>
+  <tag k="name:zh" v="中西區"/>
+  <tag k="name:zh-Hans" v="中西区"/>
+  <tag k="name:zh-Hant" v="中西區"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q312485"/>
+  <tag k="wikipedia" v="zh:中西區 (香港)"/>
+ </relation>
+ <relation id="2558883" visible="true" version="20" changeset="172427346" timestamp="2025-09-25T08:21:41Z" user="Tewuzij" uid="16194143">
+  <member type="node" ref="490729978" role="admin_centre"/>
+  <member type="way" ref="453485426" role="outer"/>
+  <member type="way" ref="1161999514" role="outer"/>
+  <member type="way" ref="189361607" role="outer"/>
+  <member type="way" ref="189361594" role="outer"/>
+  <member type="way" ref="391379357" role="outer"/>
+  <member type="way" ref="1161999513" role="outer"/>
+  <tag k="admin_level" v="6"/>
+  <tag k="alt_name:ko" v="완차이구"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="灣仔區 Wan Chai District"/>
+  <tag k="name:en" v="Wan Chai District"/>
+  <tag k="name:ko" v="완자이구"/>
+  <tag k="name:vi" v="Loan Tử"/>
+  <tag k="name:zh" v="灣仔區"/>
+  <tag k="name:zh-Hans" v="湾仔区"/>
+  <tag k="name:zh-Hant" v="灣仔區"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q986434"/>
+  <tag k="wikipedia" v="zh:灣仔區"/>
+ </relation>
+ <relation id="2670978" visible="true" version="41" changeset="172427346" timestamp="2025-09-25T08:21:41Z" user="Tewuzij" uid="16194143">
+  <member type="way" ref="189362626" role="outer"/>
+  <member type="way" ref="453485426" role="outer"/>
+  <member type="way" ref="198870039" role="outer"/>
+  <member type="way" ref="453471613" role="outer"/>
+  <member type="way" ref="208237671" role="outer"/>
+  <member type="way" ref="1161999512" role="outer"/>
+  <member type="way" ref="1161999509" role="outer"/>
+  <member type="way" ref="198869984" role="outer"/>
+  <member type="way" ref="171474808" role="outer"/>
+  <member type="node" ref="1295654855" role="admin_centre"/>
+  <member type="node" ref="13169032646" role="label"/>
+  <tag k="admin_level" v="6"/>
+  <tag k="alt_name:ko" v="야우침몽구"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="油尖旺區 Yau Tsim Mong District"/>
+  <tag k="name:en" v="Yau Tsim Mong District"/>
+  <tag k="name:ja" v="油尖旺区"/>
+  <tag k="name:ko" v="야우짐웡구"/>
+  <tag k="name:ru" v="Яучиммон"/>
+  <tag k="name:uk" v="Яучіммон"/>
+  <tag k="name:zh" v="油尖旺區"/>
+  <tag k="name:zh-Hans" v="油尖旺区"/>
+  <tag k="name:zh-Hant" v="油尖旺區"/>
+  <tag k="source:name:uk" v="https://uk.wikipedia.org/wiki/Коулун"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q157669"/>
+  <tag k="wikipedia" v="de:Yau Tsim Mong District"/>
+ </relation>
+ <relation id="10264792" visible="true" version="27" changeset="157721971" timestamp="2024-10-10T15:43:17Z" user="Lepuse" uid="9560399">
+  <member type="way" ref="198870039" role="outer"/>
+  <member type="way" ref="208242401" role="outer"/>
+  <member type="way" ref="171384893" role="outer"/>
+  <member type="way" ref="189362628" role="outer"/>
+  <member type="way" ref="171384891" role="outer"/>
+  <member type="way" ref="189362629" role="outer"/>
+  <member type="way" ref="170838215" role="outer"/>
+  <member type="way" ref="171475580" role="outer"/>
+  <member type="way" ref="189362626" role="outer"/>
+  <member type="way" ref="453485426" role="outer"/>
+  <member type="node" ref="7414774650" role="label"/>
+  <tag k="admin_level" v="5"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="香港島 Hong Kong Island"/>
+  <tag k="name:ar" v="جزيرة هونغ كونغ"/>
+  <tag k="name:arz" v="جزيره هونج كونج"/>
+  <tag k="name:ast" v="Islla de Ḥong Kong"/>
+  <tag k="name:be" v="Ганконг (востраў)"/>
+  <tag k="name:bg" v="Хонконг (остров)"/>
+  <tag k="name:bn" v="হংকং দ্বীপ"/>
+  <tag k="name:br" v="Enez Hong Kong"/>
+  <tag k="name:ca" v="Illa de Hong Kong"/>
+  <tag k="name:ceb" v="Hong Kong Island"/>
+  <tag k="name:cmn" v="香港島"/>
+  <tag k="name:cs" v="Hongkong (ostrov)"/>
+  <tag k="name:da" v="Hong Kong Island"/>
+  <tag k="name:de" v="Hong Kong Island"/>
+  <tag k="name:el" v="Νησί του Χονγκ Κονγκ"/>
+  <tag k="name:en" v="Hong Kong Island"/>
+  <tag k="name:eo" v="Honkonga Insulo"/>
+  <tag k="name:es" v="Isla de Hong Kong"/>
+  <tag k="name:et" v="Hongkongi saar"/>
+  <tag k="name:eu" v="Hong Kong uhartea"/>
+  <tag k="name:fa" v="جزیره هنگ کنگ"/>
+  <tag k="name:fi" v="Hongkongin saari"/>
+  <tag k="name:fr" v="Île de Hong Kong"/>
+  <tag k="name:gl" v="Illa de Hong Kong"/>
+  <tag k="name:hak" v="Hiông-kóng-tó"/>
+  <tag k="name:he" v="הונג קונג (אי)"/>
+  <tag k="name:hi" v="हाँगकाँग द्वीप"/>
+  <tag k="name:hr" v="Hong Kong"/>
+  <tag k="name:hu" v="Hongkong-sziget"/>
+  <tag k="name:hy" v="Հոնկոնգ"/>
+  <tag k="name:id" v="Pulau Hong Kong"/>
+  <tag k="name:it" v="Hong Kong"/>
+  <tag k="name:ja" v="香港島"/>
+  <tag k="name:ka" v="ჰონგ-კონგი (კუნძული)"/>
+  <tag k="name:ko" v="홍콩섬"/>
+  <tag k="name:la" v="Insula Hongcongensis"/>
+  <tag k="name:lt" v="Honkongas"/>
+  <tag k="name:lv" v="Honkonga"/>
+  <tag k="name:mk" v="Хонгконг"/>
+  <tag k="name:ms" v="Pulau Hong Kong"/>
+  <tag k="name:my" v="ဟောင်ကောင်ကျွန်း"/>
+  <tag k="name:nan" v="Hiong-káng-tó"/>
+  <tag k="name:nan-Hant" v="香港島"/>
+  <tag k="name:nan-Latn-pehoeji" v="Hiong-káng-tó"/>
+  <tag k="name:nan-Latn-tailo" v="Hiong-káng-tó"/>
+  <tag k="name:nl" v="Hongkong (eiland)"/>
+  <tag k="name:no" v="Hongkongøya"/>
+  <tag k="name:pl" v="Hongkong (wyspa)"/>
+  <tag k="name:pt" v="Ilha de Hong Kong"/>
+  <tag k="name:ru" v="Гонконг (остров)"/>
+  <tag k="name:scn" v="Ìsula di Hong Kong"/>
+  <tag k="name:sk" v="Hongkong"/>
+  <tag k="name:sv" v="Hongkongön"/>
+  <tag k="name:ta" v="ஒங்கொங் தீவு"/>
+  <tag k="name:th" v="เกาะฮ่องกง"/>
+  <tag k="name:tl" v="Pulo ng Hong Kong"/>
+  <tag k="name:tr" v="Hong Kong Adası"/>
+  <tag k="name:uk" v="Гонконг"/>
+  <tag k="name:ur" v="جزیرہ ہانگ کانگ"/>
+  <tag k="name:vi" v="Đảo Hồng Kông"/>
+  <tag k="name:war" v="Purô han Hong Kong"/>
+  <tag k="name:wuu" v="香港島"/>
+  <tag k="name:yue" v="香港島"/>
+  <tag k="name:zh" v="香港島"/>
+  <tag k="name:zh-Hans" v="香港岛"/>
+  <tag k="name:zh-Hant" v="香港島"/>
+  <tag k="place" v="region"/>
+  <tag k="population" v="1367900"/>
+  <tag k="short_name" v="香港 Hong Kong"/>
+  <tag k="short_name:en" v="Hong Kong"/>
+  <tag k="short_name:zh" v="香港"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q19483"/>
+  <tag k="wikipedia" v="en:Hong Kong Island"/>
+ </relation>
+ <relation id="10268797" visible="true" version="64" changeset="159724765" timestamp="2024-11-29T02:25:05Z" user="minghong" uid="541214">
+  <member type="node" ref="6986131016" role="label"/>
+  <member type="way" ref="171384893" role="outer"/>
+  <member type="way" ref="1161999511" role="outer"/>
+  <member type="way" ref="907298932" role="outer"/>
+  <member type="way" ref="907298934" role="outer"/>
+  <member type="way" ref="791590557" role="outer"/>
+  <member type="way" ref="1132401735" role="outer"/>
+  <member type="way" ref="1338759897" role="outer"/>
+  <member type="way" ref="1178303983" role="outer"/>
+  <member type="way" ref="746528376" role="outer"/>
+  <member type="way" ref="577604919" role="outer"/>
+  <member type="way" ref="998976377" role="outer"/>
+  <member type="way" ref="998976380" role="outer"/>
+  <member type="way" ref="720137644" role="outer"/>
+  <member type="way" ref="998976379" role="outer"/>
+  <member type="way" ref="171480836" role="outer"/>
+  <member type="way" ref="208237669" role="outer"/>
+  <member type="way" ref="749346546" role="outer"/>
+  <member type="way" ref="502876629" role="outer"/>
+  <member type="way" ref="754858049" role="outer"/>
+  <member type="way" ref="749360116" role="outer"/>
+  <member type="way" ref="749353257" role="outer"/>
+  <member type="way" ref="1161999508" role="outer"/>
+  <member type="way" ref="171474808" role="outer"/>
+  <member type="way" ref="189362626" role="outer"/>
+  <member type="way" ref="453485426" role="outer"/>
+  <member type="way" ref="198870039" role="outer"/>
+  <member type="way" ref="208242401" role="outer"/>
+  <tag k="admin_level" v="5"/>
+  <tag k="boundary" v="administrative"/>
+  <tag k="name" v="九龍 Kowloon"/>
+  <tag k="name:af" v="Kowloon"/>
+  <tag k="name:ar" v="كولون (هونغ كونغ)"/>
+  <tag k="name:arz" v="كولون (تجمع سكان فى هونج كونج)"/>
+  <tag k="name:ast" v="Kowloon"/>
+  <tag k="name:az" v="Koulun"/>
+  <tag k="name:bcl" v="Kowloon"/>
+  <tag k="name:bg" v="Коулун"/>
+  <tag k="name:bn" v="কাউলুন"/>
+  <tag k="name:ca" v="Kowloon"/>
+  <tag k="name:cdo" v="Giū-lṳ̀ng"/>
+  <tag k="name:ceb" v="Kowloon"/>
+  <tag k="name:cmn" v="九龍"/>
+  <tag k="name:cs" v="Kau-lung"/>
+  <tag k="name:da" v="Kowloon"/>
+  <tag k="name:de" v="Kowloon"/>
+  <tag k="name:el" v="Καουλούν"/>
+  <tag k="name:en" v="Kowloon"/>
+  <tag k="name:eo" v="Kaŭluno"/>
+  <tag k="name:es" v="Kowloon"/>
+  <tag k="name:et" v="Kowloon"/>
+  <tag k="name:eu" v="Kowloon"/>
+  <tag k="name:fa" v="کاولون"/>
+  <tag k="name:fi" v="Kowloon"/>
+  <tag k="name:fr" v="Kowloon"/>
+  <tag k="name:hak" v="Kiú-liùng"/>
+  <tag k="name:he" v="קאולון"/>
+  <tag k="name:hr" v="Kowloon"/>
+  <tag k="name:hu" v="Kaulung"/>
+  <tag k="name:hy" v="Կոուլուն"/>
+  <tag k="name:id" v="Kowloon"/>
+  <tag k="name:it" v="Kowloon"/>
+  <tag k="name:ja" v="九龍"/>
+  <tag k="name:ka" v="კოულუნი"/>
+  <tag k="name:ko" v="가우룽"/>
+  <tag k="name:ky" v="Цзюлун"/>
+  <tag k="name:lt" v="Kaulunas"/>
+  <tag k="name:mk" v="Коулун"/>
+  <tag k="name:ms" v="Kowloon"/>
+  <tag k="name:nan" v="Kiú-liông"/>
+  <tag k="name:nan-Hant" v="九龍"/>
+  <tag k="name:nan-Latn-pehoeji" v="Kiú-liông"/>
+  <tag k="name:nan-Latn-tailo" v="Kiú-liông"/>
+  <tag k="name:nl" v="Kowloon"/>
+  <tag k="name:nn" v="Kowloon"/>
+  <tag k="name:no" v="Kowloon"/>
+  <tag k="name:pl" v="Koulun"/>
+  <tag k="name:pt" v="Kowloon"/>
+  <tag k="name:ro" v="Kowloon"/>
+  <tag k="name:ru" v="Цзюлун"/>
+  <tag k="name:sco" v="Kowloon"/>
+  <tag k="name:sr" v="Каулун"/>
+  <tag k="name:sv" v="Kowloon"/>
+  <tag k="name:ta" v="கவுலூன்"/>
+  <tag k="name:th" v="เกาลูน"/>
+  <tag k="name:tr" v="Kowloon"/>
+  <tag k="name:uk" v="Коулун"/>
+  <tag k="name:ur" v="کولون (ہانگ کانگ)"/>
+  <tag k="name:uz" v="Szyulun"/>
+  <tag k="name:vi" v="Cửu Long, Hồng Kông"/>
+  <tag k="name:war" v="Kowloon"/>
+  <tag k="name:wuu" v="九龙"/>
+  <tag k="name:yue" v="九龍"/>
+  <tag k="name:zh" v="九龍"/>
+  <tag k="name:zh-Hans" v="九龙"/>
+  <tag k="name:zh-Hant" v="九龍"/>
+  <tag k="place" v="region"/>
+  <tag k="population" v="2108419"/>
+  <tag k="type" v="boundary"/>
+  <tag k="wikidata" v="Q239143"/>
+  <tag k="wikipedia" v="zh:九龍"/>
+ </relation>
+ <relation id="19705016" visible="true" version="1" changeset="173206092" timestamp="2025-10-13T03:44:46Z" user="Cypp0847" uid="9161716">
+  <member type="way" ref="1068265205" role=""/>
+  <member type="way" ref="1230632519" role=""/>
+  <member type="way" ref="1068558871" role=""/>
+  <member type="way" ref="1441756854" role=""/>
+  <tag k="dog" v="leashed"/>
+  <tag k="name" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="name:en" v="Hong Kong Water Taxi"/>
+  <tag k="name:zh" v="香港水上的士"/>
+  <tag k="name:zh-Hans" v="香港水上的士"/>
+  <tag k="name:zh-Hant" v="香港水上的士"/>
+  <tag k="network" v="香港水上的士 Hong Kong Water Taxi"/>
+  <tag k="network:en" v="Hong Kong Water Taxi"/>
+  <tag k="network:zh" v="香港水上的士"/>
+  <tag k="operation" v="private"/>
+  <tag k="operator" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="operator:en" v="Fortune Ferry Limited"/>
+  <tag k="operator:wikidata" v="Q303135"/>
+  <tag k="operator:zh" v="富裕小輪有限公司"/>
+  <tag k="owner" v="富裕小輪有限公司 Fortune Ferry Limited"/>
+  <tag k="owner:en" v="Fortune Ferry Limited"/>
+  <tag k="ownership" v="private"/>
+  <tag k="owner:wikidata" v="Q303135"/>
+  <tag k="owner:zh" v="富裕小輪有限公司"/>
+  <tag k="passenger" v="urban"/>
+  <tag k="route" v="ferry"/>
+  <tag k="service" v="tourism"/>
+  <tag k="toll" v="yes"/>
+  <tag k="type" v="route"/>
+  <tag k="website" v="https://www.hongkongwatertaxi.com.hk"/>
+ </relation>
+</osm>
