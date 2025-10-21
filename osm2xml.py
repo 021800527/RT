@@ -193,7 +193,7 @@ def process_all_osm_files(
         # === Mitsuba XML 场景文件 ===
         xml_content = f'''<scene version="2.1.0">
 
-<!-- 材质 -->
+<!-- Materials -->
 	<bsdf type="twosided" id="mat-itu_concrete" name="mat-itu_concrete">
 		<bsdf type="diffuse" name="bsdf">
 			<rgb value="0.800000 0.800000 0.800000" name="reflectance"/>
@@ -205,7 +205,7 @@ def process_all_osm_files(
 		</bsdf>
 	</bsdf>
 
-<!-- 几何体 -->
+<!-- Geometry -->
 	<shape type="ply" id="elm__2" name="elm__2">
 		<string name="filename" value="meshes/{ground_filename}"/>
 		<boolean name="face_normals" value="true"/>

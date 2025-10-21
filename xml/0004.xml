@@ -12,7 +12,7 @@
 		</bsdf>
 	</bsdf>
 
-<!-- Shapes -->
+<!-- Geometry -->
 	<shape type="ply" id="elm__2" name="elm__2">
 		<string name="filename" value="meshes/0004_ground.ply"/>
 		<boolean name="face_normals" value="true"/>
