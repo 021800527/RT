@@ -9,10 +9,12 @@ def generate_2d_map(osm_file_path):
     """
     从 .osm 文件生成严格 256x256 像素的二值建筑图（白色建筑，黑色背景）
     假设 .osm 文件覆盖的地理范围正好用于生成 256x256 米区域（1米=1像素）
+    如果无数据，则不生成图像。
     """
-    os.makedirs("./2D", exist_ok=True)
+    output_dir = "./2D"
+    os.makedirs(output_dir, exist_ok=True)
     base_name = os.path.basename(osm_file_path).replace('.osm', '')
-    output_path = f"./2D/{base_name}.png"
+    output_path = f"{output_dir}/{base_name}.png"
 
     # 读取 multipolygons
     try:
@@ -22,9 +24,7 @@ def generate_2d_map(osm_file_path):
         raise e
 
     if gdf.empty:
-        print(f"⚠️ 无数据，生成空白图: {output_path}")
-        blank = np.zeros((256, 256), dtype=np.uint8)
-        plt.imsave(output_path, blank, cmap='gray', vmin=0, vmax=1)
+        print(f"⚠️ {osm_file_path} 中无数据，不生成图像。")
         return
 
     # 获取地理边界
@@ -40,7 +40,8 @@ def generate_2d_map(osm_file_path):
         buildings = gdf
 
     if buildings.empty:
-        img = np.zeros((256, 256), dtype=np.uint8)
+        print(f"⚠️ 没有找到建筑数据，不生成图像: {output_path}")
+        return
     else:
         shapes = [(geom, 1) for geom in buildings.geometry if geom is not None and not geom.is_empty]
         img = rasterize(

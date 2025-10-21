@@ -13,9 +13,9 @@ from download_osm import download_osm_tiles
 # ==============================
 download_osm_tiles(
     min_lat=22.282413,
-    max_lat=22.284642,
+    max_lat=22.294642,
     min_lon=114.158396,
-    max_lon=114.160832,
+    max_lon=114.170832,
     output_dir="./osm",
     tile_size_m=256,
     max_retries=3
@@ -31,7 +31,7 @@ process_all_osm_files(
     default_height=20.0,
     floor_height=3.0,
     ground_margin=10.0,
-    ground_z=-0.1
+    ground_z=0
 )
 
 # ==============================
@@ -54,7 +54,7 @@ else:
 # ==============================
 generate_radio_maps_from_xmls(
     xml_dir="./xml",
-    building_png="./2d/Hongkong.png",
+    png_dir="./2d",
     num_tx=1,
     tx_height=0,
     num_rows=8,

@@ -5,7 +5,6 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 import sionna.rt as rt
 
-
 def get_scene_bounds(scene):
     """获取场景的 3D 边界（min_xyz, max_xyz）"""
     min_coords = np.full(3, np.inf)
@@ -23,12 +22,10 @@ def get_scene_bounds(scene):
 
     return min_coords, max_coords
 
-
 def world_to_pixel(x, y, x_min, x_max, y_min, y_max, img_width, img_height):
     u = ((x - x_min) / (x_max - x_min)) * img_width
     v = ((y - y_min) / (y_max - y_min)) * img_height
     return int(np.clip(u, 0, img_width - 1)), int(np.clip(v, 0, img_height - 1))
-
 
 def is_point_in_building(x, y, x_min, x_max, y_min, y_max, building_mask):
     """
@@ -38,10 +35,9 @@ def is_point_in_building(x, y, x_min, x_max, y_min, y_max, building_mask):
     u, v = world_to_pixel(x, y, x_min, x_max, y_min, y_max, W, H)
     return building_mask[v, u]  # 注意：numpy 图像是 (H, W)，v 是行，u 是列
 
-
 def generate_radio_maps_from_xmls(
     xml_dir="./xml",
-    building_png="./2d/Hongkong.png",
+    png_dir="./2d",
     num_tx=5,
     tx_height=1.5,
     num_rows=8,
@@ -53,13 +49,15 @@ def generate_radio_maps_from_xmls(
     output_dir="./radio_maps",
     overlay_dir="./tx_overlays",
     with_tx_dir="./with_tx",
-    max_retries=100  # 防止无限循环
+    max_retries=100
 ):
     xml_path = Path(xml_dir)
+    png_path = Path(png_dir)
+
     if not xml_path.exists():
         raise FileNotFoundError(f"XML 目录不存在: {xml_dir}")
-    if not Path(building_png).exists():
-        raise FileNotFoundError(f"建筑平面图不存在: {building_png}")
+    if not png_path.exists():
+        raise FileNotFoundError(f"PNG 目录不存在: {png_dir}")
 
     os.makedirs(output_dir, exist_ok=True)
     os.makedirs(overlay_dir, exist_ok=True)
@@ -72,13 +70,14 @@ def generate_radio_maps_from_xmls(
 
     print(f"🔍 找到 {len(xml_files)} 个 XML 场景，开始处理...")
 
-    # 预加载建筑图掩膜（白色=建筑）
-    building_img = Image.open(building_png).convert("L")
-    building_array = np.array(building_img)
-    building_mask = (building_array == 255)  # True 表示是建筑
-
     for xml_file in xml_files:
         try:
+            # ✅ 构造对应的 PNG 路径：./2d/0001.png
+            png_file = png_path / f"{xml_file.stem}.png"
+            if not png_file.exists():
+                print(f"⚠️ 对应 {xml_file.name} 的 PNG 文件不存在: {png_file}")
+                continue
+
             print(f"\n📦 处理场景: {xml_file.name}")
             scene = rt.load_scene(str(xml_file))
             scene.bandwidth = 100e6
@@ -102,6 +101,11 @@ def generate_radio_maps_from_xmls(
 
             print(f"📏 场景边界: x∈[{x_min:.1f}, {x_max:.1f}], y∈[{y_min:.1f}, {y_max:.1f}]")
 
+            # === 加载建筑掩膜 ===
+            building_img = Image.open(png_file).convert("L")
+            building_array = np.array(building_img)
+            building_mask = (building_array == 255)  # 白色=建筑
+
             # === 生成合法 Tx 位置（避开建筑）===
             tx_positions = []
             for i in range(num_tx):
@@ -112,10 +116,9 @@ def generate_radio_maps_from_xmls(
                         tx_positions.append([x, y, tx_height])
                         break
                 else:
-                    # fallback：从非建筑像素中随机选一个
                     non_building_pixels = np.argwhere(~building_mask)
                     if len(non_building_pixels) == 0:
-                        raise RuntimeError("建筑图全为白色，无可用 Tx 位置！")
+                        raise RuntimeError(f"建筑图 {png_file} 全为白色，无可用 Tx 位置！")
                     v, u = non_building_pixels[np.random.randint(len(non_building_pixels))]
                     x = x_min + (u / building_mask.shape[1]) * (x_max - x_min)
                     y = y_min + (v / building_mask.shape[0]) * (y_max - y_min)
@@ -155,7 +158,6 @@ def generate_radio_maps_from_xmls(
                 cell_size=cell_size
             )
             rss_data = rm.rss.numpy()  # (num_tx, H, W)
-            print(rm.rss.shape)
             base_name = xml_file.stem
 
             # 保存无线电地图
@@ -167,10 +169,9 @@ def generate_radio_maps_from_xmls(
             )
             print(f"✅ 无线电地图已保存: {npz_path}")
 
-            # === 生成带红点的 Tx 图（修改部分：建筑变黑，非建筑变白）===
-            building_img_orig = Image.open(building_png).convert("L")
+            # === 生成带红点的 Tx 图（建筑变黑，空地变白）===
+            building_img_orig = Image.open(png_file).convert("L")
             building_array_orig = np.array(building_img_orig)
-            # 反色：建筑（255）→ 0（黑），空地（0）→ 255（白）
             inverted_array = 255 - building_array_orig
             img = Image.fromarray(inverted_array, mode="L").convert("RGB")
             W, H = img.size
@@ -191,10 +192,10 @@ def generate_radio_maps_from_xmls(
             img.save(tx_overlay_path)
             print(f"✅ 带 Tx 红点的图已保存: {tx_overlay_path}")
 
-            # === 生成 RSS 叠加图（调用第一个函数）===
+            # === 生成 RSS 叠加图 ===
             rss_overlay_path = os.path.join(overlay_dir, f"{base_name}_rss_overlay.png")
-            from RSSOverlay import overlay_rss_on_building  # 或直接放在同一文件
-            overlay_rss_on_building(rss_data, building_png, rss_overlay_path)
+            from RSSOverlay import overlay_rss_on_building
+            overlay_rss_on_building(rss_data, str(png_file), rss_overlay_path)
 
         except Exception as e:
             print(f"❌ 处理 {xml_file.name} 时出错: {e}")

@@ -26,7 +26,7 @@ def process_all_osm_files(
         output_meshes_dir (str): 输出 PLY 文件的目录（默认为 "{output_xml_dir}/meshes"）
         default_height (float): 默认建筑高度（米）
         floor_height (float): 每层楼高度（用于 building:levels）
-        ground_margin (float): 地面平面在建筑包围盒基础上外扩的边距（米，默认 20.0）
+        ground_margin (float): 地面平面在建筑包围盒基础上外扩的边距（米，默认 10.0）
         ground_z (float): 地面 Z 坐标（通常略低于 0）
 
     返回:
@@ -51,6 +51,7 @@ def process_all_osm_files(
             return dx, dy
 
     def parse_height(tags):
+        """从 OSM 标签中解析建筑高度"""
         if 'height' in tags:
             try:
                 h = float(tags['height'])
@@ -68,6 +69,7 @@ def process_all_osm_files(
         return default_height
 
     def polygon_to_mesh(vertices_2d, height):
+        """将二维多边形拉伸为三维建筑网格"""
         verts = np.array(vertices_2d)
         if len(verts) < 3:
             return None
@@ -76,19 +78,20 @@ def process_all_osm_files(
         vertices = np.vstack([bottom, top])
         N = len(verts)
         faces = []
-        # Bottom cap
+        # 底面
         for i in range(1, N - 1):
             faces.append([0, i + 1, i])
-        # Top cap
+        # 顶面
         for i in range(1, N - 1):
             faces.append([N, N + i, N + i + 1])
-        # Side walls
+        # 侧面
         for i in range(N):
             j = (i + 1) % N
             faces += [[i, j, N + j], [i, N + j, N + i]]
         return trimesh.Trimesh(vertices=vertices, faces=faces)
 
     class BuildingHandler(osmium.SimpleHandler):
+        """用于提取 OSM 中建筑的处理器"""
         def __init__(self, projector):
             super().__init__()
             self.projector = projector
@@ -108,9 +111,10 @@ def process_all_osm_files(
             self.buildings.append((coords_2d, height))
 
     def process_single_file(input_osm_path):
-        print(f"\n🔧 Processing: {input_osm_path}")
+        print(f"\n🔧 正在处理: {input_osm_path}")
 
         class RefPointFinder(osmium.SimpleHandler):
+            """查找第一个有效节点作为投影原点"""
             def __init__(self):
                 self.lat = None
                 self.lon = None
@@ -124,11 +128,11 @@ def process_all_osm_files(
         try:
             finder.apply_file(input_osm_path, locations=True)
         except Exception as e:
-            print(f"⚠️  Failed to read {input_osm_path}: {e}")
+            print(f"⚠️  读取文件失败 {input_osm_path}: {e}")
             return
 
         if finder.lat is None:
-            print(f"❌ No valid location in {input_osm_path}")
+            print(f"❌ 文件中无有效地理坐标: {input_osm_path}")
             return
 
         projector = LocalProjector(finder.lat, finder.lon)
@@ -136,11 +140,11 @@ def process_all_osm_files(
         try:
             handler.apply_file(input_osm_path, locations=True)
         except Exception as e:
-            print(f"⚠️  Error parsing buildings in {input_osm_path}: {e}")
+            print(f"⚠️  解析建筑数据出错 {input_osm_path}: {e}")
             return
 
         if not handler.buildings:
-            print(f"ℹ️  No buildings found in {input_osm_path}")
+            print(f"ℹ️  未找到任何建筑: {input_osm_path}")
             return
 
         basename = os.path.splitext(os.path.basename(input_osm_path))[0]
@@ -152,7 +156,7 @@ def process_all_osm_files(
         meshes = [polygon_to_mesh(v, h) for v, h in handler.buildings]
         meshes = [m for m in meshes if m is not None]
         if not meshes:
-            print(f"⚠️  No valid meshes from {input_osm_path}")
+            print(f"⚠️  无法生成有效建筑网格: {input_osm_path}")
             return
 
         combined = trimesh.util.concatenate(meshes)
@@ -189,7 +193,7 @@ def process_all_osm_files(
         # === Mitsuba XML 场景文件 ===
         xml_content = f'''<scene version="2.1.0">
 
-<!-- Materials -->
+<!-- 材质 -->
 	<bsdf type="twosided" id="mat-itu_concrete" name="mat-itu_concrete">
 		<bsdf type="diffuse" name="bsdf">
 			<rgb value="0.800000 0.800000 0.800000" name="reflectance"/>
@@ -201,7 +205,7 @@ def process_all_osm_files(
 		</bsdf>
 	</bsdf>
 
-<!-- Shapes -->
+<!-- 几何体 -->
 	<shape type="ply" id="elm__2" name="elm__2">
 		<string name="filename" value="meshes/{ground_filename}"/>
 		<boolean name="face_normals" value="true"/>
@@ -218,19 +222,19 @@ def process_all_osm_files(
         with open(xml_path, 'w') as f:
             f.write(xml_content)
 
-        print(f"✅ Success: {basename}")
-        print(f"   🏢 Buildings: {building_path}")
-        print(f"   🌍 Ground:    {ground_path}")
-        print(f"   📄 Scene XML: {xml_path}")
+        print(f"✅ 处理成功: {basename}")
+        print(f"   🏢 建筑网格: {building_path}")
+        print(f"   🌍 地面网格: {ground_path}")
+        print(f"   📄 场景 XML: {xml_path}")
 
     # === 主流程 ===
     osm_files = glob.glob(os.path.join(osm_dir, "*.osm"))
     if not osm_files:
-        print(f"❌ No .osm files found in {osm_dir}")
+        print(f"❌ 在目录 {osm_dir} 中未找到 .osm 文件")
         return
 
-    print(f"📁 Found {len(osm_files)} .osm files in {osm_dir}")
+    print(f"📁 在 {osm_dir} 中找到 {len(osm_files)} 个 .osm 文件")
     for osm_file in sorted(osm_files):
         process_single_file(osm_file)
 
-    print(f"\n🎉 All done! XMLs in: {output_xml_dir}, Meshes in: {output_meshes_dir}")
+    print(f"\n🎉 全部完成！XML 文件位于: {output_xml_dir}，网格文件位于: {output_meshes_dir}")

@@ -22,7 +22,7 @@ def download_osm_tiles(
         max_lon (float): 最大经度（东边界）
         output_dir (str): 输出目录，默认 "./osm"
         tile_size_m (int): 每个瓦片的边长（米），默认 256
-        max_retries (int): 下载失败时的最大重试次数
+        max_retries (int): 下载失败时的最大重试次数，默认 3
 
     返回:
         int: 成功下载的文件数量
@@ -79,15 +79,15 @@ def download_osm_tiles(
                         success = True
                         break
                     elif resp.status_code == 400:
-                        print(f"❌ BBox too large: {west:.6f},{south:.6f},{east:.6f},{north:.6f}")
+                        print(f"❌ BBox 过大: {west:.6f},{south:.6f},{east:.6f},{north:.6f}")
                         break
                 except Exception as e:
                     if attempt == max_retries - 1:
-                        print(f"⚠️  Tile {tile_count} failed: {e}")
+                        print(f"⚠️ 瓦片 {tile_count} 下载失败: {e}")
                     continue
 
             if success:
                 success_count += 1
 
-    print(f"✅ Downloaded {success_count} / {tile_count} tiles to '{output_dir}'")
+    print(f"✅ 已下载 {success_count} / {tile_count} 个瓦片到 '{output_dir}'")
     return success_count
