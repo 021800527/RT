@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113204 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893121 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="22.2916117" minlon="114.1658521" maxlat="22.2939114" maxlon="114.1683375"/>
  <node id="24355878" visible="true" version="4" changeset="132217210" timestamp="2023-02-07T17:26:38Z" user="samsung galaxy s6" uid="3691120" lat="22.2842865" lon="114.1755856"/>
  <node id="24355880" visible="true" version="4" changeset="132217210" timestamp="2023-02-07T17:26:38Z" user="samsung galaxy s6" uid="3691120" lat="22.2853574" lon="114.1753005"/>
@@ -650,7 +650,7 @@
   <tag k="landform" v="coastline"/>
   <tag k="natural" v="coastline"/>
  </way>
- <way id="1117587185" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587185" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405328"/>
   <nd ref="10221395884"/>
   <tag k="access:backward" v="private"/>
@@ -662,11 +662,12 @@
   <tag k="landing" v="no"/>
   <tag k="level" v="0"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
  </way>
- <way id="1117587186" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587186" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405335"/>
   <nd ref="10221395885"/>
   <tag k="access:backward" v="private"/>
@@ -678,6 +679,7 @@
   <tag k="landing" v="no"/>
   <tag k="level" v="0"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
@@ -709,7 +711,7 @@
   <nd ref="10221395910"/>
   <nd ref="10221395909"/>
  </way>
- <way id="1117587234" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587234" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405326"/>
   <nd ref="10221405337"/>
   <tag k="access:backward" v="private"/>
@@ -723,11 +725,12 @@
   <tag k="incline" v="down"/>
   <tag k="landing" v="no"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
  </way>
- <way id="1117587235" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587235" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405327"/>
   <nd ref="10221405339"/>
   <tag k="access:backward" v="private"/>
@@ -741,11 +744,12 @@
   <tag k="incline" v="down"/>
   <tag k="landing" v="no"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
  </way>
- <way id="1117587236" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587236" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221395884"/>
   <nd ref="10221405325"/>
   <tag k="access:backward" v="private"/>
@@ -755,11 +759,12 @@
   <tag k="indoor" v="yes"/>
   <tag k="level" v="0"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
  </way>
- <way id="1117587237" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587237" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405338"/>
   <nd ref="10221405335"/>
   <tag k="access:backward" v="private"/>
@@ -773,11 +778,12 @@
   <tag k="incline" v="down"/>
   <tag k="landing" v="no"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
  </way>
- <way id="1117587238" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587238" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405336"/>
   <nd ref="10221405328"/>
   <tag k="access:backward" v="private"/>
@@ -791,6 +797,7 @@
   <tag k="incline" v="down"/>
   <tag k="landing" v="no"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
@@ -807,7 +814,7 @@
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
  </way>
- <way id="1117587243" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587243" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405341"/>
   <nd ref="10221405327"/>
   <tag k="access:backward" v="private"/>
@@ -819,6 +826,7 @@
   <tag k="landing" v="no"/>
   <tag k="level" v="0"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
@@ -846,7 +854,7 @@
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
  </way>
- <way id="1117587246" visible="true" version="2" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1117587246" visible="true" version="3" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221405340"/>
   <nd ref="10221405326"/>
   <tag k="access:backward" v="private"/>
@@ -858,6 +866,7 @@
   <tag k="landing" v="no"/>
   <tag k="level" v="0"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
@@ -884,7 +893,7 @@
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>
  </way>
- <way id="1118626540" visible="true" version="1" changeset="129602437" timestamp="2022-12-01T12:41:46Z" user="Kovoschiz" uid="6250193">
+ <way id="1118626540" visible="true" version="2" changeset="173592898" timestamp="2025-10-21T17:00:50Z" user="Kovoschiz" uid="6250193">
   <nd ref="10221395885"/>
   <nd ref="10221405324"/>
   <tag k="access:backward" v="private"/>
@@ -894,6 +903,7 @@
   <tag k="indoor" v="yes"/>
   <tag k="level" v="0"/>
   <tag k="oneway" v="yes"/>
+  <tag k="oneway:foot" v="yes"/>
   <tag k="repeat_on" v="0;1"/>
   <tag k="toll" v="yes"/>
   <tag k="ventilation" v="natural"/>

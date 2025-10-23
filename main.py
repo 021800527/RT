@@ -10,6 +10,9 @@ from download_osm import download_osm_tiles
 # 这里做了个小处理, 为了生成256x256的结果
 # 通过换算，近似截取了实际256mx256m的地形图
 # 再通过sionna的cell(1, 1)感觉还是比较靠谱的
+# 这部分如果是无建筑的地区还会保留
+# 不做删除是感觉用不到
+# 删了可能会出现争用
 # ==============================
 download_osm_tiles(
     min_lat=22.282413,
@@ -23,6 +26,14 @@ download_osm_tiles(
 
 # ==============================
 # 第二部分: 将osm文件转换成xml格式并生成meshs
+# 这里的逻辑是去读取osm文件
+# 取所有建筑的x和y值
+# 取(最大值x+10)和(最大值y+10)作为平面的长和宽
+# 合并所有ply文件
+# 合为两个
+# 一个building
+# 一个plane
+# 设置所有材质为concrete
 # ==============================
 process_all_osm_files(
     osm_dir="./osm",
@@ -36,13 +47,13 @@ process_all_osm_files(
 
 # ==============================
 # 第三部分: 将osm文件转换成2D俯视图
+# 这里做了一点点处理
+# 如果osm空白或者错误直接略过
 # ==============================
 osm_dir = Path("./osm")
-if osm_dir.exists():
-    for osm_file in osm_dir.glob("*.osm"):
-        generate_2d_map(str(osm_file))
-else:
-    print("请创建 ./osm 文件夹并放入 .osm 文件")
+osm_files = list(osm_dir.glob("*.osm")) or (print("请创建 ./osm 文件夹并放入 .osm 文件") or [])
+for osm_file in osm_files:
+    generate_2d_map(str(osm_file))
 
 # ==============================
 # 第四部分: 这部分比较复杂

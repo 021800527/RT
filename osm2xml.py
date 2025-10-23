@@ -5,9 +5,6 @@ import numpy as np
 import trimesh
 
 
-# ----------------------------
-# 核心处理函数（可被外部调用）
-# ----------------------------
 def process_all_osm_files(
         osm_dir="./osm",
         output_xml_dir="./xml",
@@ -214,7 +211,7 @@ def process_all_osm_files(
 	<shape type="ply" id="elm__4" name="elm__4">
 		<string name="filename" value="meshes/{building_filename}"/>
 		<boolean name="face_normals" value="true"/>
-		<ref id="mat-itu_brick" name="bsdf"/>
+		<ref id="mat-itu_concrete" name="bsdf"/>
 	</shape>
 
 </scene>'''

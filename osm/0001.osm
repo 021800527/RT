@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113218 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
- <bounds minlat="22.2824130" minlon="114.1583960" maxlat="22.2846420" maxlon="114.1608320"/>
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893112 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="22.2824130" minlon="114.1583960" maxlat="22.2847127" maxlon="114.1608814"/>
  <node id="166091181" visible="true" version="10" changeset="144277502" timestamp="2023-11-21T08:56:15Z" user="minghong" uid="541214" lat="22.2836050" lon="114.1591342"/>
  <node id="166091256" visible="true" version="8" changeset="119286914" timestamp="2022-04-04T06:06:50Z" user="GasaiYuno" uid="10054182" lat="22.2834452" lon="114.1599687"/>
  <node id="166091396" visible="true" version="10" changeset="144277502" timestamp="2023-11-21T08:56:15Z" user="minghong" uid="541214" lat="22.2832120" lon="114.1598104"/>
@@ -100,6 +100,11 @@
  <node id="598449591" visible="true" version="8" changeset="136777996" timestamp="2023-05-31T08:38:43Z" user="Kovoschiz" uid="6250193" lat="22.2843484" lon="114.1594809"/>
  <node id="598449665" visible="true" version="6" changeset="136777996" timestamp="2023-05-31T08:38:43Z" user="Kovoschiz" uid="6250193" lat="22.2843939" lon="114.1594040"/>
  <node id="598449666" visible="true" version="5" changeset="13040086" timestamp="2012-09-09T03:19:15Z" user="KX675" uid="31685" lat="22.2845595" lon="114.1591280"/>
+ <node id="598449743" visible="true" version="7" changeset="140641952" timestamp="2023-08-31T15:41:38Z" user="HolloWorld" uid="6946532" lat="22.2851751" lon="114.1580531">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="ref" v="H410"/>
+ </node>
  <node id="598450203" visible="true" version="8" changeset="136777996" timestamp="2023-05-31T08:38:43Z" user="Kovoschiz" uid="6250193" lat="22.2835888" lon="114.1609093"/>
  <node id="653109846" visible="true" version="5" changeset="126270915" timestamp="2022-09-16T16:30:19Z" user="Wright One" uid="261189" lat="22.2844215" lon="114.1597146"/>
  <node id="653109847" visible="true" version="11" changeset="136796354" timestamp="2023-05-31T16:08:54Z" user="Kovoschiz" uid="6250193" lat="22.2836211" lon="114.1611301">
@@ -323,6 +328,7 @@
  <node id="1905582239" visible="true" version="3" changeset="125064575" timestamp="2022-08-18T14:15:51Z" user="Wright One" uid="261189" lat="22.2831937" lon="114.1603298"/>
  <node id="1905582240" visible="true" version="5" changeset="145000295" timestamp="2023-12-11T13:43:04Z" user="Wright One" uid="261189" lat="22.2832103" lon="114.1606785"/>
  <node id="1906324661" visible="true" version="1" changeset="13040086" timestamp="2012-09-09T03:19:12Z" user="KX675" uid="31685" lat="22.2847185" lon="114.1585428"/>
+ <node id="1906324690" visible="true" version="2" changeset="21096627" timestamp="2014-03-14T10:10:12Z" user="hlaw" uid="169827" lat="22.2853130" lon="114.1578123"/>
  <node id="1906326460" visible="true" version="3" changeset="144860846" timestamp="2023-12-07T10:14:54Z" user="Kovoschiz" uid="6250193" lat="22.2847049" lon="114.1577018"/>
  <node id="1906326461" visible="true" version="3" changeset="144860846" timestamp="2023-12-07T10:14:54Z" user="Kovoschiz" uid="6250193" lat="22.2845089" lon="114.1579899">
   <tag k="entrance" v="yes"/>
@@ -1071,6 +1077,11 @@
   <tag k="crossing:markings" v="no"/>
   <tag k="highway" v="crossing"/>
  </node>
+ <node id="7159378949" visible="true" version="2" changeset="140641952" timestamp="2023-08-31T15:41:38Z" user="HolloWorld" uid="6946532" lat="22.2851619" lon="114.1580762">
+  <tag k="highway" v="traffic_signals"/>
+  <tag k="ref" v="H410"/>
+  <tag k="traffic_signals" v="signal"/>
+ </node>
  <node id="7175416413" visible="true" version="4" changeset="144277502" timestamp="2023-11-21T08:56:15Z" user="minghong" uid="541214" lat="22.2835136" lon="114.1592915">
   <tag k="access" v="yes"/>
   <tag k="door" v="yes"/>
@@ -1310,10 +1321,15 @@
   <tag k="route_ref" v="22"/>
  </node>
  <node id="8184127150" visible="true" version="3" changeset="149778767" timestamp="2024-04-09T13:56:10Z" user="Wright One" uid="261189" lat="22.2836468" lon="114.1584585"/>
+ <node id="8424412461" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358" lat="22.2846677" lon="114.1594267"/>
  <node id="8424412462" visible="true" version="3" changeset="144860846" timestamp="2023-12-07T10:14:54Z" user="Kovoschiz" uid="6250193" lat="22.2852876" lon="114.1584272">
   <tag k="entrance" v="yes"/>
   <tag k="exit" v="yes"/>
  </node>
+ <node id="8424412464" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358" lat="22.2848744" lon="114.1590668"/>
+ <node id="8424412465" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358" lat="22.2846691" lon="114.1594656"/>
+ <node id="8424412466" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358" lat="22.2846879" lon="114.1594997"/>
+ <node id="8424412467" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358" lat="22.2848961" lon="114.1596262"/>
  <node id="8424412468" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358" lat="22.2851084" lon="114.1577969"/>
  <node id="8424412469" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358" lat="22.2845070" lon="114.1588419"/>
  <node id="8424412470" visible="true" version="4" changeset="164541589" timestamp="2025-04-05T09:05:45Z" user="Kovoschiz" uid="6250193" lat="22.2846412" lon="114.1584882">
@@ -1614,6 +1630,7 @@
   <tag k="entrance" v="service"/>
   <tag k="level" v="0"/>
  </node>
+ <node id="11054129961" visible="true" version="1" changeset="138695659" timestamp="2023-07-19T04:46:42Z" user="Patrickov" uid="178278" lat="22.2848785" lon="114.1596155"/>
  <node id="11159278785" visible="true" version="1" changeset="140641952" timestamp="2023-08-31T15:41:38Z" user="HolloWorld" uid="6946532" lat="22.2845384" lon="114.1594047">
   <tag k="highway" v="traffic_signals"/>
   <tag k="ref" v="H408"/>
@@ -3682,6 +3699,33 @@
   <tag k="building:part" v="yes"/>
   <tag k="height" v="30"/>
  </way>
+ <way id="664250329" visible="true" version="12" changeset="164541589" timestamp="2025-04-05T09:05:45Z" user="Kovoschiz" uid="6250193">
+  <nd ref="6217227849"/>
+  <nd ref="6217227848"/>
+  <nd ref="290058568"/>
+  <nd ref="6217227838"/>
+  <nd ref="6217227837"/>
+  <nd ref="8424412462"/>
+  <nd ref="2991175419"/>
+  <nd ref="5444491703"/>
+  <nd ref="2991175412"/>
+  <nd ref="6217227835"/>
+  <nd ref="12730532641"/>
+  <nd ref="6217227832"/>
+  <nd ref="6217227847"/>
+  <nd ref="6217227846"/>
+  <nd ref="6217227845"/>
+  <nd ref="6217227844"/>
+  <nd ref="11054129944"/>
+  <nd ref="12492686502"/>
+  <nd ref="1616458992"/>
+  <nd ref="7651752638"/>
+  <nd ref="6217227849"/>
+  <tag k="building:levels" v="4"/>
+  <tag k="building:min_level" v="0"/>
+  <tag k="building:part" v="retail"/>
+  <tag k="height" v="30"/>
+ </way>
  <way id="665110070" visible="true" version="4" changeset="129423013" timestamp="2022-11-27T06:07:19Z" user="Kovoschiz" uid="6250193">
   <nd ref="6225398379"/>
   <nd ref="2991175307"/>
@@ -3830,6 +3874,21 @@
   <tag k="name:zh" v="民耀街"/>
   <tag k="oneway" v="yes"/>
   <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="675837675" visible="true" version="8" changeset="157739564" timestamp="2024-10-11T03:43:57Z" user="GasaiYuno" uid="10054182">
+  <nd ref="6329200302"/>
+  <nd ref="7159378949"/>
+  <nd ref="598449743"/>
+  <nd ref="1906324690"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="lanes" v="3"/>
+  <tag k="maxspeed" v="50"/>
+  <tag k="name" v="民祥街 Man Cheung Street"/>
+  <tag k="name:en" v="Man Cheung Street"/>
+  <tag k="name:zh" v="民祥街"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="surface" v="asphalt"/>
+  <tag k="unsigned_ref" v="P2"/>
  </way>
  <way id="675837676" visible="true" version="3" changeset="107273476" timestamp="2021-07-01T17:57:13Z" user="Kovoschiz" uid="6250193">
   <nd ref="8883588835"/>
@@ -4940,6 +4999,20 @@
   <tag k="service" v="driveway"/>
   <tag k="surface" v="asphalt"/>
  </way>
+ <way id="907226871" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358">
+  <nd ref="8424412464"/>
+  <nd ref="8424412461"/>
+  <tag k="covered" v="yes"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="907226872" visible="true" version="2" changeset="138695659" timestamp="2023-07-19T04:46:42Z" user="Patrickov" uid="178278">
+  <nd ref="8424412461"/>
+  <nd ref="8424412465"/>
+  <nd ref="8424412466"/>
+  <nd ref="11054129961"/>
+  <nd ref="8424412467"/>
+  <tag k="highway" v="footway"/>
+ </way>
  <way id="907226873" visible="true" version="1" changeset="99283569" timestamp="2021-02-15T06:21:51Z" user="🗺🗺🗺" uid="8162358">
   <nd ref="8424412486"/>
   <nd ref="8424412468"/>
@@ -5597,6 +5670,10 @@
   <tag k="surface" v="asphalt"/>
   <tag k="unsigned_ref" v="P2"/>
   <tag k="wikidata" v="Q7185311"/>
+ </way>
+ <way id="1177805162" visible="true" version="1" changeset="136777996" timestamp="2023-05-31T08:38:43Z" user="Kovoschiz" uid="6250193">
+  <nd ref="3089139166"/>
+  <nd ref="10941572530"/>
  </way>
  <way id="1177805164" visible="true" version="1" changeset="136777996" timestamp="2023-05-31T08:38:43Z" user="Kovoschiz" uid="6250193">
   <nd ref="10941572540"/>
@@ -17623,6 +17700,13 @@
   <tag k="route" v="bus"/>
   <tag k="type" v="route"/>
   <tag k="via" v="中環 Central"/>
+ </relation>
+ <relation id="3575088" visible="true" version="2" changeset="67994976" timestamp="2019-03-10T17:07:47Z" user="Kovoschiz" uid="6250193">
+  <member type="way" ref="675837675" role="from"/>
+  <member type="way" ref="266108383" role="to"/>
+  <member type="node" ref="1906324690" role="via"/>
+  <tag k="restriction" v="only_straight_on"/>
+  <tag k="type" v="restriction"/>
  </relation>
  <relation id="3593980" visible="true" version="52" changeset="171575585" timestamp="2025-09-07T09:47:03Z" user="Kovoschiz" uid="6250193">
   <member type="node" ref="1812383875" role="platform_entry_only"/>
@@ -60177,7 +60261,7 @@
   <tag k="type" v="route_master"/>
   <tag k="wheelchair" v="no"/>
  </relation>
- <relation id="12011987" visible="true" version="28" changeset="173320545" timestamp="2025-10-15T13:22:35Z" user="vectorial8192" uid="10815817">
+ <relation id="12011987" visible="true" version="29" changeset="173585807" timestamp="2025-10-21T14:29:48Z" user="vectorial8192" uid="10815817">
   <member type="node" ref="12860310019" role="stop_entry_only"/>
   <member type="node" ref="11377943972" role="platform_entry_only"/>
   <member type="node" ref="4355348431" role="stop_entry_only"/>
@@ -60418,6 +60502,7 @@
   <member type="way" ref="1257198283" role=""/>
   <member type="way" ref="1257221907" role=""/>
   <member type="way" ref="170904341" role=""/>
+  <member type="way" ref="1443720909" role=""/>
   <member type="way" ref="170904309" role=""/>
   <member type="way" ref="522298980" role=""/>
   <member type="way" ref="263967591" role=""/>
@@ -63100,7 +63185,7 @@
   <tag k="to:zh" v="天后站"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="16756930" visible="true" version="22" changeset="173320545" timestamp="2025-10-15T13:22:35Z" user="vectorial8192" uid="10815817">
+ <relation id="16756930" visible="true" version="23" changeset="173585807" timestamp="2025-10-21T14:29:48Z" user="vectorial8192" uid="10815817">
   <member type="node" ref="12860310019" role="stop_entry_only"/>
   <member type="node" ref="11377943972" role="platform_entry_only"/>
   <member type="node" ref="4355348431" role="stop_entry_only"/>
@@ -63323,6 +63408,7 @@
   <member type="way" ref="1257198283" role=""/>
   <member type="way" ref="1257221907" role=""/>
   <member type="way" ref="170904341" role=""/>
+  <member type="way" ref="1443720909" role=""/>
   <member type="way" ref="170904309" role=""/>
   <member type="way" ref="522298980" role=""/>
   <member type="way" ref="263967591" role=""/>
@@ -68266,7 +68352,7 @@
   <tag k="wikidata" v="Q10929868"/>
   <tag k="wikipedia" v="zh:城巴E11線"/>
  </relation>
- <relation id="19188870" visible="true" version="10" changeset="173320545" timestamp="2025-10-15T13:22:35Z" user="vectorial8192" uid="10815817">
+ <relation id="19188870" visible="true" version="11" changeset="173585807" timestamp="2025-10-21T14:29:48Z" user="vectorial8192" uid="10815817">
   <member type="node" ref="12872716395" role="stop_entry_only"/>
   <member type="node" ref="12872716397" role="platform_entry_only"/>
   <member type="node" ref="6018824250" role="stop"/>
@@ -68338,6 +68424,7 @@
   <member type="way" ref="638659370" role=""/>
   <member type="way" ref="241775460" role=""/>
   <member type="way" ref="921232286" role=""/>
+  <member type="way" ref="1443720910" role=""/>
   <member type="way" ref="702606474" role=""/>
   <member type="way" ref="170904312" role=""/>
   <member type="way" ref="763943092" role=""/>
@@ -68362,6 +68449,7 @@
   <member type="way" ref="1257198283" role=""/>
   <member type="way" ref="1257221907" role=""/>
   <member type="way" ref="170904341" role=""/>
+  <member type="way" ref="1443720909" role=""/>
   <member type="way" ref="170904309" role=""/>
   <member type="way" ref="522298980" role=""/>
   <member type="way" ref="263967591" role=""/>
