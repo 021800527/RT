@@ -2,7 +2,7 @@ from pathlib import Path
 from osmto2d import generate_2d_map
 from RT import generate_radio_maps_from_xmls
 from osm2xml import process_all_osm_files
-from download_osm import download_osm_tiles
+from download_osm import download_osm_tiles, filter_and_renumber_osm_files
 
 
 # ==============================
@@ -23,6 +23,7 @@ download_osm_tiles(
     tile_size_m=256,
     max_retries=3
 )
+filter_and_renumber_osm_files("./osm")
 
 # ==============================
 # 第二部分: 将osm文件转换成xml格式并生成meshs
@@ -41,7 +42,7 @@ process_all_osm_files(
     output_meshes_dir=None,
     default_height=20.0,
     floor_height=3.0,
-    ground_margin=10.0,
+    ground_margin=0.0,
     ground_z=0
 )
 
@@ -55,6 +56,7 @@ osm_files = list(osm_dir.glob("*.osm")) or (print("请创建 ./osm 文件夹并�
 for osm_file in osm_files:
     generate_2d_map(str(osm_file))
 
+
 # ==============================
 # 第四部分: 这部分比较复杂
 # 主要做了三件事情
@@ -66,14 +68,14 @@ for osm_file in osm_files:
 generate_radio_maps_from_xmls(
     xml_dir="./xml",
     png_dir="./2d",
-    num_tx=1,
+    num_tx=3,
     tx_height=0,
     num_rows=8,
     num_cols=2,
     power_dbm=23,
     max_depth=5,
-    samples_per_tx=30**6,
-    cell_size=(0.5, 0.5),
+    samples_per_tx=20**6,
+    cell_size=(1, 1),
     output_dir="./radio_maps",
     overlay_dir="./tx_overlays",
     with_tx_dir="./with_tx"

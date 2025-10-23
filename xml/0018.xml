@@ -1,0 +1,27 @@
+<scene version="2.1.0">
+
+<!-- Materials -->
+	<bsdf type="twosided" id="mat-itu_concrete" name="mat-itu_concrete">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.800000 0.800000 0.800000" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+	<bsdf type="twosided" id="mat-itu_brick" name="mat-itu_brick">
+		<bsdf type="diffuse" name="bsdf">
+			<rgb value="0.073800 0.073800 0.073800" name="reflectance"/>
+		</bsdf>
+	</bsdf>
+
+<!-- Geometry -->
+	<shape type="ply" id="elm__2" name="elm__2">
+		<string name="filename" value="meshes/0018_ground.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="elm__4" name="elm__4">
+		<string name="filename" value="meshes/0018_buildings.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_concrete" name="bsdf"/>
+	</shape>
+
+</scene>
