@@ -5,7 +5,7 @@ def initialize_directories():
     """
     初始化工作目录结构。
     检查并清理或创建以下子目录：
-        ./2d, ./osm, ./radio_maps, ./tx_overlay, ./with_tx, ./xml, ./xml/meshes
+    ./2d, ./osm, ./radio_maps, ./tx_overlay, ./with_tx, ./xml, ./xml/meshes
     若目录存在，则清空其内容（保留目录本身）；
     若不存在，则递归创建。
     """

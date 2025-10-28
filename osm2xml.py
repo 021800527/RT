@@ -13,7 +13,7 @@ def process_all_osm_files(
         default_height=20.0,
         floor_height=3.0,
         ground_z=-0.1,
-        map_size=256.0  # 新增参数：地图物理尺寸（米），默认 256x256 米
+        map_size=256.0
 ):
     """
     批量处理指定目录下所有 .osm 文件，生成建筑网格、地面和 Mitsuba XML 场景。
@@ -126,11 +126,11 @@ def process_all_osm_files(
         try:
             finder.apply_file(input_osm_path, locations=True)
         except Exception as e:
-            print(f"⚠️ 读取文件失败 {input_osm_path}: {e}")
+            print(f"读取文件失败 {input_osm_path}: {e}")
             return
 
         if finder.lat is None:
-            print(f"❌ 文件中无有效地理坐标: {input_osm_path}")
+            print(f"文件中无有效地理坐标: {input_osm_path}")
             return
 
         projector = LocalProjector(finder.lat, finder.lon)
@@ -138,11 +138,11 @@ def process_all_osm_files(
         try:
             handler.apply_file(input_osm_path, locations=True)
         except Exception as e:
-            print(f"⚠️ 解析建筑数据出错 {input_osm_path}: {e}")
+            print(f"解析建筑数据出错 {input_osm_path}: {e}")
             return
 
         if not handler.buildings:
-            print(f"ℹ️ 未找到任何建筑: {input_osm_path}")
+            print(f"未找到任何建筑: {input_osm_path}")
             return
 
         basename = os.path.splitext(os.path.basename(input_osm_path))[0]
@@ -168,7 +168,7 @@ def process_all_osm_files(
             try:
                 poly = Polygon(verts)
                 if not poly.is_valid:
-                    poly = poly.buffer(0)  # 尝试修复
+                    poly = poly.buffer(0)
                 if poly.is_empty:
                     continue
 
@@ -187,18 +187,18 @@ def process_all_osm_files(
                             if len(coords) >= 3:
                                 clipped_buildings.append((coords, height))
             except Exception as e:
-                print(f"⚠️ 裁剪建筑时出错: {e}")
+                print(f"裁剪建筑时出错: {e}")
                 continue
 
         if not clipped_buildings:
-            print(f"⚠️ 裁剪后无有效建筑: {input_osm_path}")
+            print(f"裁剪后无有效建筑: {input_osm_path}")
             return
 
         # === 生成 3D 网格（仅裁剪后部分）===
         meshes = [polygon_to_mesh(v, h) for v, h in clipped_buildings]
         meshes = [m for m in meshes if m is not None]
         if not meshes:
-            print(f"⚠️ 无法生成有效建筑网格: {input_osm_path}")
+            print(f"无法生成有效建筑网格: {input_osm_path}")
             return
 
         combined = trimesh.util.concatenate(meshes)
@@ -249,19 +249,19 @@ def process_all_osm_files(
         with open(xml_path, 'w') as f:
             f.write(xml_content)
 
-        print(f"✅ 处理成功: {basename}")
-        print(f"   🏢 建筑网格: {building_path}")
-        print(f"   🌍 地面网格: {ground_path}")
-        print(f"   📄 场景 XML: {xml_path}")
+        print(f"处理成功: {basename}")
+        print(f"建筑网格: {building_path}")
+        print(f"地面网格: {ground_path}")
+        print(f"场景 XML: {xml_path}")
 
     # === 主流程 ===
     osm_files = glob.glob(os.path.join(osm_dir, "*.osm"))
     if not osm_files:
-        print(f"❌ 在目录 {osm_dir} 中未找到 .osm 文件")
+        print(f"在目录 {osm_dir} 中未找到 .osm 文件")
         return
 
-    print(f"📁 在 {osm_dir} 中找到 {len(osm_files)} 个 .osm 文件")
+    print(f"在 {osm_dir} 中找到 {len(osm_files)} 个 .osm 文件")
     for osm_file in sorted(osm_files):
         process_single_file(osm_file)
 
-    print(f"\n🎉 全部完成！XML 文件位于: {output_xml_dir}，网格文件位于: {output_meshes_dir}")
+    print(f"\n全部完成！XML 文件位于: {output_xml_dir}，网格文件位于: {output_meshes_dir}")

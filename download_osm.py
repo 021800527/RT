@@ -56,7 +56,7 @@ def download_osm_tiles(
             if north <= south or east <= west:
                 continue
 
-            # 👇 关键修改：先命名 0000.osm，再递增
+            # 先命名 0000.osm，再递增
             filename = os.path.join(output_dir, f"{tile_count:04d}.osm")
             tile_count += 1
 
@@ -76,17 +76,17 @@ def download_osm_tiles(
                         success = True
                         break
                     elif resp.status_code == 400:
-                        print(f"❌ BBox 过大: {west:.6f},{south:.6f},{east:.6f},{north:.6f}")
+                        print(f" BBox 过大: {west:.6f},{south:.6f},{east:.6f},{north:.6f}")
                         break
                 except Exception as e:
                     if attempt == max_retries - 1:
-                        print(f"⚠️ 瓦片 {tile_count - 1} 下载失败: {e}")
+                        print(f"️ 瓦片 {tile_count - 1} 下载失败: {e}")
                     continue
 
             if success:
                 success_count += 1
 
-    print(f"✅ 已下载 {success_count} / {tile_count} 个瓦片到 '{output_dir}'")
+    print(f" 已下载 {success_count} / {tile_count} 个瓦片到 '{output_dir}'")
     return success_count
 
 
@@ -100,7 +100,7 @@ def filter_and_renumber_osm_files(osm_dir="./osm"):
     """
     osm_path = Path(osm_dir)
     if not osm_path.exists():
-        print("❌ osm 目录不存在")
+        print("osm 目录不存在")
         return 0
 
     # 获取所有 .osm 文件，按数字排序
@@ -119,27 +119,27 @@ def filter_and_renumber_osm_files(osm_dir="./osm"):
         try:
             # 快速跳过太小的文件（<1KB）
             if f.stat().st_size < 1024:
-                print(f"🗑️  {f.name} 文件太小 (<1KB)，删除")
+                print(f"{f.name} 文件太小 (<1KB)，删除")
                 f.unlink()
                 continue
 
             # 尝试读取 multipolygons 图层（最多读 20 行加速）
             gdf = gpd.read_file(str(f), layer='multipolygons', rows=20)
             if gdf.empty:
-                print(f"🗑️  {f.name} 无 multipolygons 数据，删除")
+                print(f"{f.name} 无 multipolygons 数据，删除")
                 f.unlink()
                 continue
 
             # 检查是否有 building 标签且非空
             if 'building' not in gdf.columns or gdf['building'].isnull().all():
-                print(f"🗑️  {f.name} 无有效建筑标签，删除")
+                print(f"{f.name} 无有效建筑标签，删除")
                 f.unlink()
                 continue
 
             valid_files.append(f)
 
         except Exception as e:
-            print(f"🗑️  {f.name} 读取失败或无效，删除: {e}")
+            print(f"{f.name} 读取失败或无效，删除: {e}")
             f.unlink()
 
     # 重命名有效文件为 0000.osm, 0001.osm, ...
@@ -149,7 +149,7 @@ def filter_and_renumber_osm_files(osm_dir="./osm"):
     for idx, f in enumerate(valid_files):
         new_name = temp_dir / f"{idx:04d}.osm"
         shutil.move(str(f), str(new_name))
-        print(f"✅ 保留并重命名: {f.name} → {new_name.name}")
+        print(f"保留并重命名: {f.name} → {new_name.name}")
 
     # 清空原目录中的 .osm 文件
     for f in osm_path.glob("*.osm"):
@@ -162,5 +162,5 @@ def filter_and_renumber_osm_files(osm_dir="./osm"):
 
     temp_dir.rmdir()
 
-    print(f"🎯 共保留 {len(valid_files)} 个有效 OSM 文件，已重命名为 0000.osm ~ {len(valid_files)-1:04d}.osm")
+    print(f"共保留 {len(valid_files)} 个有效 OSM 文件，已重命名为 0000.osm ~ {len(valid_files)-1:04d}.osm")
     return len(valid_files)

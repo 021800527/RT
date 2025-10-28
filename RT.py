@@ -50,7 +50,7 @@ def generate_radio_maps_from_xmls(
     overlay_dir="./tx_overlays",
     with_tx_dir="./with_tx",
     max_retries=100,
-    map_size=256  # 新增参数：地图大小（像素），同时也是物理尺寸（米）
+    map_size=256
 ):
     xml_path = Path(xml_dir)
     png_path = Path(png_dir)
@@ -66,19 +66,19 @@ def generate_radio_maps_from_xmls(
 
     xml_files = list(xml_path.glob("*.xml"))
     if not xml_files:
-        print(f"⚠️ {xml_dir} 中没有 .xml 文件")
+        print(f"{xml_dir} 中没有 .xml 文件")
         return
 
-    print(f"🔍 找到 {len(xml_files)} 个 XML 场景，开始处理...")
+    print(f"找到 {len(xml_files)} 个 XML 场景，开始处理...")
 
     for xml_file in xml_files:
         try:
             png_file = png_path / f"{xml_file.stem}.png"
             if not png_file.exists():
-                print(f"⚠️ 对应 {xml_file.name} 的 PNG 文件不存在: {png_file}")
+                print(f"对应 {xml_file.name} 的 PNG 文件不存在: {png_file}")
                 continue
 
-            print(f"\n📦 处理场景: {xml_file.name}")
+            print(f"\n处理场景: {xml_file.name}")
             scene = rt.load_scene(str(xml_file))
             scene.bandwidth = 100e6
 
@@ -123,7 +123,7 @@ def generate_radio_maps_from_xmls(
                     x = x_min + (u / building_mask.shape[1]) * (x_max - x_min)
                     y = y_min + (v / building_mask.shape[0]) * (y_max - y_min)
                     tx_positions.append([x, y, tx_height])
-                    print(f"⚠️ Tx {i} 使用 fallback 位置")
+                    print(f"Tx {i} 使用 fallback 位置")
 
             tx_xs = np.array([p[0] for p in tx_positions])
             tx_ys = np.array([p[1] for p in tx_positions])
@@ -146,7 +146,7 @@ def generate_radio_maps_from_xmls(
                     power_dbm=power_dbm
                 ))
 
-            print("📡 开始射线追踪...")
+            print("开始射线追踪...")
             rm_solver = rt.RadioMapSolver()
             rm = rm_solver(
                 scene,
@@ -163,7 +163,7 @@ def generate_radio_maps_from_xmls(
                 rss=rss_data,
                 tx_positions=np.stack([tx_xs, tx_ys, tx_zs], axis=1)
             )
-            print(f"✅ 无线电地图已保存: {npz_path}")
+            print(f"无线电地图已保存: {npz_path}")
 
             building_img_orig = Image.open(png_file).convert("L")
             building_array_orig = np.array(building_img_orig)
@@ -184,12 +184,12 @@ def generate_radio_maps_from_xmls(
                 )
             tx_overlay_path = os.path.join(with_tx_dir, f"{base_name}_with_tx.png")
             img.save(tx_overlay_path)
-            print(f"✅ 带 Tx 红点的图已保存: {tx_overlay_path}")
+            print(f"带 Tx 红点的图已保存: {tx_overlay_path}")
 
             rss_overlay_path = os.path.join(overlay_dir, f"{base_name}_rss_overlay.png")
             from RSSOverlay import overlay_rss_on_building
             overlay_rss_on_building(rss_data, str(png_file), rss_overlay_path, map_size)
 
         except Exception as e:
-            print(f"❌ 处理 {xml_file.name} 时出错: {e}")
+            print(f"处理 {xml_file.name} 时出错: {e}")
             traceback.print_exc()
