@@ -1,8 +1,18 @@
+from dirs2manage import initialize_directories
 from pathlib import Path
 from osmto2d import generate_2d_map
 from RT import generate_radio_maps_from_xmls
 from osm2xml import process_all_osm_files
 from download_osm import download_osm_tiles, filter_and_renumber_osm_files
+
+
+# ==============================
+# 第0部分: 初始化工作目录结构
+# 检查并清理或创建所需子目录：
+# ./2d, ./osm, ./radio_maps, ./tx_overlay, ./with_tx, ./xml, ./xml/meshes
+# 若目录存在则清空内容，若不存在则创建
+# ==============================
+initialize_directories()
 
 
 # ==============================
@@ -29,7 +39,7 @@ filter_and_renumber_osm_files("./osm")
 # 第二部分: 将osm文件转换成xml格式并生成meshs
 # 这里的逻辑是去读取osm文件
 # 取所有建筑的x和y值
-# 取(最大值x+10)和(最大值y+10)作为平面的长和宽
+# 取256作为平面的长和宽
 # 合并所有ply文件
 # 合为两个
 # 一个building
@@ -42,7 +52,7 @@ process_all_osm_files(
     output_meshes_dir=None,
     default_height=20.0,
     floor_height=3.0,
-    ground_margin=0.0,
+    map_size=256.0,
     ground_z=0
 )
 
@@ -54,7 +64,9 @@ process_all_osm_files(
 osm_dir = Path("./osm")
 osm_files = list(osm_dir.glob("*.osm")) or (print("请创建 ./osm 文件夹并放入 .osm 文件") or [])
 for osm_file in osm_files:
-    generate_2d_map(str(osm_file))
+    generate_2d_map(str(osm_file),
+                    map_size = 256.0
+                    )
 
 
 # ==============================
@@ -68,15 +80,16 @@ for osm_file in osm_files:
 generate_radio_maps_from_xmls(
     xml_dir="./xml",
     png_dir="./2d",
-    num_tx=3,
+    num_tx=1,
     tx_height=0,
     num_rows=8,
     num_cols=2,
     power_dbm=23,
-    max_depth=5,
-    samples_per_tx=20**6,
+    max_depth=8,
+    samples_per_tx=25**6,
     cell_size=(1, 1),
     output_dir="./radio_maps",
     overlay_dir="./tx_overlays",
-    with_tx_dir="./with_tx"
+    with_tx_dir="./with_tx",
+    map_size=256
 )

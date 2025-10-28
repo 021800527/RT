@@ -3,6 +3,7 @@ import glob
 import osmium
 import numpy as np
 import trimesh
+from shapely.geometry import Polygon, box
 
 
 def process_all_osm_files(
@@ -11,11 +12,12 @@ def process_all_osm_files(
         output_meshes_dir=None,
         default_height=20.0,
         floor_height=3.0,
-        ground_margin=10.0,
-        ground_z=-0.1
+        ground_z=-0.1,
+        map_size=256.0  # 新增参数：地图物理尺寸（米），默认 256x256 米
 ):
     """
     批量处理指定目录下所有 .osm 文件，生成建筑网格、地面和 Mitsuba XML 场景。
+    所有建筑在平移后会被裁剪到 [0, map_size] × [0, map_size] 米范围内。
 
     参数:
         osm_dir (str): 包含 .osm 文件的目录路径（默认 "./osm"）
@@ -23,8 +25,9 @@ def process_all_osm_files(
         output_meshes_dir (str): 输出 PLY 文件的目录（默认为 "{output_xml_dir}/meshes"）
         default_height (float): 默认建筑高度（米）
         floor_height (float): 每层楼高度（用于 building:levels）
-        ground_margin (float): 地面平面在建筑包围盒基础上外扩的边距（米，默认 10.0）
+        ground_margin (float): 【保留但不再使用】
         ground_z (float): 地面 Z 坐标（通常略低于 0）
+        map_size (float): 场景物理尺寸（米），正方形区域 [0, map_size] × [0, map_size]
 
     返回:
         None
@@ -35,7 +38,7 @@ def process_all_osm_files(
     os.makedirs(output_xml_dir, exist_ok=True)
     os.makedirs(output_meshes_dir, exist_ok=True)
 
-    # 投影类（局部定义，避免污染全局）
+    # 投影类
     class LocalProjector:
         def __init__(self, origin_lat, origin_lon):
             self.origin_lat = origin_lat
@@ -75,10 +78,10 @@ def process_all_osm_files(
         vertices = np.vstack([bottom, top])
         N = len(verts)
         faces = []
-        # 底面
+        # 底面（逆时针）
         for i in range(1, N - 1):
             faces.append([0, i + 1, i])
-        # 顶面
+        # 顶面（顺时针以保持法向朝上）
         for i in range(1, N - 1):
             faces.append([N, N + i, N + i + 1])
         # 侧面
@@ -88,7 +91,6 @@ def process_all_osm_files(
         return trimesh.Trimesh(vertices=vertices, faces=faces)
 
     class BuildingHandler(osmium.SimpleHandler):
-        """用于提取 OSM 中建筑的处理器"""
         def __init__(self, projector):
             super().__init__()
             self.projector = projector
@@ -111,7 +113,6 @@ def process_all_osm_files(
         print(f"\n🔧 正在处理: {input_osm_path}")
 
         class RefPointFinder(osmium.SimpleHandler):
-            """查找第一个有效节点作为投影原点"""
             def __init__(self):
                 self.lat = None
                 self.lon = None
@@ -125,7 +126,7 @@ def process_all_osm_files(
         try:
             finder.apply_file(input_osm_path, locations=True)
         except Exception as e:
-            print(f"⚠️  读取文件失败 {input_osm_path}: {e}")
+            print(f"⚠️ 读取文件失败 {input_osm_path}: {e}")
             return
 
         if finder.lat is None:
@@ -137,11 +138,11 @@ def process_all_osm_files(
         try:
             handler.apply_file(input_osm_path, locations=True)
         except Exception as e:
-            print(f"⚠️  解析建筑数据出错 {input_osm_path}: {e}")
+            print(f"⚠️ 解析建筑数据出错 {input_osm_path}: {e}")
             return
 
         if not handler.buildings:
-            print(f"ℹ️  未找到任何建筑: {input_osm_path}")
+            print(f"ℹ️ 未找到任何建筑: {input_osm_path}")
             return
 
         basename = os.path.splitext(os.path.basename(input_osm_path))[0]
@@ -149,38 +150,67 @@ def process_all_osm_files(
         ground_filename = f"{basename}_ground.ply"
         xml_filename = f"{basename}.xml"
 
-        # === 建筑网格 ===
-        meshes = [polygon_to_mesh(v, h) for v, h in handler.buildings]
+        # === 平移：使最左下角为 (0, 0) ===
+        all_x = [x for verts, _ in handler.buildings for x, _ in verts]
+        all_y = [y for verts, _ in handler.buildings for _, y in verts]
+        x_min, y_min = min(all_x), min(all_y)
+
+        translated_buildings = []
+        for verts, height in handler.buildings:
+            translated_verts = [(x - x_min, y - y_min) for x, y in verts]
+            translated_buildings.append((translated_verts, height))
+
+        # === 裁剪到 [0, map_size] × [0, map_size] 米 ===
+        clip_window = box(0.0, 0.0, map_size, map_size)
+        clipped_buildings = []
+
+        for verts, height in translated_buildings:
+            try:
+                poly = Polygon(verts)
+                if not poly.is_valid:
+                    poly = poly.buffer(0)  # 尝试修复
+                if poly.is_empty:
+                    continue
+
+                clipped = poly.intersection(clip_window)
+                if clipped.is_empty:
+                    continue
+
+                if clipped.geom_type == 'Polygon':
+                    coords = list(clipped.exterior.coords)[:-1]
+                    if len(coords) >= 3:
+                        clipped_buildings.append((coords, height))
+                elif clipped.geom_type == 'MultiPolygon':
+                    for part in clipped.geoms:
+                        if not part.is_empty and part.geom_type == 'Polygon':
+                            coords = list(part.exterior.coords)[:-1]
+                            if len(coords) >= 3:
+                                clipped_buildings.append((coords, height))
+            except Exception as e:
+                print(f"⚠️ 裁剪建筑时出错: {e}")
+                continue
+
+        if not clipped_buildings:
+            print(f"⚠️ 裁剪后无有效建筑: {input_osm_path}")
+            return
+
+        # === 生成 3D 网格（仅裁剪后部分）===
+        meshes = [polygon_to_mesh(v, h) for v, h in clipped_buildings]
         meshes = [m for m in meshes if m is not None]
         if not meshes:
-            print(f"⚠️  无法生成有效建筑网格: {input_osm_path}")
+            print(f"⚠️ 无法生成有效建筑网格: {input_osm_path}")
             return
 
         combined = trimesh.util.concatenate(meshes)
         building_path = os.path.join(output_meshes_dir, building_filename)
         combined.export(building_path)
 
-        # === 地面网格：自动适配建筑范围 + 外扩 margin ===
-        all_x = [x for verts, _ in handler.buildings for x, _ in verts]
-        all_y = [y for verts, _ in handler.buildings for _, y in verts]
-
-        min_x, max_x = min(all_x), max(all_x)
-        min_y, max_y = min(all_y), max(all_y)
-
-        # 外扩边距（单位：米）
-        margin = ground_margin
-
-        min_x -= margin
-        max_x += margin
-        min_y -= margin
-        max_y += margin
-
-        # 构建地面四顶点（逆时针，确保法向朝上）
+        # === 固定地面：map_size × map_size 米 ===
         plane_verts = np.array([
-            [min_x, min_y, ground_z],
-            [max_x, min_y, ground_z],
-            [max_x, max_y, ground_z],
-            [min_x, max_y, ground_z]
+            [0.0,       0.0,       ground_z],
+            [map_size,  0.0,       ground_z],
+            [map_size,  map_size,  ground_z],
+            [0.0,       map_size,  ground_z]
         ])
         plane_faces = [[0, 1, 2], [0, 2, 3]]
         plane_mesh = trimesh.Trimesh(vertices=plane_verts, faces=plane_faces)

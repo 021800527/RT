@@ -22,17 +22,17 @@ def get_scene_bounds(scene):
 
     return min_coords, max_coords
 
-def world_to_pixel(x, y, x_min, x_max, y_min, y_max, img_width, img_height):
-    u = ((x - x_min) / (x_max - x_min)) * img_width
-    v = ((y - y_min) / (y_max - y_min)) * img_height
-    return int(np.clip(u, 0, img_width - 1)), int(np.clip(v, 0, img_height - 1))
+def world_to_pixel(x, y, x_min, x_max, y_min, y_max, map_size=256):
+    u = ((x - x_min) / (x_max - x_min)) * map_size
+    v = ((y - y_min) / (y_max - y_min)) * map_size
+    return int(np.clip(u, 0, map_size - 1)), int(np.clip(v, 0, map_size - 1))
 
-def is_point_in_building(x, y, x_min, x_max, y_min, y_max, building_mask):
+def is_point_in_building(x, y, x_min, x_max, y_min, y_max, building_mask, map_size=256):
     """
     判断世界坐标 (x, y) 是否落在建筑区域内（即对应像素是否为白色）
     """
     H, W = building_mask.shape
-    u, v = world_to_pixel(x, y, x_min, x_max, y_min, y_max, W, H)
+    u, v = world_to_pixel(x, y, x_min, x_max, y_min, y_max, map_size=map_size)
     return building_mask[v, u]  # 注意：numpy 图像是 (H, W)，v 是行，u 是列
 
 def generate_radio_maps_from_xmls(
@@ -49,7 +49,8 @@ def generate_radio_maps_from_xmls(
     output_dir="./radio_maps",
     overlay_dir="./tx_overlays",
     with_tx_dir="./with_tx",
-    max_retries=100
+    max_retries=100,
+    map_size=256  # 新增参数：地图大小（像素），同时也是物理尺寸（米）
 ):
     xml_path = Path(xml_dir)
     png_path = Path(png_dir)
@@ -72,7 +73,6 @@ def generate_radio_maps_from_xmls(
 
     for xml_file in xml_files:
         try:
-            # ✅ 构造对应的 PNG 路径：./2d/0001.png
             png_file = png_path / f"{xml_file.stem}.png"
             if not png_file.exists():
                 print(f"⚠️ 对应 {xml_file.name} 的 PNG 文件不存在: {png_file}")
@@ -101,18 +101,18 @@ def generate_radio_maps_from_xmls(
 
             print(f"📏 场景边界: x∈[{x_min:.1f}, {x_max:.1f}], y∈[{y_min:.1f}, {y_max:.1f}]")
 
-            # === 加载建筑掩膜 ===
             building_img = Image.open(png_file).convert("L")
             building_array = np.array(building_img)
+            if building_array.shape != (map_size, map_size):
+                raise ValueError(f"PNG {png_file} 尺寸应为 ({map_size}, {map_size})，但实际为 {building_array.shape}")
             building_mask = (building_array == 255)  # 白色=建筑
 
-            # === 生成合法 Tx 位置（避开建筑）===
             tx_positions = []
             for i in range(num_tx):
                 for attempt in range(max_retries):
                     x = np.random.uniform(x_min, x_max)
                     y = np.random.uniform(y_min, y_max)
-                    if not is_point_in_building(x, y, x_min, x_max, y_min, y_max, building_mask):
+                    if not is_point_in_building(x, y, x_min, x_max, y_min, y_max, building_mask, map_size=map_size):
                         tx_positions.append([x, y, tx_height])
                         break
                 else:
@@ -133,11 +133,9 @@ def generate_radio_maps_from_xmls(
             center_y = float((y_min + y_max) / 2)
             center_z = 0.0
 
-            # 清除旧 Tx
             for name in list(scene.transmitters.keys()):
                 scene.remove(name)
 
-            # 添加新 Tx
             for i in range(num_tx):
                 position = [float(tx_xs[i]), float(tx_ys[i]), float(tx_zs[i])]
                 look_at = [center_x, center_y, center_z]
@@ -148,7 +146,6 @@ def generate_radio_maps_from_xmls(
                     power_dbm=power_dbm
                 ))
 
-            # === 射线追踪 ===
             print("📡 开始射线追踪...")
             rm_solver = rt.RadioMapSolver()
             rm = rm_solver(
@@ -157,10 +154,9 @@ def generate_radio_maps_from_xmls(
                 samples_per_tx=samples_per_tx,
                 cell_size=cell_size
             )
-            rss_data = rm.rss.numpy()  # (num_tx, H, W)
+            rss_data = rm.rss.numpy()
             base_name = xml_file.stem
 
-            # 保存无线电地图
             npz_path = os.path.join(output_dir, f"{base_name}_radio_map.npz")
             np.savez_compressed(
                 npz_path,
@@ -169,18 +165,16 @@ def generate_radio_maps_from_xmls(
             )
             print(f"✅ 无线电地图已保存: {npz_path}")
 
-            # === 生成带红点的 Tx 图（建筑变黑，空地变白）===
             building_img_orig = Image.open(png_file).convert("L")
             building_array_orig = np.array(building_img_orig)
             inverted_array = 255 - building_array_orig
             img = Image.fromarray(inverted_array, mode="L").convert("RGB")
-            W, H = img.size
             pixel_coords = [
-                world_to_pixel(x, y, x_min, x_max, y_min, y_max, W, H)
+                world_to_pixel(x, y, x_min, x_max, y_min, y_max, map_size=map_size)
                 for x, y in zip(tx_xs, tx_ys)
             ]
             draw = ImageDraw.Draw(img)
-            radius = max(3, min(W, H) // 100)
+            radius = max(3, map_size // 100)
             for (u, v) in pixel_coords:
                 draw.ellipse(
                     (u - radius, v - radius, u + radius, v + radius),
@@ -192,10 +186,9 @@ def generate_radio_maps_from_xmls(
             img.save(tx_overlay_path)
             print(f"✅ 带 Tx 红点的图已保存: {tx_overlay_path}")
 
-            # === 生成 RSS 叠加图 ===
             rss_overlay_path = os.path.join(overlay_dir, f"{base_name}_rss_overlay.png")
             from RSSOverlay import overlay_rss_on_building
-            overlay_rss_on_building(rss_data, str(png_file), rss_overlay_path)
+            overlay_rss_on_building(rss_data, str(png_file), rss_overlay_path, map_size)
 
         except Exception as e:
             print(f"❌ 处理 {xml_file.name} 时出错: {e}")
