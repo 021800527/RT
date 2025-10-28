@@ -14,7 +14,6 @@ def overlay_rss_on_building(rss_data, building_png_path, output_path, map_size):
     total_rss_linear = np.sum(rss_data, axis=0)  # (H, W)
 
     # Step 2: 截取 [0:map_size, 0:map_size] 区域
-    print(rss_data.shape)
     rss_cropped = total_rss_linear[:map_size, :map_size]
 
     # Step 3: 转换为 dBm，避免 log(0)
