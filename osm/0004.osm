@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (3893102 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.1.0 (113205 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="22.2847127" minlon="114.1583960" maxlat="22.2870124" maxlon="114.1608814"/>
  <node id="30745880" visible="true" version="16" changeset="161655799" timestamp="2025-01-22T23:07:29Z" user="cnvery" uid="3627342" lat="22.2871201" lon="114.1610833">
   <tag k="access:ferry" v="private"/>
@@ -27235,7 +27235,7 @@
   <tag k="to" v="天后站 Tin Hau Station"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="9444067" visible="true" version="64" changeset="170018213" timestamp="2025-08-05T17:08:42Z" user="Wright One" uid="261189">
+ <relation id="9444067" visible="true" version="65" changeset="173890246" timestamp="2025-10-28T15:50:55Z" user="vectorial8192" uid="10815817">
   <member type="node" ref="12870353346" role="platform_exit_only"/>
   <member type="way" ref="205704585" role=""/>
   <member type="way" ref="685068961" role=""/>
@@ -27278,6 +27278,8 @@
   <member type="way" ref="111957493" role=""/>
   <member type="way" ref="524514020" role=""/>
   <member type="way" ref="111957490" role=""/>
+  <member type="way" ref="1445792632" role=""/>
+  <member type="way" ref="1445792632" role=""/>
   <member type="way" ref="111957490" role=""/>
   <member type="way" ref="524514018" role=""/>
   <member type="way" ref="111957496" role=""/>
